@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Private user pages — keep out of the index
+Disallow: /account/
+Disallow: /*/account/
+
+Sitemap: https://www.heyhomie.io/sitemap.xml

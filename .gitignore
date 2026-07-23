@@ -1,0 +1,27 @@
+# Node / Next.js (heyhomie-client keeps its own .gitignore too)
+node_modules/
+.next/
+out/
+build/
+.vercel
+
+# Python tooling in tools/
+__pycache__/
+*.py[cod]
+.venv/
+
+# Secrets — note: heyhomie-client/.env.dev and .env.prod are tracked on purpose,
+# they hold only NEXT_PUBLIC_* values (publishable Stripe key, GA/FB ids).
+# Anything with a real secret goes here instead:
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Office lock files
+~$*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

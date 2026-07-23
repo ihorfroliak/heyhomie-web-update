@@ -1,0 +1,466 @@
+/* eslint-disable react/no-array-index-key */
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
+import { theme } from 'twin.macro';
+import { useTranslations } from 'next-intl';
+
+import { cityDistricts, seoCitiesOrder, getCitySeoForms } from './cityDistricts';
+import CleaningSeoJsonLd from './CleaningSeoJsonLd';
+
+const Section = styled.section`
+    background-color: #ffffff;
+    color: ${theme`colors.primary.dark`};
+
+    padding: 56px 24px 72px;
+
+    @media (min-width: 1024px) {
+        padding: 96px 128px;
+    }
+`;
+
+const Inner = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
+`;
+
+const Heading = styled.h2`
+    font-family: 'Quicksand';
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-bottom: 24px;
+
+    @media (min-width: 1024px) {
+        font-size: 40px;
+        line-height: 50px;
+
+        margin-bottom: 32px;
+    }
+`;
+
+const Lead = styled.p`
+    font-size: 16px;
+    line-height: 27px;
+
+    margin-bottom: 16px;
+
+    &:first-of-type {
+        font-weight: 500;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+`;
+
+const SubHeading = styled.h3`
+    font-family: 'Quicksand';
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-size: 22px;
+    line-height: 28px;
+
+    margin-top: 56px;
+    margin-bottom: 20px;
+
+    @media (min-width: 1024px) {
+        font-size: 28px;
+        line-height: 35px;
+
+        margin-top: 72px;
+    }
+`;
+
+const TrustGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 14px;
+
+    margin-top: 8px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+`;
+
+const TrustCard = styled.div`
+    background-color: #f4f7ff;
+    border-radius: 12px;
+
+    padding: 20px 18px;
+    text-align: center;
+
+    .trust-icon {
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-family: 'Quicksand';
+        font-weight: bold;
+
+        font-size: 16px;
+        line-height: 21px;
+
+        margin-bottom: 6px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 19px;
+        opacity: 0.75;
+    }
+`;
+
+const CardsGrid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+    }
+`;
+
+const ServicesGrid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+
+    @media (min-width: 640px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+`;
+
+const PlanCard = styled.div`
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px 0px rgba(67, 108, 203, 0.2);
+
+    padding: 24px;
+
+    .card-icon {
+        font-size: 28px;
+        line-height: 1;
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        font-family: 'Quicksand';
+        font-weight: bold;
+
+        font-size: 20px;
+        line-height: 26px;
+
+        margin-bottom: 12px;
+
+        color: #ff3c87;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+`;
+
+const DistrictsIntro = styled.p`
+    font-size: 16px;
+    line-height: 27px;
+
+    margin-bottom: 20px;
+`;
+
+const DistrictGrid = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+`;
+
+const DistrictChip = styled.li`
+    background-color: #f4f7ff;
+    color: ${theme`colors.primary.dark`};
+    border-radius: 20px;
+
+    padding: 8px 16px;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+`;
+
+const Footnote = styled.p`
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.7;
+
+    margin-top: 20px;
+`;
+
+const FaqList = styled.div`
+    border-top: 1px solid #e7ebf6;
+`;
+
+const FaqItem = styled.div`
+    border-bottom: 1px solid #e7ebf6;
+`;
+
+const FaqQuestion = styled.button`
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+
+    padding: 20px 4px;
+
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: ${theme`colors.primary.dark`};
+
+    &:focus {
+        outline: none;
+    }
+
+    .faq-chevron {
+        flex-shrink: 0;
+        transition: transform 0.2s ease-in-out;
+        font-size: 20px;
+        color: #ff3c87;
+        transform: rotate(${props => (props.isOpen ? '45deg' : '0deg')});
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 19px;
+    }
+`;
+
+const FaqAnswer = styled.div`
+    overflow: hidden;
+    max-height: ${props => (props.isOpen ? '600px' : '0')};
+    transition: max-height 0.3s ease-in-out;
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 0 4px 20px;
+    }
+`;
+
+const CitiesLinks = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 20px;
+`;
+
+const CityLink = styled.a`
+    display: inline-block;
+
+    border: 2px solid #36f0c7;
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    font-weight: bold;
+    font-size: 16px;
+    color: ${theme`colors.primary.dark`};
+
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #36f0c7;
+    }
+`;
+
+const PlansCta = styled.a`
+    display: inline-block;
+    margin-top: 24px;
+
+    background-color: #36f0c7;
+    border-radius: 8px;
+
+    padding: 12px 24px;
+
+    font-weight: bold;
+    font-size: 16px;
+    color: ${theme`colors.primary.dark`};
+
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+        opacity: 0.85;
+    }
+`;
+
+const TRUST_KEYS = [
+    { key: 'eco', icon: '🌿' },
+    { key: 'vetted', icon: '✅' },
+    { key: 'pricing', icon: '🏷️' },
+    { key: 'guarantee', icon: '💖' },
+];
+
+const SERVICE_KEYS = [
+    { key: 'cleaning', icon: '🧹' },
+    { key: 'postRenovation', icon: '🔨' },
+    { key: 'windows', icon: '🪟' },
+    { key: 'kitchen', icon: '🍽️' },
+    { key: 'bathroom', icon: '🛁' },
+    { key: 'upholstery', icon: '🛋️' },
+];
+
+const FAQ_KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
+
+const CleaningSeoSection = ({ city }) => {
+    const t = useTranslations('CleaningSeoSection');
+    const router = useRouter();
+    const isPl = router.locale === 'pl';
+
+    const cityName = city && city.name;
+    const { data, displayName, locative: cityLocative } = getCitySeoForms(cityName, isPl);
+
+    const otherCities = seoCitiesOrder.filter(c => c !== cityName);
+
+    const [openFaq, setOpenFaq] = useState(0);
+
+    const services = SERVICE_KEYS.map(s => ({
+        icon: s.icon,
+        title: t(`services.${s.key}.title`),
+        body: t(`services.${s.key}.body`),
+    }));
+
+    const faqItems = FAQ_KEYS.map(n => ({
+        q: t(`faq.q${n}`, { cityLocative, cityName: displayName }),
+        a: t(`faq.a${n}`, { cityLocative, cityName: displayName }),
+    }));
+
+    return (
+        <Section aria-label={t('intro.heading', { cityLocative })}>
+            <CleaningSeoJsonLd cityKey={cityName} displayName={displayName} locative={cityLocative} locale={router.locale} faqItems={faqItems} services={services} />
+            <Inner>
+                {/* Intro */}
+                <Heading>{t('intro.heading', { cityLocative })}</Heading>
+                <Lead>{t('intro.para_1', { cityLocative, cityName: displayName })}</Lead>
+                <Lead>{t('intro.para_2', { cityLocative, cityName: displayName })}</Lead>
+                <Lead>{t('intro.para_3', { cityLocative, cityName: displayName })}</Lead>
+
+                {/* Trust signals */}
+                <SubHeading>{t('trust.heading')}</SubHeading>
+                <TrustGrid>
+                    {TRUST_KEYS.map(item => (
+                        <TrustCard key={item.key}>
+                            <div className='trust-icon'>{item.icon}</div>
+                            <h4>{t(`trust.${item.key}.title`)}</h4>
+                            <p>{t(`trust.${item.key}.body`)}</p>
+                        </TrustCard>
+                    ))}
+                </TrustGrid>
+
+                {/* Standard vs general */}
+                <SubHeading>{t('plans.heading')}</SubHeading>
+                <CardsGrid>
+                    <PlanCard>
+                        <div className='card-icon'>🧽</div>
+                        <h4>{t('plans.standard.title')}</h4>
+                        <p>{t('plans.standard.body')}</p>
+                    </PlanCard>
+                    <PlanCard>
+                        <div className='card-icon'>✨</div>
+                        <h4>{t('plans.general.title')}</h4>
+                        <p>{t('plans.general.body')}</p>
+                    </PlanCard>
+                </CardsGrid>
+                <Link href='/cleaning' passHref>
+                    <PlansCta>{t('plans.linkText')}</PlansCta>
+                </Link>
+
+                {/* Related cleaning services */}
+                <SubHeading>{t('services.heading')}</SubHeading>
+                <ServicesGrid>
+                    {services.map((s, i) => (
+                        <PlanCard key={i}>
+                            <div className='card-icon'>{s.icon}</div>
+                            <h4>{s.title}</h4>
+                            <p>{s.body}</p>
+                        </PlanCard>
+                    ))}
+                </ServicesGrid>
+
+                {/* Districts */}
+                {data && data.districts && data.districts.length > 0 ? (
+                    <>
+                        <SubHeading>{t('districts.heading')}</SubHeading>
+                        <DistrictsIntro>{t('districts.subheading', { cityLocative })}</DistrictsIntro>
+                        <DistrictGrid>
+                            {data.districts.map((district, i) => (
+                                <DistrictChip key={i}>{district}</DistrictChip>
+                            ))}
+                        </DistrictGrid>
+                        <Footnote>{t('districts.footnote')}</Footnote>
+                    </>
+                ) : null}
+
+                {/* FAQ */}
+                <SubHeading>{t('faq.heading')}</SubHeading>
+                <FaqList>
+                    {faqItems.map((item, i) => (
+                        <FaqItem key={i}>
+                            <FaqQuestion isOpen={openFaq === i} aria-expanded={openFaq === i} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+                                <span>{item.q}</span>
+                                <span className='faq-chevron' aria-hidden='true'>
+                                    +
+                                </span>
+                            </FaqQuestion>
+                            <FaqAnswer isOpen={openFaq === i}>
+                                <p>{item.a}</p>
+                            </FaqAnswer>
+                        </FaqItem>
+                    ))}
+                </FaqList>
+
+                {/* Other cities */}
+                {otherCities.length > 0 ? (
+                    <>
+                        <SubHeading>{t('otherCities.heading')}</SubHeading>
+                        <DistrictsIntro>{t('otherCities.subheading', { cityLocative })}</DistrictsIntro>
+                        <CitiesLinks>
+                            {otherCities.map(c => (
+                                <Link key={c} href={`/${c}`} passHref>
+                                    <CityLink>{cityDistricts[c].nameNominative}</CityLink>
+                                </Link>
+                            ))}
+                        </CitiesLinks>
+                    </>
+                ) : null}
+            </Inner>
+        </Section>
+    );
+};
+
+export default CleaningSeoSection;

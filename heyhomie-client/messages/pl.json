@@ -1,0 +1,1672 @@
+{
+    "CityPage": {
+        "session_expired_toast": "Sesja wygasła, zaloguj się proszę ponownie",
+        "coupon_added_toast": "Kod został dodany",
+        "coupon_not_valid_toast": "Kod jest nieważny",
+        "coupon_duplicate_toast": "Kod został już dodany",
+        "coupon_error_generic_toast": "Wystapił błąd podczas dodawania kodu",
+        "coupon_has_expired": "Kod wygasł",
+        "coupon_is_not_active_yet": "Kod nie jest jeszcze aktywny",
+        "user_already_ordered": "Already ordered",
+        "user_has_referral_coupon": "Masz już aktywny kod polecający",
+        "user_identical_to_sponsor": "Nie możesz uzyć własnego kodu polecającego",
+        "error_deleting_service_toast": "Podczas usuwania usługi wystąpił błąd.",
+        "service_already_in_order": "Usługa jest już w zamówieniu",
+        "meta": {
+            "title": "Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+            "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+            "og_title": "Korzystaj wygodnie z usług w swoim domu",
+            "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż",
+            "title_city": "Sprzątanie {cityLocative} i usługi domowe z dojazdem | HeyHomie",
+            "description_city": "Profesjonalne sprzątanie mieszkań i domów {cityLocative}: standardowe, generalne, po remoncie, mycie okien. Sprawdzeni homies, ekologiczne środki, przejrzyste ceny. Zarezerwuj online!",
+            "og_title_city": "Sprzątanie {cityLocative} | HeyHomie",
+            "og_description_city": "Sprzątanie mieszkań i domów {cityLocative}: standardowe, generalne, po remoncie. Sprawdzeni homies, ekologiczne środki, przejrzyste ceny."
+        },
+        "Layout": {
+            "cityNames": {
+                "krakow": "Kraków",
+                "warsaw": "Warszawa",
+                "wroclaw": "Wrocław",
+                "poznan": "Poznań",
+                "rzeszow": "Rzeszów",
+                "katowice": "Katowice",
+                "default": ""
+            }
+        },
+        "Topnav": {
+            "aboutLink": "O nas",
+            "LinksDropdown": {
+                "heading": "Usługi",
+                "cleaning": "Sprzątanie",
+                "massage": "Masaż",
+                "flowers": "Kwiaty"
+            },
+            "cityNames": {
+                "krakow": "Kraków",
+                "warsaw": "Warszawa",
+                "wroclaw": "Wrocław",
+                "poznan": "Poznań",
+                "rzeszow": "Rzeszów",
+                "katowice": "Katowice",
+                "default": ""
+            },
+            "servicesBtn": {
+                "unsavedChangesToast": "Masz niezapisane zmiany"
+            },
+            "myAccount": "Konto"
+        },
+        "modals": {
+            "RecurrentPriceModal": {
+                "h_1": "Cena preferencyjna",
+                "para_1": "Niższe ceny obowiązują na usługi świadczone regularnie (co tydzień, co 2 tygodnie, co miesiąc).",
+                "para_2": "",
+                "close_btn": "Ok, dzięki!"
+            },
+            "ResetOrderOrCancelChangeCityModal": {
+                "h_1": "Zamówienie nie zostało jeszcze ukończone",
+                "para_1": "Masz nieukończone zamówienie w mieście ({city_name}).",
+                "para_2": "Czy przekierować Cię do miasta {city_name} anulując aktualne zamówienie?",
+                "stay_btn": "Zostań",
+                "redirect_btn": "Przekieruj"
+            },
+            "RedirectToUnfinishedOrResetOrderModal": {
+                "h_1": "Zamówienie nie zostało jeszcze ukończone",
+                "para_1": "Przejdziesz na stronę miasta {city_name}, mając nieukończone zamówienie w {user_selectedCity}.",
+                "para_2": "Czy chcesz uzyskać dostep do miasta {city_name} i usunąć nieukończone zamówienie?",
+                "return_to_order_in_btn": "Powrót do zamówienia w mieście {city_name}",
+                "stay_on_page_for_btn": "Zostań na stronie miasta {city_name}"
+            },
+            "ConfirmDeleteServiceModal": {
+                "h_1": "Usuń usługę",
+                "message": "Na pewno chcesz usunąć wybraną usługę?",
+                "cancel_btn": "Zamknij",
+                "confirm_btn": "Usuń"
+            }
+        },
+        "SignInMenu": {
+            "signInSuccess_toast": "Jesteś teraz zalogowany pomyślnie!",
+            "phone_not_exist_toast": "Ten numer telefonu nie istnieje",
+            "incorrect_confirmation_code_toast": "Niepoprawny kod potwierdzający",
+            "error_occured_toast": "Wystapił błąd",
+            "already_exists_toast": "Uzytkownik już istnieje",
+            "coupon_added_toast": "Kod został dodany",
+            "coupon_not_valid_toast": "Kod jest nieważny",
+            "coupon_duplicate_toast": "Kod został już dodany",
+            "coupon_error_generic_toast": "Wystapił błąd podczas dodawania kodu",
+            "coupon_has_expired": "Kod wygasł",
+            "coupon_is_not_active_yet": "Kod nie jest jeszcze aktywny",
+            "user_already_ordered": "Already ordered",
+            "user_has_referral_coupon": "Masz już aktywny kod polecający",
+            "user_identical_to_sponsor": "Nie możesz uzyć własnego kodu polecającego",
+            "sign_up": "Zarejestruj się",
+            "sign_up_form": {
+                "para1": "Podaj proszę swoje dane aby zarejestrować się w Homie.",
+                "first_name": "Imię",
+                "last_name": "Nazwisko",
+                "phone_number": "Numer telefonu",
+                "email": "Email",
+                "terms_checkbox_1": "Dokonując zamówienia akceptuję ",
+                "terms_checkbox_1_Link": "Regulamin Homie",
+                "terms_checkbox_2": "Dokonując zamówienia akceptuję ",
+                "terms_checkbox_2_Link": "Politykę prywatności Homie",
+                "confirmBtn": "Potwierdź",
+                "first_name_err": "Wprowadź swoje imię",
+                "last_name_err": "Wprowadź swoje nazwisko",
+                "phone_number_err": "Wprowadź poprawny numer telefonu",
+                "email_err": "Wprowadź poprawny adres email"
+            },
+            "sign_in_form": {
+                "h3": "Jesteś z nami nie od dziś?",
+                "para": "Podaj proszę swój numer telefonu. Otrzymasz kod SMS-em.",
+                "phone_number": "Numer telefonu",
+                "phone_number_err": "Wprowadź poprawny numer telefonu",
+                "confirmBtn": "Potwierdź"
+            },
+            "confirm_code_menu": {
+                "confirmationCode": "Kod potwierdzający",
+                "editPhoneNumber": "Edytuj swój numer telefonu",
+                "para": "Wysłaliśmy Ci kod SMS-em. Wpisz go w polu poniżej.",
+                "code_placeholder": "Kod",
+                "code_err": "Wprowadź kod potwierdzający",
+                "enter_valid_phone_number_err": "Wprowadź poprawny numer telefonu",
+                "confirmBtn": "Potwierdź",
+                "changePhoneNumberBtn": "Zmień swój numer telefonu"
+            }
+        },
+        "ProfileMenu": {
+            "welcome": "miło Cię widzieć!",
+            "profile_link": "Profil",
+            "signout_btn": "Wyloguj"
+        },
+        "PaymentMethodMenu": {
+            "heading": "Wybierz kartę",
+            "para": "Zarządzaj płatnościami, korzystając z naszego bezpiecznego systemu płatności."
+        },
+        "ValidatePaymentConfirmOrderMenu": {
+            "heading": "Wybierz kartę",
+            "para": "Zarządzaj płatnościami, korzystając z naszego bezpiecznego systemu płatności.",
+            "validate": "Potwiedź",
+            "order_success_toast": "Dzięki za Twoje zamówienie!",
+            "error_occured_toast": "Wystapił błąd",
+            "discount": "Aktywna zniżka na najbliższą płatność",
+            "earnedAmountDiscount": "Przyznane środki",
+            "paymentIsSecure": "Każda płatność zabezpieczona jest przez szyfrowanie danych.",
+            "AddCouponCode": {
+                "addCoupon_placeholder": "Twój kod promocyjny",
+                "switchToAddCouponForm_btn": "Dodaj kod promocyjny",
+                "coupon_added_toast": "Kod został dodany",
+                "coupon_not_valid_toast": "Kod jest nieważny",
+                "coupon_duplicate_toast": "Kod został już dodany",
+                "coupon_error_generic_toast": "Wystapił błąd podczas dodawania kodu",
+                "coupon_has_expired": "Kod wygasł",
+                "coupon_is_not_active_yet": "Kod nie jest jeszcze aktywny",
+                "user_already_ordered": "Already ordered",
+                "user_has_referral_coupon": "Masz już aktywny kod polecający",
+                "user_identical_to_sponsor": "Nie możesz uzyć własnego kodu polecającego"
+            },
+            "servicesBilling": {
+                "billing_heading": "Podsumowanie",
+                "billing_msg": "Każda płatność pobierana jest następnego dnia po wykonaniu usługi.",
+                "yourAccountHeading": "Na Twoim koncie",
+                "servicesNames": {
+                    "cleaning": "Sprzątanie",
+                    "flowers": "Kwiaty",
+                    "nails": "Paznokcie",
+                    "massage": "Masaż",
+                    "laundry": "Pralnia",
+                    "carpet": "Czyszczenie dywanów",
+                    "teacher": "Nauczyciel",
+                    "babysitting": "Opiekunka",
+                    "upholstery": "Czyszczenie tapicerki"
+                },
+                "oneTime": "Jednorazowo",
+                "recurrent": "Regularnie",
+                "afterTheMission": "zostanie pobrane po tej misji",
+                "afterEachMission": "zostanie pobrane po każdej misji"
+            }
+        },
+        "AddCardSubmenu": {
+            "addNewCard": "Dodaj nową kartę",
+            "heading": "Dodaj swoją kartę",
+            "para": "Wprowadź proszę informacje dotyczące płatności. Zachowamy Twoją metodę płatności aby pobrać należność po każdej zakończonej misji.",
+            "securePayment": "Obsługiwane płatności",
+            "securityFirstHeading": "Bezpieczeństwo przede wszystkim",
+            "securityFirstCaption": "Każda płatność zabezpieczona jest przez szyfrowanie danych.",
+            "CardSection": {
+                "placeHolderName": "Imię właściela karty",
+                "cardNumberPlaceholder": "Numer karty",
+                "cardExpiryPlaceholder": "Data ważności",
+                "cardCVCPlaceholder": "CVC",
+                "saveCard": "Zapisz kartę",
+                "error_occured_toast": "Wystapił błąd"
+            }
+        },
+        "BookingMenu": {
+            "heading": "Twoja rezerwacja",
+            "heading_instruction": "Wypełnij wszystkie pola",
+            "error_deleting_service_toast": "Podczas usuwania usługi wystąpił błąd.",
+            "order_success_toast": "Dzięki za Twoje zamówienie!",
+            "error_occured_toast": "Wystapił błąd",
+            "cityNames": {
+                "krakow": "Kraków",
+                "warsaw": "Warszawa",
+                "wroclaw": "Wrocław",
+                "poznan": "Poznań",
+                "rzeszow": "Rzeszów",
+                "katowice": "Katowice",
+                "default": ""
+            },
+            "buttons": {
+                "addNewService": "Dodaj nową usługę",
+                "letsBook": "Zarezerwuj!"
+            },
+            "servicesBilling": {
+                "billing_heading": "Podsumowanie",
+                "billing_msg": "Każda płatność pobierana jest następnego dnia po wykonaniu usługi.",
+                "servicesNames": {
+                    "cleaning": "Sprzątanie",
+                    "flowers": "Kwiaty",
+                    "nails": "Paznokcie",
+                    "massage": "Masaż",
+                    "laundry": "Pralnia",
+                    "carpet": "Czyszczenie dywanów",
+                    "teacher": "Nauczyciel",
+                    "babysitting": "Opiekunka",
+                    "upholstery": "Czyszczenie tapicerki"
+                },
+                "oneTime": "Jednorazowo",
+                "recurrent": "Regularnie",
+                "afterTheMission": "zostanie pobrane po tej misji",
+                "afterEachMission": "zostanie pobrane po każdej misji"
+            },
+            "ServiceCard": {
+                "servicesNames": {
+                    "cleaning": "Sprzątanie",
+                    "flowers": "Kwiaty",
+                    "nails": "Paznokcie",
+                    "massage": "Masaż",
+                    "laundry": "Pralnia",
+                    "carpet": "Czyszczenie dywanów",
+                    "teacher": "Nauczyciel",
+                    "babysitting": "Opiekunka",
+                    "upholstery": "Czyszczenie tapicerki"
+                },
+                "frequency": {
+                    "once": "Jednorazowo",
+                    "every_week": "Co tydzień",
+                    "every_two_weeks": "Co 2 tygodnie",
+                    "every_month": "Raz w miesiącu"
+                },
+                "utils": {
+                    "pickDateHour": "Wybierz preferowaną datę i godzinę",
+                    "pickAddress": "Wybierz adres",
+                    "time_at": "o",
+                    "addComment": "Dodatkowe informacje"
+                }
+            },
+            "SelectAddressSubmenu": {
+                "heading": "Wybierz adres",
+                "addNewAddressOption": "Dodaj nowy adres",
+                "addNewAddressCaption": "Wprowadź proszę adres, gdzie wykonamy usługę.",
+                "validate": "Potwierdź",
+                "AddressEditor": {
+                    "addressName": "Nazwa tego adresu",
+                    "addressLine1": "Adres",
+                    "streetNumber": "Numer budynku",
+                    "houseNumber": "Numer mieszkania",
+                    "zipcode": "Kod pocztowy",
+                    "city": "Miasto",
+                    "additionalInformation": "Dodatkowe informacje",
+                    "add": "Dodaj",
+                    "cityNames": {
+                        "krakow": "Kraków",
+                        "warsaw": "Warszawa",
+                        "wroclaw": "Wrocław",
+                        "poznan": "Poznań",
+                        "rzeszow": "Rzeszów",
+                        "katowice": "Katowice",
+                        "default": ""
+                    }
+                }
+            },
+            "DatePickerSubmenu": {
+                "heading": "Wybierz datę i godzinę",
+                "validate": "Potwierdź",
+                "firstMission": "Pierwsza misja",
+                "followingMissions": "Kolejne misje",
+                "dayPlaceHolderEveryWeek": "Każdy ",
+                "dayPlaceHolderEveryTwoWeeks": "Każdy kolejny ",
+                "dayPlaceHolderEveryMonth": "Co miesiąc w ",
+                "timePlaceholder": "Godzina",
+                "weekDays": {
+                    "monday": "Poniedziałek",
+                    "tuesday": "Wtorek",
+                    "wednesday": "Środa",
+                    "thursday": "Czwartek",
+                    "friday": "Piątek",
+                    "saturday": "Sobota",
+                    "sunday": "Niedziela"
+                },
+                "minimumBookableHourWarning": "Tą usługę możesz zarezerwować z wyprzedzeniem minimum {minimum_bookable_hour} godzin",
+                "laundry_for_pick_up": "odbioru prania od Ciebie ",
+                "carpet_for_pick_up": "odbioru dywanu ",
+                "we_will_arrive_to_you": "We will arrive to you on  between",
+                "we_will_arrive_to_you_laundry": "Odbierzemy Twoje pranie {arrive_date}, między {hour_1} a {hour_2}. ",
+                "we_will_arrive_to_you_carpet": "Odbierzemy Twój dywan {arrive_date}, między {hour_1} a {hour_2}. ",
+                "we_will_arrive_to_you_flowers": "Dostarczymy Ci kwiaty {arrive_date}, między {hour_1} a {hour_2}.",
+                "carpet_delivery_standard": "Zwrócimy go {delivery_date}, między 16:00 a 21:00.",
+                "laundry_delivery_standard": "Zwrócimy je {delivery_date}, między 16:00 a 21:00.",
+                "laundry_express_delivery_tip": "Wskazówka: Dla prania ekspresowego wybierz godzinę odbioru przed 10:00. W ten sposób dostarczymy Twoje rzeczy tego samego dnia.",
+                "laundry_delivery_standard_no_delivery_on": "W niedzielę nie obsługujemy prania",
+                "carpet_delivery_standard_no_delivery_on": "W niedzielę nie obsługujemy",
+                "laundry_delivery_express": "🚀 Pranie ekspresowe: Dostarczymy Ci czyste, pachnące i wyprasowane rzeczy {laundry_delivery_date}, pomiędzy 16:00 a 21:00."
+            },
+            "AddCommentSubmenu": {
+                "heading": "Dodatkowe informacje",
+                "para": "Dodaj tutaj wszelkie informacje, które mogą być potrzebne",
+                "textareaPlacheloder": "Dodatkowe informacje",
+                "validateBTN": "Dodaj"
+            },
+            "PersonalInformation": {
+                "heading": "Informacje osobiste",
+                "account": "Konto",
+                "payment_methods": "Metody Płatności"
+            }
+        },
+        "ServicesSlider": {
+            "heading": {
+                "h1": "Korzystaj \nwygodnie \nz usług",
+                "h3": "W swoim domu",
+                "h4": {
+                    "p1": "Zadzwoń",
+                    "p2": " lub ",
+                    "p3": "wypełnij formularz"
+                }
+            }
+        },
+        "ServiceGeneral": {
+            "cleaning": {
+                "name": "Sprzątanie",
+                "headerCopy": " <br/>Zajmiemy się Twoim domem - masz to z głowy 🍿",
+                "opening_hours": "Dostępne między 8:00 - 20:00",
+                "opening_hours_short": "8:00 - 20:00"
+            },
+            "flowers": {
+                "name": "Kwiaty",
+                "headerCopy": " <br/>Wprowadź 🌼&nbsp;Flower&nbsp;power do swojego życia!",
+                "opening_hours": "Dostępne między 8:00 - 21:00",
+                "opening_hours_short": "8:00 - 21:00"
+            },
+            "nails": {
+                "name": "Paznokcie",
+                "headerCopy": "",
+                "opening_hours": "",
+                "opening_hours_short": ""
+            },
+            "massage": {
+                "name": "Masaż",
+                "headerCopy": " <br/>Skorzystaj z masażu w swoim domu i poczuj się fantastycznie 😊",
+                "opening_hours": "Dostępny między 8:00 - 21:00",
+                "opening_hours_short": "8:00 - 21:00"
+            },
+            "teacher": {
+                "name": "Nauczyciel",
+                "headerCopy": "",
+                "opening_hours": "",
+                "opening_hours_short": ""
+            },
+            "babysitting": {
+                "name": "Opiekunka",
+                "headerCopy": "",
+                "opening_hours": "",
+                "opening_hours_short": ""
+            },
+            "laundry": {
+                "name": "Pralnia",
+                "headerCopy": " <br/>⚡ Awaria? Odbieramy, pierzemy i prasujemy Twoje rzeczy",
+                "opening_hours": "Obiór 7:00 - 15:00, Dostawa 16:00 - 21:00",
+                "opening_hours_short": ""
+            },
+            "carpet": {
+                "name": "Czyszczenie dywanów",
+                "headerCopy": " <br/>Odbierzemy Twój dywan i zwrócimy na błysk ✨",
+                "opening_hours": "Obiór 7:00 - 15:00, Dostawa 16:00 - 21:00",
+                "opening_hours_short": ""
+            },
+            "upholstery": {
+                "name": "Czyszczenie tapicerki",
+                "headerCopy": " <br/>Odświeżymy Twoje meble – wygodnie i bez stresu 💫",
+                "opening_hours": "Dostępne między 8:00 - 20:00",
+                "opening_hours_short": "8:00 - 20:00"
+            },
+            "coming_soon": "WKRÓTCE"
+        },
+        "ServiceConfigContainer": {
+            "error_occured_toast": "Niefart! Wystąpił błąd"
+        },
+        "ServiceConfig": {
+            "price": "Cena",
+            "minOrderValue": "Minimalna wartość zamówienia",
+            "additionalOptions": "Opcje dodatkowe",
+            "onetimePriceNameCaption": "Jednorazowo",
+            "recurrentPriceNameCaption": "Regularnie",
+            "recurrentPriceDescriptionHeadingCaption": "Cena preferencyjna",
+            "recurrentPriceDescriptionBodyCaption": "Korzystaj z niższych cen wybierając swoje usługi w sposób powtarzalny (co tydzień, co 2 tygodnie, raz w miesiącu).",
+            "rooms_quantity_singular_nameCaptionKey": "Pokój",
+            "rooms_quantity_plural_nameCaptionKey": "Pokoje",
+            "rooms_quantity_plural_different_nameCaptionKey": "Pokoi",
+            "bathrooms_quantity_singular_nameCaptionKey": "Łazienka",
+            "bathrooms_quantity_plural_nameCaptionKey": "Łazienki",
+            "bathrooms_quantity_plural_different_nameCaptionKey": "Łazienek",
+            "kitchens_quantity_singular_nameCaptionKey": "Kuchnia",
+            "kitchens_quantity_plural_nameCaptionKey": "Kuchnie",
+            "kitchens_quantity_plural_different_nameCaptionKey": "Kuchni",
+            "frequency_nameCaptionKey": "Jak często?",
+            "frequency_descriptionCaptionKey": "",
+            "frequency_once": "Jednorazowo",
+            "frequency_every_week": "Co tydzień",
+            "frequency_every_two_weeks": "Co 2 tygodnie",
+            "frequency_every_month": "Raz w miesiącu",
+            "cleaning_plan_nameCaptionKey": "Rodzaj usługi sprzątania?",
+            "cleaning_plan_regular": "Standardowe",
+            "cleaning_plan_deep": "Generalne",
+            "cleaning_plan_linkToLandingCopy": "Więcej szczegółów",
+            "cleaning_house_size_nameCaptionKey": "Your area, m2",
+            "cleaning_house_size_descriptionCaptionKey": "",
+            "cleaning_additional_hours_nameCaptionKey": "Dodatkowe godziny",
+            "cleaning_additional_hours_descriptionCaptionKey": "",
+            "cleaning_additional_hours_quantity_cost": "49.00zł",
+            "cleaning_windows_quantity_nameCaptionKey": "Okna",
+            "cleaning_windows_quantity_hint_hintCaptionKey": "Liczba okien",
+            "cleaning_windows_quantity_cost": "35.00zł",
+            "cleaning_ironing_items_nameCaptionKey": "Prasowanie (godzin)",
+            "cleaning_ironing_quantity_cost": "49.00zł",
+            "cleaning_balcony_quantity_nameCaptionKey": "Balkon",
+            "cleaning_balcony_quantity_cost": "30.00zł",
+            "cleaning_fridge_quantity_nameCaptionKey": "Lodówka",
+            "cleaning_fridge_quantity_cost": "49.00zł",
+            "cleaning_microwave_quantity_nameCaptionKey": "Mikrofalówka",
+            "cleaning_microwave_quantity_cost": "15.00zł",
+            "cleaning_oven_quantity_nameCaptionKey": "Piekarnik",
+            "cleaning_oven_quantity_cost": "49.00zł",
+            "cleaning_kitchen_hood_quantity_nameCaptionKey": "Okap kuchenny",
+            "cleaning_kitchen_hood_quantity_cost": "49.00zł",
+            "cleaning_ventilator_quantity_nameCaptionKey": "Wentylator",
+            "cleaning_ventilator_quantity_cost": "15.00zł",
+            "cleaning_dishes_quantitynameCaptionKey": "Brudne naczynia",
+            "cleaning_dishes_quantity_cost": "25.00zł",
+            "cleaning_dishes_if_false": "Nie",
+            "cleaning_dishes_if_true": "Tak",
+            "cleaning_pets_nameCaptionKey": "Zwierzęta",
+            "cleaning_pets_existing_btn_text": "Posiadam",
+            "cleaning_pets_if_false": "Bez zwierząt",
+            "cleaning_pets_if_true": "Posiadam",
+            "cleaning_additionalOptionsInfo": "'<h3><strong>💦Zakres sprzątania:</strong></h3><h3><strong>✔PRZESTRZEŃ DOMOWA </strong></h3><ul><li><p>Odkurzanie lub zamiecenie i umycie podłóg oraz przestrzeni wejściowej </p></li><li><p>Wytarcie kurzu z dostępnych szafek, blatów i parapetów </p></li><li><p>Wytarcie frontów szaf </p></li><li><p>Uporządkowanie zabawek i przedmiotów codziennego użytku </p></li><li><p>Wyniesienie śmieci i wyczyszczenie koszy na śmieci </p></li><li><p>Usunięcie kurzu ze wszystkich dostępnych lamp </p></li><li><p>Usunięcie pajęczyn </p></li><li><p>Umycie luster i ram </p></li><li><p>Wyczyszczenie cokołów i listew przypodłogowych </p></li><li><p>Wytarcie drzwi, klamek </p></li><li><p>Wytarcie włączników i gniazdek </p></li><li><p>Włożenie prania i nastawienia pralki z wyselekcjonowanym praniem </p></li><li><p>Rozładowanie pralki jeśli jest pełna i rozwieszenie mokrych rzeczy na suszarce do ubrań lub włożenie do suszarki bębnowej </p></li><li><p>Ściągnięcie suchych ubrań z suszarki i ułożenie ich </p></li><li><p>Pozostawienie narzędzi do sprzątania w należytym porządku: wyczyszczenie mopa, odkurzacza it</p></li></ul><h3><strong>✔KUCHNIA </strong></h3><ul><li><p>Umycie naczyń i zlewu </p></li><li><p>Wytarcie zewnętrznych powierzchni kuchennych (szafki, blaty) </p></li><li><p>Wyczyszczenie piekarnika, mikrofalówki, tostera </p></li><li><p>Usunięcie kamienia z czajnika </p></li><li><p>Opróżnienie czystej zmywarki </p></li><li><p>Na życzenie: umycie wnętrza lodówki</p></li></ul><h3><strong>✔SYPIALNIA </strong></h3><ul><li><p>Zmiana pościeli na czystą i ścielenie łóżka</p></li></ul><h3><strong>✔ŁAZIENKA </strong></h3><ul><li><p>Umycie i odkażenie toalety, prysznica, wanny i umywalki </p></li><li><p>Wytarcie luster i powierzchni szklanych</p></li></ul><h3><strong>✔POKÓJ DZIENNY </strong></h3><ul><li><p>Wytarcie stołów i krzeseł </p></li><li><p>Odkurzenie sof, ułożenie podusze</p></li></ul><h3><strong>✔BALKON </strong></h3><ul><li><p>Umycie podłóg i barierek</p></li></ul>'",
+            "cleaning_priceFieldMessage": "Zapewniamy pełny zestaw środków czystości (płyny)",
+            "flowers_plan_nameCaptionKey": "",
+            "flowers_plan_descriptionCaptionKey": "",
+            "flowers_plan_medium_title": "Średniej wielkości",
+            "flowers_plan_medium_subtitle": "Średnica bukietu z kwiatów sezonowych to +30cm",
+            "flowers_plan_medium_onetime": "89zł",
+            "flowers_plan_medium_recurrent": "80zł",
+            "flowers_plan_large_title": "Duży",
+            "flowers_plan_large_subtitle": "Średnica bukietu z kwiatów sezonowych to +40cm",
+            "flowers_plan_large_onetime": "129zł",
+            "flowers_plan_large_recurrent": "120zł",
+            "flowers_quantity_nameCaptionKey": "ilość",
+            "flowers_quantity_descriptionCaptionKey": "",
+            "flowers_quantity_1": "1",
+            "flowers_quantity_2": "2",
+            "flowers_quantity_3": "3",
+            "flowers_quantity_4": "4",
+            "flowers_quantity_5": "5",
+            "flowers_quantity_6": "6",
+            "flowers_quantity_7": "7",
+            "flowers_quantity_8": "8",
+            "flowers_quantity_9": "9",
+            "flowers_quantity_10": "10",
+            "nails_plan_nameCaptionKey": "",
+            "nails_plan_descriptionCaptionKey": "",
+            "nails_plan_manicure_title": "Manicure",
+            "nails_manicure_subtitle": "Klasyczny zabieg pielęgnacji paznokci",
+            "nails_manicure_onetime": "89zł",
+            "nails_manicure_recurrent": "80zł",
+            "nails_plan_pedicure_title": "Pedicure",
+            "nails_plan_pedicure_subtitle": "Klasyczny zabieg pielęgnacji skóry stóp i paznokci",
+            "nails_plan_pedicure_onetime": "135zł",
+            "nails_plan_pedicure_recurrent": "125zł",
+            "nails_plan_all_title": "Manicure & Pedicure",
+            "nails_plan_all_subtitle": "Klasyczny zabieg pielęgnacji skóry dłoni, stóp i paznokci",
+            "nails_plan_all_onetime": "205zł",
+            "nails_plan_all_recurrent": "190zł",
+            "nails_polishing_nameCaptionKey": "Malowanie",
+            "nails_polishing_priceCaption": "30zł",
+            "nails_hybrid_nameCaptionKey": "Hybrydy",
+            "nails_hybrid_priceCaption": "50zł",
+            "nails_gel_nameCaptionKey": "Zdobienie",
+            "nails_gel_priceCaption": "30zł",
+            "nails_gel_removal_nameCaptionKey": "Usuwanie żelu lub hybryd",
+            "nails_gel_removal_priceCaption": "30zł",
+            "massage_plan_nameCaptionKey": "Rodzaj",
+            "massage_plan_relaxation": "Relaksacyjny",
+            "massage_plan_deep_tissue": "Tkanek głębokich",
+            "massage_plan_sport": "Sportowy",
+            "massage_plan_physio": "Ukierunkowany",
+            "massage_quantity_nameCaptionKey": "Dla ilu osób?",
+            "massage_quantity_1": "1",
+            "massage_quantity_2": "2",
+            "massage_quantity_3": "3",
+            "massage_duration_nameCaptionKey": "",
+            "massage_duration_descriptionCaptionKey": "",
+            "massage_duration_45_title": "45min",
+            "massage_duration_45_subtitle": "😊",
+            "massage_duration_45_onetime": "98zł",
+            "massage_duration_45_recurrent": "89zł",
+            "massage_duration_90_title": "90min",
+            "massage_duration_90_subtitle": "😘",
+            "massage_duration_90_onetime": "175zł",
+            "massage_duration_90_recurrent": "165zł",
+            "massage_duration_120_title": "120min",
+            "massage_duration_120_subtitle": "😍",
+            "massage_duration_120_onetime": "235zł",
+            "massage_duration_120_recurrent": "220zł",
+            "massage_preferred_therapist_gender_nameCaptionKey": "Płeć fizjoterapeuty",
+            "massage_preferred_therapist_gender_n": "Bez znaczenia",
+            "massage_preferred_therapist_gender_f": "Kobieta",
+            "massage_preferred_therapist_gender_m": "Mężczyzna",
+            "massage_fallback_to_any_gender_nameCaptionKey": "Hej Homie, nie martw się o płeć terapeuty jeśli zaznaczona przeze mnie opcja jest niedostępna.",
+            "massage_plan_linkToLandingCopy": "Checklist",
+            "laundry_clothesTitle": "Odzież",
+            "laundry_clothes_light_nameCaptionKey": "Lekka",
+            "laundry_clothes_light_description_descriptionCaptionKey": "15zł za sztukę",
+            "laundry_clothes_light_hintCaptionKey": "Koszulka t-shirt, koszulka polo, koszulka z długim rękawem, koszula, lekka & krótka sukienka, szorty typu legginsy, lekka spódnica, tunika, piżama. Akcesoria: rękawiczki, czapka, apaszka, szalik, krawat.",
+            "laundry_clothes_light_1": "1 (15zł)",
+            "laundry_clothes_light_2": "2 (30zł)",
+            "laundry_clothes_light_3": "3 (45zł)",
+            "laundry_clothes_light_4": "4 (60zł)",
+            "laundry_clothes_light_5": "5 (75zł)",
+            "laundry_clothes_light_6": "6 (90zł)",
+            "laundry_clothes_light_7": "7 (105zł)",
+            "laundry_clothes_light_8": "8 (120zł)",
+            "laundry_clothes_light_9": "9 (135zł)",
+            "laundry_clothes_light_10": "10 (150zł)",
+            "laundry_clothes_medium_nameCaptionKey": "Średnia",
+            "laundry_clothes_medium_description_descriptionCaptionKey": "29zł za sztukę",
+            "laundry_clothes_medium_hintCaptionKey": "Bluza, polar, golf, sweter, spodnie, bezrękawnik, bluzka damska okolicznościowa, marynarka, żakiet, każdy element garnituru lub garsonki, bolerko, gorset, kamizelka, sukienka bez elementów dekoracyjnych, spódnica, lekka kurtka np wiosenna.",
+            "laundry_clothes_medium_1": "1 (29zł)",
+            "laundry_clothes_medium_2": "2 (58zł)",
+            "laundry_clothes_medium_3": "3 (87zł)",
+            "laundry_clothes_medium_4": "4 (116zł)",
+            "laundry_clothes_medium_5": "5 (145zł)",
+            "laundry_clothes_medium_6": "6 (174zł)",
+            "laundry_clothes_medium_7": "7 (203zł)",
+            "laundry_clothes_medium_8": "8 (232zł)",
+            "laundry_clothes_medium_9": "9 (261zł)",
+            "laundry_clothes_medium_10": "10 (290zł)",
+            "laundry_clothes_heavy_nameCaptionKey": "Ciężka",
+            "laundry_clothes_heavy_description_descriptionCaptionKey": "65zł za sztukę",
+            "laundry_clothes_heavy_hintCaptionKey": "Kurtka jesienna, kurtka zimowa, kurtka puchowa, płaszcz, długa suknia wieczorowa, suknia dekorowana np. cekinami, futro sztuczne, spodnie narciarskie, kombinezon narciarski.",
+            "laundry_clothes_heavy_1": "1 (65zł)",
+            "laundry_clothes_heavy_2": "2 (130zł)",
+            "laundry_clothes_heavy_3": "3 (195zł)",
+            "laundry_clothes_heavy_4": "4 (260zł)",
+            "laundry_clothes_heavy_5": "5 (325zł)",
+            "laundry_clothes_heavy_6": "6 (390zł)",
+            "laundry_clothes_heavy_7": "7 (455zł)",
+            "laundry_clothes_heavy_8": "8 (520zł)",
+            "laundry_clothes_heavy_9": "9 (585zł)",
+            "laundry_clothes_heavy_10": "10 (650zł)",
+            "laundry_homeTitle": "Dla domu",
+            "laundry_home_light_nameCaptionKey": "Lekkie",
+            "laundry_home_light_description_descriptionCaptionKey": "22zł za sztukę",
+            "laundry_home_light_hintCaptionKey": "Prześcieradło, komplet pościeli zawierający: 2x poszewka i 1x poszwa, ręcznik, ścierka, firanka do 2m2, obrus do 8 osób, lekki koc lub kocyk dziecięcy, mała zabawka pluszowa do 40 cm wys., poduszka syntetyczna",
+            "laundry_home_light_1": "1 (22zł)",
+            "laundry_home_light_2": "2 (44zł)",
+            "laundry_home_light_3": "3 (66zł)",
+            "laundry_home_light_4": "4 (88zł)",
+            "laundry_home_light_5": "5 (110zł)",
+            "laundry_home_light_6": "6 (132zł)",
+            "laundry_home_light_7": "7 (154zł)",
+            "laundry_home_light_8": "8 (176zł)",
+            "laundry_home_light_9": "9 (198zł)",
+            "laundry_home_light_10": "10 (220zł)",
+            "laundry_home_heavy_nameCaptionKey": "Ciężkie",
+            "laundry_home_heavy_description_descriptionCaptionKey": "75zł za sztukę",
+            "laundry_home_heavy_hintCaptionKey": "Koc, narzuta, zasłony, firany, obrus bankietowy, obrus powyżej 8 osób, kołdra, poduszka puchowa, śpiwór syntetyczny lub puchowy, pokrowiec na materac, zabawka pluszowa powyżej 40 cm, pokrowiec na fotel, pokrowiec na sofę",
+            "laundry_home_heavy_1": "1 (75zł)",
+            "laundry_home_heavy_2": "2 (150zł)",
+            "laundry_home_heavy_3": "3 (225zł)",
+            "laundry_home_heavy_4": "4 (300zł)",
+            "laundry_home_heavy_5": "5 (375zł)",
+            "laundry_home_heavy_6": "6 (450zł)",
+            "laundry_home_heavy_7": "7 (525zł)",
+            "laundry_home_heavy_8": "8 (600zł)",
+            "laundry_home_heavy_9": "9 (675zł)",
+            "laundry_home_heavy_10": "10 (750zł)",
+            "laundry_expressDeliveryTitle": "Dostawa ekspresowa",
+            "laundry_expressnameCaptionKey": "Chcę aby pranie zostało odebrane & dostarczone tego samego dnia",
+            "laundry_expresssubtitleCaptionKey": "Dostawa standardowa: dostarczymy Twoje rzeczy następnego dnia",
+            "laundry_expresspriceCaptionKey": "45zł",
+            "carpet_items_nameCaptionKey": "Liczba dywanów",
+            "carpet_items__quantity_1": "1",
+            "carpet_items__quantity_2": "2",
+            "carpet_items__quantity_3": "3",
+            "carpet_items__quantity_4": "4",
+            "carpet_items__quantity_5": "5",
+            "carpet_upTo": "do ",
+            "individualCarpetItem": "Rozmiar {value}. dywanu ",
+            "carpet_total_size_nameCaptionKey": "Całkowity rozmiar",
+            "carpet_priceFieldMessage": "Cena czyszczenia 25 zł/m2",
+            "cleaning_of_furniture_upholstery_priceFieldMessage": "Zapewniamy pełny zestaw środków czystości i sprzętu",
+            "two_seater_sofa_quantity_nameCaptionKey": "Dwuosobowa kanapa",
+            "two_seater_sofa_quantity_cost": "145.00zł",
+            "three_seater_sofa_quantity_nameCaptionKey": "Trzyosobowa kanapa",
+            "three_seater_sofa_quantity_cost": "165.00zł",
+            "corner_sofa_5_quantity_nameCaptionKey": "Narożnik (5 miejsc)",
+            "corner_sofa_5_quantity_cost": "175.00zł",
+            "corner_sofa_7_quantity_nameCaptionKey": "Narożnik (7 miejsc)",
+            "corner_sofa_7_quantity_cost": "195.00zł",
+            "single_person_mattress_quantity_nameCaptionKey": "Materac jednoosobowy (jedna strona)",
+            "single_person_mattress_quantity_cost": "75.00zł",
+            "single_person_mattress_both_side_quantity_nameCaptionKey": "Materac jednoosobowy (obie strony)",
+            "single_person_mattress_both_side_quantity_cost": "150.00zł",
+            "double_person_mattress_quantity_nameCaptionKey": "Materac dwuosobowy (jedna strona)",
+            "double_person_mattress_quantity_cost": "150.00zł",
+            "double_person_mattress_both_side_quantity_nameCaptionKey": "Materac dwuosobowy (obie strony)",
+            "double_person_mattress_both_side_quantity_cost": "250.00zł",
+            "armchair_quantity_nameCaptionKey": "Fotel",
+            "armchair_quantity_cost": "59.00zł",
+            "office_chair_quantity_nameCaptionKey": "Krzesło biurowe",
+            "office_chair_quantity_cost": "25.00zł",
+            "stool_quantity_nameCaptionKey": "Krzesło i stołki",
+            "stool_quantity_cost": "15.00zł",
+            "bed_headboard_quantity_nameCaptionKey": "Zagłówek łóżka",
+            "bed_headboard_quantity_cost": "120.00zł",
+            "pouffe_quantity_nameCaptionKey": "Pufa",
+            "pouffe_quantity_cost": "15.00zł",
+            "pillow_quantity_nameCaptionKey": "Poduszka",
+            "pillow_quantity_cost": "10.00zł",
+            "car_seat_quantity_nameCaptionKey": "Fotel samochodowy",
+            "car_seat_quantity_cost": "40.00zł",
+            "stroller_quantity_nameCaptionKey": "Wózek spacerowy",
+            "stroller_quantity_cost": "70.00zł",
+            "animal_hair_existing_nameCaptionKey": "Usunięcie sierści zwierząt",
+            "animal_hair_existing_btn_text": "50.00zł",
+            "antiallergic_treatment_existing_nameCaptionKey": "Zabieg antyalergiczny",
+            "antiallergic_treatment_existing_btn_text": "25.00zł",
+            "carpet_impregnation_existing_nameCaptionKey": "Impregnacja tapicerki",
+            "carpet_impregnation_existing_btn_text": "70.00zł",
+            "bad_odors_existing_nameCaptionKey": "Usuwanie brzydkich zapachów",
+            "bad_odors_existing_btn_text": "70.00zł",
+            "priceFieldMessage_btn": "Dalej",
+            "additionalOptions_reset_btn": "Resetuj",
+            "additionalComment": {
+                "heading": "Dodatkowe informacje",
+                "placeholder": "Dodatkowe informacje"
+            },
+            "error_occured_toast": "Niefart! Wystąpił błąd",
+            "at_least_one_item_required": "Wybierz przynajmniej jedną opcję",
+            "minimum_order_not_met": "Minimalne zamówienie nie zostało osiągnięte"
+        },
+        "CitypageBody": {
+            "blocks": {
+                "block_1": {
+                    "heading_1": "WYBIERZ",
+                    "heading_2": "USŁUGĘ",
+                    "para": "Wskaż datę, godzinę i lokalizację aby potwierdzić swój wybór"
+                },
+                "block_2": {
+                    "heading_1": "WYBIERZEMY",
+                    "heading_2": "DLA CIEBIE",
+                    "heading_3": "NAJLEPSZEGO HOMIE",
+                    "para": "Przy każdej misji otrzymujesz email z informacją o swoim Homie"
+                },
+                "block_3": {
+                    "heading_1": "MAMY TO!",
+                    "para": "Płatność pobieramy po zakończeniu misji. Polubiłeś swojego Homie? Zrobimy co w naszej mocy, aby nastepnym razem był również dla Ciebie dostępny!"
+                }
+            },
+            "row": {
+                "heading": "To jest całkiem proste",
+                "point_1": "Wszystkie usługi \nw jednym miejscu",
+                "point_2": "Zawsze otrzymujesz właściwego\nHomie w zależności od Twoich potrzeb",
+                "point_3": "Uproszczona i \nprzejrzysta oferta",
+                "point_4": "Obsługa klienta \n7 dni w tygodniu"
+            },
+            "testimonials": {
+                "heading": "Nasi klienci i zespół",
+                "testimonial_1": {
+                    "quote": "Najbardziej lubię w Homie to, że gdy wracam wieczorem do domu, zastaję pięknie czysty dom, co powoduje u mnie niesamowite poczucie komfortu!",
+                    "author": "Monika Cyganek, mama Franka"
+                },
+                "testimonial_2": {
+                    "quote": "Po masażu z Homie czułem właściwą równowagę między relaksem a orzeźwieniem i odświeżeniem.",
+                    "author": "Markus"
+                }
+            }
+        },
+        "Footer": {
+            "services": {
+                "heading": "Usługi",
+                "cleaning": "Sprzątanie",
+                "massage": "Masaż",
+                "flowers": "Kwiaty"
+            },
+            "company": {
+                "heading": "Homie",
+                "about_us": "O nas"
+            },
+            "cities": {
+                "heading": "Miasta",
+                "krakow": "Kraków",
+                "warsaw": "Warszawa",
+                "wroclaw": "Wrocław",
+                "poznan": "Poznań",
+                "rzeszow": "Rzeszów",
+                "katowice": "Katowice"
+            },
+            "legal": {
+                "heading": "Warunki",
+                "terms_conditions": "Regulamin",
+                "privacy": "Polityka prywatności"
+            },
+            "ContactManager": {
+                "contact": "Kontakt"
+            }
+        }
+    },
+    "AccountPage": {
+        "SidenavMenu": {
+            "subscriptions": "Usługi",
+            "addresses": "Adresy",
+            "payment_billing": "Płatności",
+            "settings": "Ustawienia"
+        },
+        "Footer": {
+            "services": {
+                "heading": "Usługi",
+                "cleaning": "Sprzątanie",
+                "massage": "Masaż",
+                "flowers": "Kwiaty"
+            },
+            "company": {
+                "heading": "Homie",
+                "about_us": "O nas"
+            },
+            "cities": {
+                "heading": "Miasta",
+                "krakow": "Kraków",
+                "warsaw": "Warszawa",
+                "wroclaw": "Wrocław",
+                "poznan": "Poznań",
+                "rzeszow": "Rzeszów",
+                "katowice": "Katowice"
+            },
+            "legal": {
+                "heading": "Warunki",
+                "terms_conditions": "Regulamin",
+                "privacy": "Polityka prywatności"
+            }
+        },
+        "IndexPage": {
+            "copied_msg": "Skopiowano",
+            "error_msg": "Wystapił błąd",
+            "cancelSuccess_msg": "Anulowano misję",
+            "editSuccess_msg": "Zaktualizowano misję",
+            "meta": {
+                "title": "Konto | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            },
+            "RewardsModal": {
+                "heading": "Twoje nagrody",
+                "earned_tab": "Przyznane",
+                "noEarned__msg": "Twoje nagrody pojawią się tutaj",
+                "pending_tab": "Oczekujące",
+                "resendPending_btn": "Prześlij ponownie",
+                "noPending__msg": "Twoje nagrody oczekujące pojawią się tutaj",
+                "close_btn": "Zamknij",
+                "sendSuccess_toast": "Wysłane ponownie!",
+                "sendError_toast": "Wystąpił błąd"
+            },
+            "welcomeDiv": {
+                "hey_welcomeMsg": "Cześć",
+                "howAreYou_welcomeMsg": "Miło Cię widzieć!"
+            },
+            "ReferralDiv": {
+                "socialShareTitle": "Hej! 😊 Zapraszam Cię do wypróbowania usług Homie. Otrzymasz 15 zł na swoje pierwsze zamówienie używając mojego kodu: ",
+                "discount": "Zniżka na Twoje najbliższe zamówienie",
+                "copied_msg": "Skopiowano",
+                "rewardsHeading": "Nagrody",
+                "rewardsPara_1": "Udostępnij swój kod",
+                "rewardsPara_2": "Za każdym razem kiedy ktoś wprowadzi Twój kod polecający rezerwując po raz pierwszy, oboje otrzymacie 15 zł do wykorzystania w Homie",
+                "earned": "Przyznane",
+                "pending": "Oczekujące",
+                "seeDetails_btn": "Zobacz szczegóły",
+                "shareLink_btn": "Udostępnij swój kod",
+                "addCouponPara_1": "Czy masz kod promocyjny?",
+                "addCouponPara_2": "Wprowadź go tutaj",
+                "addCoupon_placeholder": "Twój kod promocyjny",
+                "addCoupon_btn": "Dodaj kod promocyjny",
+                "coupon_added_toast": "Kod został dodany",
+                "coupon_not_valid_toast": "Kod jest nieważny",
+                "coupon_duplicate_toast": "Kod został już wykorzystany",
+                "coupon_error_generic_toast": "Wystapił błąd w trakcie dodawania kuponu",
+                "coupon_has_expired": "Kod wygasł",
+                "coupon_is_not_active_yet": "Kod nie jest jeszcze aktywny",
+                "user_already_ordered": "Już zamówione",
+                "user_has_referral_coupon": "Masz już aktywny kod polecający",
+                "user_identical_to_sponsor": "Nie możesz uzyć własnego kodu polecającego"
+            },
+            "MissionsComponent": {
+                "heading": "Misje",
+                "upcoming_tabBtn": "Nadchodzące",
+                "past_tabBtn": "Poprzednie",
+                "seeMore_btn": "Rozwiń",
+                "cancellationPolicyHeading": "⚠️  Zasady anulowania .",
+                "cancellationPolicySpan": " Możesz bezpłatnie zrezygnować z misji do 24 godzin przed jej realizacją. Jeśli anulujesz ją po tym czasie, pobierzemy 50% należności.",
+                "createABooking_btn": "Dokonaj rezerwacji",
+                "error_msg": "Wystapił błąd",
+                "missions": {
+                    "servicesNames": {
+                        "cleaning": "Sprzątanie",
+                        "flowers": "Kwiaty",
+                        "nails": "Paznokcie",
+                        "massage": "Masaż",
+                        "laundry": "Pralnia",
+                        "carpet": "Czyszczenie dywanów",
+                        "teacher": "Nauczyciel",
+                        "babysitting": "Opiekunka",
+                        "upholstery": "Czyszczenie tapicerki"
+                    },
+                    "frequency": {
+                        "undefined": "Nie wybrano",
+                        "once": "Jednorazowo",
+                        "every_week": "Co tydzień",
+                        "every_two_weeks": "Co 2 tygodnie",
+                        "every_month": "Co miesiąc"
+                    },
+                    "statuses": {
+                        "planned": "Zaplanowane",
+                        "canceled": "Anulowane",
+                        "searching_homie": "Wybieramy homie",
+                        "homie_found": "Potwierdzona",
+                        "done": "Zakończone",
+                        "unpaid": "Nieopłacone",
+                        "freezed": "Zamrożone",
+                        "awaiting_payment": "Oczekujące na płatność"
+                    },
+                    "serviceConfigDetails": {
+                        "price": "Cena",
+                        "cleaning": {
+                            "plan": "Rodzaj",
+                            "plans": {
+                                "basic": "Standardowe",
+                                "regular": "Standardowe",
+                                "deep": "Generalne",
+                                "undefined": ""
+                            },
+                            "cleaning_house_size": "Powierzchnia Twojego mieszkania",
+                            "options": "Opcje",
+                            "cleaning_windows_quantity": "Okna ({value}) ",
+                            "cleaning_ironing_items": "Prasowanie ({value}) "
+                        },
+                        "flowers": {
+                            "plan": "Rozmiar",
+                            "medium": "Średniej wielkości",
+                            "large": "Duży",
+                            "quantity": "Ilość"
+                        },
+                        "nails": {
+                            "plan": "Rodzaj",
+                            "options": "Opcje",
+                            "manicure": "Manicure",
+                            "pedicure": "Pedicure",
+                            "all": "Manicure & Pedicure",
+                            "nails_polishing": "Malowanie ",
+                            "nails_hybrid": "Hybrydy ",
+                            "nails_gel": "Zdobienia ",
+                            "nails_gel_removal": "Usunięcie żelu lub hybrydy"
+                        },
+                        "massage": {
+                            "plan": "Rodzaj",
+                            "quantity": "Dla ilu osób",
+                            "massage_duration": "Czas trwania",
+                            "massage_preferred_therapist_gender": "Płeć masażysty",
+                            "relaxation": "Relaksacyjny",
+                            "deep_tissue": "Tkanek głębokich",
+                            "sport": "Sportowy",
+                            "physio": "Ukierunkowany",
+                            "n": "Bez znaczenia",
+                            "f": "Kobieta",
+                            "m": "Mężczyzna"
+                        },
+                        "laundry": {
+                            "clothes": "Odzież",
+                            "home": "Dla domu",
+                            "laundry_clothes_light": "Lekka({value}) ",
+                            "laundry_clothes_medium": "Średnia({value}) ",
+                            "laundry_clothes_heavy": "Ciężka({value}) ",
+                            "laundry_home_light": "Lekkie({value}) ",
+                            "laundry_home_heavy": "Ciężkie({value}) "
+                        },
+                        "carpet": {
+                            "carpet_items": "Liczba dywanów",
+                            "carpets_total_size": "Całkowity rozmiar"
+                        },
+                        "teacher": "_",
+                        "babysitting": "_"
+                    },
+                    "spokenLanguages": {
+                        "heading": "Języki",
+                        "languages": {
+                            "english": "Angielski",
+                            "polish": "Polski",
+                            "russian": "Rosyjski",
+                            "french": "Francuski",
+                            "german": "Niemiecki",
+                            "spanish": "Hiszpański",
+                            "italian": "Włoski",
+                            "mandarin": "Mandaryński"
+                        }
+                    },
+                    "homieComingSoon": "Nadchodzące",
+                    "cancelMission_btn": "Anuluj",
+                    "editMission_btn": "Edytuj",
+                    "editMissionComment_btn": "Komentarz"
+                },
+                "utils": {
+                    "time_at": "o"
+                }
+            },
+            "CancelMissionModalDialog": {
+                "heading": "Anuluj misję",
+                "para_1": "Na pewno chcesz anulować wybraną misję?",
+                "para_2": "⚠️ Możesz bezpłatnie zrezygnować z misji do 2 godzin przed jej realizacją.",
+                "para_3": "Jeśli anulujesz ją po tym czasie, pobierzemy 50% należności.",
+                "keepMission_btn": "Zachowaj misję",
+                "confirmCancel_btn": "Anuluję misję!"
+            },
+            "EditMissionModalDialog": {
+                "heading": "Edytuj {service_name}",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Zatwierdź",
+                "cancellationPolicy_para_1": "",
+                "cancellationPolicy_para_2": "",
+                "servicesNames": {
+                    "cleaning": "Sprzątanie",
+                    "flowers": "Kwiaty",
+                    "nails": "Paznokcie",
+                    "massage": "Masaż",
+                    "laundry": "Pralnia",
+                    "carpet": "Czyszczenie dywanów",
+                    "teacher": "Nauczyciel",
+                    "babysitting": "Opiekunka",
+                    "upholstery": "Czyszczenie tapicerki"
+                }
+            },
+            "EditMissionCommentModalDialog": {
+                "heading": "Dodatkowe informacje",
+                "placeholder": "Dodatkowe informacje",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Zatwierdź"
+            },
+            "BottomNavDiv": {
+                "subscriptions": "Usługi",
+                "addresses": "Adresy",
+                "payment_billing": "Płatności",
+                "settings": "Ustawienia"
+            },
+            "ReferralMenu": {
+                "heading": "Dziękujemy!\nTwoja rezerwacja jest potwierdzona",
+                "para_1": "W międzyczasie, śmiało udostępnij swój kod przyjaciołom aby odkryli Homie 😊",
+                "para_2": "",
+                "para_3": "Podczas ich pierwszego zamówienia, 15 zł dla trafi do Ciebie i każdego, kto doda Twój kod!",
+                "refLink_placeholder": "Link polecający",
+                "copyLink_btn": "Skopiuj link",
+                "socialShareTitle": "Hej! 😊 Zapraszam Cię do wypróbowania usług Homie. Otrzymasz 15 zł na swoje pierwsze zamówienie używając mojego kodu: ",
+                "share_btn": "Udostępnik link",
+                "ignore_btn": "Pokaż moją rezerwację",
+                "copied_msg": "Skopiowano"
+            }
+        },
+        "SubscriptionsPage": {
+            "error_msg": "Wystąpił błąd",
+            "cancelSuccess_msg": "Usługa anulowana",
+            "editSuccess_msg": "Usługa zaktualizowana",
+            "meta": {
+                "title": "Usługi | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            },
+            "breadCrumbs": {
+                "dashboard": "Mój panel",
+                "heading": "Usługi"
+            },
+            "ServicesComponent": {
+                "heading": "Usługi",
+                "active_tabBtn": "Aktywne",
+                "cancelled_tabBtn": "Anulowane",
+                "seeMore_btn": "Rozwiń",
+                "cancellationPolicyHeading": "⚠️  Zasady anulowania .",
+                "cancellationPolicySpan": " Możesz bezpłatnie zrezygnować z usługi do 24 godzin przed jej realizacją. Jeśli anulujesz ją po tym czasie, pobierzemy 50% należności.",
+                "createABooking_btn": "Zarezerwuj usługę",
+                "error_msg": "Wsytąpił błąd",
+                "services": {
+                    "servicesNames": {
+                        "cleaning": "Sprzątanie",
+                        "flowers": "Kwiaty",
+                        "nails": "Paznokcie",
+                        "massage": "Masaż",
+                        "laundry": "Pralnia",
+                        "carpet": "Czyszczenie dywanów",
+                        "teacher": "Nauczyciel",
+                        "babysitting": "Opiekunka",
+                        "upholstery": "Czyszczenie tapicerki"
+                    },
+                    "frequency": {
+                        "undefined": "Nie wybrano",
+                        "once": "Jednorazowo",
+                        "every_week": "Co tydzień",
+                        "every_two_weeks": "Co 2 tygodnie",
+                        "every_month": "Co miesiąc"
+                    },
+                    "weekDays": {
+                        "monday": "Poniedziałek",
+                        "tuesday": "Wtorek",
+                        "wednesday": "Środa",
+                        "thursday": "Czwartek",
+                        "friday": "Piątek",
+                        "saturday": "Sobota",
+                        "sunday": "Niedziela"
+                    },
+                    "time_at": "o",
+                    "statuses": {
+                        "active": "Aktywne",
+                        "canceled": "Anulowane",
+                        "freezed": "Zamrożone"
+                    },
+                    "homieComingSoon": "Nadchodzące",
+                    "cancelService_btn": "Anuluj",
+                    "editService_btn": "Edytuj",
+                    "editServiceComment_btn": "Komentarz"
+                },
+                "utils": {
+                    "time_at": "o"
+                }
+            },
+            "CancelServiceModalDialog": {
+                "heading": "Anuluj usługę",
+                "para_1": "Na pewno chcesz anulować tą usługę?",
+                "para_2": "⚠️ Możesz bezpłatnie zrezygnować z usługi do 2 godzin przed jej realizacją.",
+                "para_3": "Jeśli anulujesz ją po tym czasie, pobierzemy 50% należności.",
+                "keepService_btn": "Zachowaj usługę",
+                "confirmCancel_btn": "Anuluj usługę!"
+            },
+            "EditServiceModalDialog": {
+                "heading": "Edytuj {service_name}",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Zatwierdź",
+                "cancellationPolicy_para_1": "⚠️ Możesz edytować szczegóły usługi do 2 godzin przed jej realizacją.",
+                "cancellationPolicy_para_2": "Jeśli edytujesz ją po tym czasie, zmiany zostaną wsprowadzone do kolejnej misji",
+                "servicesNames": {
+                    "cleaning": "Sprzątanie",
+                    "flowers": "Kwiaty",
+                    "nails": "Paznokcie",
+                    "massage": "Masaż",
+                    "laundry": "Pralnia",
+                    "carpet": "Czyszczenie dywanów",
+                    "teacher": "Nauczyciel",
+                    "babysitting": "Opiekunka",
+                    "upholstery": "Czyszczenie tapicerki"
+                }
+            },
+            "EditServiceCommentModalDialog": {
+                "heading": "Dodatkowe informacje",
+                "placeholder": "Dodatkowe informacje",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Zatwierdź"
+            }
+        },
+        "AddressesPage": {
+            "error_msg": "Wystąpił błąd",
+            "deleteSuccess_msg": "Adres został usunięty",
+            "editSuccess_msg": "Adres zaktualizowany",
+            "addSuccess_msg": "Adres został dodany",
+            "meta": {
+                "title": "Adresy | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            },
+            "breadCrumbs": {
+                "dashboard": "Mój panel",
+                "heading": "Adresy"
+            },
+            "AddressesComponent": {
+                "deleteAddress_btn": "Usuń",
+                "editAddress_btn": "Edytuj",
+                "addAddress_btn": "Dodaj adres"
+            },
+            "AddressEditor": {
+                "addressName": "Nazwa adresu",
+                "addressLine1": "Adres",
+                "streetNumber": "Numer budynku",
+                "houseNumber": "Numer mieszkania",
+                "zipcode": "Kod pocztowy",
+                "city": "Miasto",
+                "additionalInformation": "Dodatkowe informacje",
+                "add": "Dodaj",
+                "cityNames": {
+                    "city": "Wybierz miasto",
+                    "undefined": "Wybierz miasto",
+                    "krakow": "Kraków",
+                    "warsaw": "Warszawa",
+                    "wroclaw": "Wrocław",
+                    "poznan": "Poznań",
+                    "rzeszow": "Rzeszów",
+                    "katowice": "Katowice",
+                    "default": ""
+                }
+            },
+            "AddNewAddressModalDialog": {
+                "heading": "Dodaj nowy adres",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Zatwierdź"
+            },
+            "EditAddressModalDialog": {
+                "heading": "Edytuj swój adres {address_name}",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Zatwierdź"
+            },
+            "DeleteAddressModalDialog": {
+                "heading": "Usuń adres",
+                "para_1": "Na pewno chcesz usunąć adres {address_name}?",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Usuń"
+            }
+        },
+        "PaymentPage": {
+            "error_msg": "wystąpił błąd",
+            "deleteSuccess_msg": "Karta została usunięta",
+            "addSuccess_msg": "Karta została dodana",
+            "meta": {
+                "title": "Płatności | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            },
+            "breadCrumbs": {
+                "dashboard": "Mój panel",
+                "heading": "Płatności"
+            },
+            "CardsComponent": {
+                "heading": "Płatności kartą",
+                "cardActive": "Aktywna karta",
+                "cardExpired": "Karta nieważna",
+                "deleteCard_btn": "Usuń",
+                "setCard_btn": "Ustaw jako aktywną",
+                "addCard_btn": "+ Dodaj nową kartę"
+            },
+            "AddNewCardModalDialog": {
+                "heading": "Dodaj nową kartę",
+                "placeHolderName": "Imię i nazwisko właściciela karty",
+                "para": "Zapisz swoje szczegóły płatności. Zapamietamy wybraną metodę płatności aby pobrać środki po każdej zakończonej misji.",
+                "securityFirstHeading": "Bezpieczeństwo przede wszystkim",
+                "securityFirstCaption": "Każda płatność jest zabezpieczona za pomocą szyfrowania danych",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Dodaj",
+                "error_occured_toast": "Wystąpił błąd"
+            },
+            "DeleteCardModalDialog": {
+                "heading": "Usuń kartę",
+                "para_1": "Na pewno chcesz usunąć kartę ***-{card_number}?",
+                "cancel_btn": "Anuluj",
+                "validate_btn": "Usuń"
+            },
+            "BillingsComponent": {
+                "heading": "Rozliczenia",
+                "downloadInvoice_btn": "Wyświetl fakturę",
+                "noBillings_msg": "Faktury są niedostępne",
+                "paymentFailed_msg": "Płatność nie powiodła się",
+                "servicesNames": {
+                    "cleaning": "Sprzątanie",
+                    "flowers": "Kwiaty",
+                    "nails": "Paznokcie",
+                    "massage": "Masaż",
+                    "laundry": "Pralnia",
+                    "carpet": "Czyszczenie dywanów",
+                    "teacher": "Nauczyciel",
+                    "babysitting": "Opiekunka",
+                    "upholstery": "Czyszczenie tapicerki"
+                }
+            }
+        },
+        "SettingsPage": {
+            "error_msg": "Wystąpił błąd",
+            "updateSuccess_msg": "Twoje informacje zostały zaktualizowane",
+            "personalInfo": "Dane osobowe",
+            "first_name": "Imię",
+            "last_name": "Nazwisko",
+            "phone_number": "Numer telefonu",
+            "email": "Email",
+            "confirmBtn": "Zapisz",
+            "first_name_err": "Wprowadź swoje imię",
+            "last_name_err": "Wprowadź swoje nazwisko",
+            "phone_number_err": "Wprowadź aktualny numer telefonu",
+            "email_err": "Wprowadź aktualny email",
+            "signOut_btn": "Wyloguj się",
+            "meta": {
+                "title": "Ustawienia | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            },
+            "breadCrumbs": {
+                "dashboard": "Mój panel",
+                "heading": "Ustawienia"
+            }
+        }
+    },
+    "UtilsPages": {
+        "TermsConditionsPage": {
+            "heading": "Regulamin",
+            "body": "",
+            "meta": {
+                "title": "Regulamin | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            }
+        },
+        "PrivacyPage": {
+            "heading": "Polityka prywatności",
+            "body": "",
+            "meta": {
+                "title": "Polityka prywatności | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            }
+        },
+        "AboutPage": {
+            "meta": {
+                "title": "O nas | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+                "og_title": "Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+            },
+            "whoAreWe__text": "'<p>Cześć! Miło, że jesteś 👋</p><p>Z tej strony Sylwia i Thibault, założycie <em>Homie,</em> z Polski i Francji (zgadnij kto jest skąd 😀).</p><p>Nasza przygoda rozpoczęła się w trakcie pandemii Covid-19, kiedy praca, rodzina, dzieci, sprzątanie, gotowanie, momenty pełne napięć i rozluźnienia, radości i słabości rozgrywały się: w Domu 🌸</p><p>Zdecydowaliśmy się stworzyć usługi, których potrzebowaliśmy dla samych siebie. Takich, które dałyby nam więcej (a czasem, chodź trochę 🙂) czasu, wpłynęły na komfort życia w domu i stawiały na dostępność, jakość i relacje międzyludzkie.</p><p>Przeszliśmy całkiem sporo zmian, zaczynając od projektu Masaż na Minuty (musisz wiedzieć, że masowaliśmy ludzi na ulicach Krakowa - serio 😅), kończąc na Homie. Dziś oferujemy masaż, sprzątanie, dowóz kwiatów i czyszczenie dywanów, a kto wie gdzie będziemy jutro 😉</p>'",
+            "portraitsSection": {
+                "nameSylwia": "SYLWIA",
+                "textSylwia": "Czegokolwiek potrzebujesz, Sylwia uruchomi swoje super-moce, aby pomóc. To ona stoi za tym, aby usługi Homie były ludzkie i odpowiadały Twoim potrzebom. Często działa w terenie, dlatego najpewniej będziesz miał/a okazję ją poznać 🙂",
+                "nameTibo": "THIBAULT",
+                "textTibo": "Odpowiada za nasze narzędzia online. Dba o to, aby proces rezerwacji był prosty jak kaszka z mleczkiem. Blisko współpracując z Sylwią, Thibault koordynuje wszystkie misje w Homie i dba o najwyższą jakość usług. "
+            },
+            "row": {
+                "heading": "To jest całkiem proste",
+                "point_1": "Wszystkie usługi \nw jednym miejscu",
+                "point_2": "Zawsze otrzymujesz właściwego\nHomie w zależności od Twoich potrzeb",
+                "point_3": "Uproszczona i \nprzejrzysta oferta",
+                "point_4": "Obsługa klienta \n7 dni w tygodniu"
+            },
+            "aboutVideoSubsection": {
+                "heading": "Poznaj Sylwię",
+                "subheading": "Współzałożycielkę Homie"
+            }
+        }
+    },
+    "IndexPage": {
+        "meta": {
+            "title": "Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+            "description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż, Opiekunka, Wykonanie napraw, Kucharz i więcej z dojazdem w Krakowie",
+            "og_title": "Korzystaj wygodnie z usług w swoim domu",
+            "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż"
+        },
+        "landing": {
+            "hero": {
+                "h1": "Sprzątanie i usługi domowe w całej Polsce",
+                "subtitle": "Profesjonalne sprzątanie mieszkań i domów z dojazdem — sprawdzeni homies, ekologiczne środki i rezerwacja online w kilka minut.",
+                "cta": "Wybierz swoje miasto"
+            },
+            "cityPicker": {
+                "heading": "Wybierz swoje miasto",
+                "subheading": "HeyHomie działa w tych miastach — kliknij, aby zamówić sprzątanie:"
+            },
+            "value": {
+                "heading": "Dlaczego HeyHomie?",
+                "subheading": "Sprzątanie standardowe i generalne, po remoncie, mycie okien oraz czyszczenie kuchni i łazienki.",
+                "eco": { "title": "Ekologiczne środki", "body": "Bezpieczne dla domu, dzieci i zwierząt." },
+                "vetted": { "title": "Sprawdzeni homies", "body": "Każdą osobę weryfikujemy przed wizytą." },
+                "pricing": { "title": "Przejrzyste ceny", "body": "Cenę widzisz przed rezerwacją." },
+                "guarantee": { "title": "Gwarancja zadowolenia", "body": "Poprawimy, jeśli coś wymaga poprawy." },
+                "cta": "Zobacz ofertę sprzątania"
+            }
+        }
+    },
+    "CleaningSeoSection": {
+        "intro": {
+            "heading": "Profesjonalne sprzątanie mieszkań i domów {cityLocative}",
+            "para_1": "HeyHomie to nowoczesna firma sprzątająca {cityLocative}. Oferujemy sprzątanie mieszkań, domów i biur — zarówno jednorazowe, jak i regularne. Nasi sprawdzeni homies przyjeżdżają z własnymi, ekologicznymi środkami czystości i dbają o każdy detal, abyś Ty zyskał/a wolny czas dla siebie.",
+            "para_2": "Wybierasz dogodny termin, a my zajmujemy się resztą. Realizujemy sprzątanie standardowe (regularne utrzymanie czystości), sprzątanie generalne (dokładne, gruntowne) oraz sprzątanie po remoncie i przed wprowadzeniem się. Płacisz dopiero po wykonanej usłudze, a każde sprzątanie objęte jest gwarancją zadowolenia.",
+            "para_3": "Dlaczego {cityName}? Bo znamy to miasto i jego mieszkańców. Dojeżdżamy do każdej dzielnicy {cityLocative} — szybko, punktualnie i bez ukrytych kosztów."
+        },
+        "trust": {
+            "heading": "Dlaczego HeyHomie?",
+            "eco": {
+                "title": "Ekologiczne środki",
+                "body": "Sprzątamy bezpiecznymi dla domu i środowiska detergentami."
+            },
+            "vetted": {
+                "title": "Sprawdzeni homies",
+                "body": "Każdą osobę weryfikujemy, zanim trafi do Twojego domu."
+            },
+            "pricing": {
+                "title": "Przejrzyste ceny",
+                "body": "Cenę widzisz przed rezerwacją — bez ukrytych kosztów."
+            },
+            "guarantee": {
+                "title": "Gwarancja zadowolenia",
+                "body": "Kontaktujemy się po sprzątaniu i poprawiamy, jeśli trzeba."
+            }
+        },
+        "plans": {
+            "heading": "Sprzątanie standardowe i generalne",
+            "standard": {
+                "title": "Sprzątanie standardowe",
+                "body": "Regularne utrzymanie czystości: odkurzanie i mycie podłóg, ścieranie kurzu, mycie kuchni i łazienki, opróżnianie koszy. Idealne jako cotygodniowe lub dwutygodniowe wsparcie w dbaniu o dom."
+            },
+            "general": {
+                "title": "Sprzątanie generalne",
+                "body": "Gruntowne, dokładne sprzątanie: mycie okien, czyszczenie wnętrza szafek, lodówki i piekarnika, usuwanie kamienia i czyszczenie fug. Najlepsze przed świętami, po remoncie lub gdy chcesz odświeżyć całe mieszkanie."
+            },
+            "linkText": "Zobacz pełny zakres sprzątania standardowego i generalnego →"
+        },
+        "services": {
+            "heading": "Co obejmuje nasze sprzątanie",
+            "cleaning": {
+                "title": "Sprzątanie mieszkań i domów",
+                "body": "Standardowe i generalne sprzątanie dopasowane do Twojej przestrzeni — jednorazowo lub regularnie."
+            },
+            "postRenovation": {
+                "title": "Sprzątanie po remoncie",
+                "body": "Usuwamy kurz budowlany, resztki farby i zabrudzenia, by mieszkanie było gotowe do życia."
+            },
+            "windows": {
+                "title": "Mycie okien",
+                "body": "Mycie okien, ram i parapetów — bez smug, na lśniąco."
+            },
+            "kitchen": {
+                "title": "Sprzątanie kuchni",
+                "body": "Odtłuszczanie blatów i frontów, mycie AGD, zlewu i sprzętów."
+            },
+            "bathroom": {
+                "title": "Sprzątanie łazienki",
+                "body": "Dezynfekcja, usuwanie kamienia i osadu, czyszczenie fug i armatury."
+            },
+            "upholstery": {
+                "title": "Czyszczenie tapicerki",
+                "body": "Pranie sof, foteli i dywanów — odświeżamy tkaniny w Twoim domu."
+            }
+        },
+        "districts": {
+            "heading": "Sprzątamy w każdej dzielnicy",
+            "subheading": "Nasi homies dojeżdżają do wszystkich dzielnic i okolic — {cityLocative}:",
+            "footnote": "Nie widzisz swojej okolicy na liście? Napisz do nas — obsługujemy całe miasto wraz z przedmieściami."
+        },
+        "faq": {
+            "heading": "Najczęstsze pytania",
+            "q1": "Czy obsługujecie wszystkie dzielnice {cityLocative}?",
+            "a1": "Tak. Nasi homies dojeżdżają do wszystkich dzielnic {cityLocative} oraz okolic — bez dodatkowych opłat za dojazd w granicach miasta.",
+            "q2": "Czym różni się sprzątanie standardowe od generalnego?",
+            "a2": "Standardowe to regularne utrzymanie czystości. Generalne jest dużo dokładniejsze — obejmuje m.in. mycie okien, wnętrza szafek, lodówki i piekarnika.",
+            "q3": "Czy muszę być w domu podczas sprzątania?",
+            "a3": "Nie ma takiej potrzeby. Jeśli wyjdziesz, wystarczy że przekażesz nam, jak wejść i zamknąć mieszkanie po usłudze.",
+            "q4": "Czy zapewniacie środki czystości?",
+            "a4": "Tak, przyjeżdżamy z ekologicznymi środkami czystości. Prosimy jedynie o przygotowanie sprzętu: odkurzacza lub miotły, mopa i wiadra.",
+            "q5": "Czy mogę zamówić sprzątanie regularne?",
+            "a5": "Oczywiście. Możesz ustawić sprzątanie cykliczne — co tydzień, co dwa tygodnie lub co miesiąc — i zarządzać nim z poziomu swojego konta.",
+            "q6": "Jak wygląda płatność?",
+            "a6": "Wycenę widzisz przed potwierdzeniem rezerwacji, a płatnością zarządzasz wygodnie online ze swojego konta — bez ukrytych kosztów.",
+            "q7": "Czy akceptujecie zwierzęta?",
+            "a7": "Jasne, że tak! Uwielbiamy zwierzęta, a cena sprzątania się nie zmienia. Zadbaj tylko, aby Twoi pupile byli bezpieczni, np. podczas otwierania i mycia okien.",
+            "q8": "Co jeśli nie będę zadowolony/a ze sprzątania?",
+            "a8": "Skontaktuj się z nami — w ramach gwarancji zadowolenia wrócimy i poprawimy to, co wymaga poprawy.",
+            "q9": "Czy środki czystości są bezpieczne dla dzieci i alergików?",
+            "a9": "Tak. Używamy ekologicznych, przyjaznych domownikom środków — bezpiecznych dla dzieci i zwierząt.",
+            "q10": "Czy mogę przełożyć lub odwołać wizytę?",
+            "a10": "Tak. Pojedynczą wizytę przełożysz lub odwołasz, kontaktując się z nami; całą usługę cykliczną zmienisz z poziomu swojego konta.",
+            "q11": "Jak policzyć liczbę okien do umycia?",
+            "a11": "Policz liczbę skrzydeł okiennych lub osobnych tafli szkła wydzielonych ramami — tyle okien wskaż przy zamówieniu."
+        },
+        "otherCities": {
+            "heading": "Sprzątanie w innych miastach",
+            "subheading": "HeyHomie sprząta nie tylko {cityLocative}. Skorzystaj z naszych usług także w innych miastach Polski:"
+        }
+    },
+    "ServicesLandings": {
+        "common": {
+            "howItWorksSection": {
+                "heading": "Jak to działa?",
+                "blocks": {
+                    "block_1": {
+                        "heading_1": "WYBIERZ",
+                        "heading_2": "USŁUGĘ",
+                        "para": "Wskaż datę, godzinę i lokalizację aby potwierdzić swój wybór"
+                    },
+                    "block_2": {
+                        "heading_1": "WYBIERZEMY",
+                        "heading_2": "NAJLEPSZEGO HOMIE",
+                        "heading_3": "DLA CIEBIE",
+                        "para": "Przy każdej misji otrzymujesz email z informacją o swoim Homie"
+                    },
+                    "block_3": {
+                        "heading_1": "MAMY TO!",
+                        "para": "Płatność pobieramy po zakończeniu misji. Polubiłeś swojego Homie? Zrobimy co w naszej mocy, aby nastepnym razem był również dla Ciebie dostępny!"
+                    }
+                }
+            },
+            "homiesGallery": {
+                "heading": "Poznaj naszych homies"
+            },
+            "howWeSelectHomies": {
+                "heading": "JAK WYBIERAMY HOMIES?",
+                "para_1": "Rozpoczęliśmy tę przygodę tworząc usługę, która ułatwiłaby nam życie. W trakcie tego procesu testowaliśmy każdego homie, aby upewnić się, że sprosta standardom, których poszukiwaliśmy dla samych siebie. ",
+                "para_2": "A dziś? Nic się w tej kwestii nie zmieniło! Wciąż osobiście rekrutujemy, testujemy i trenujemy wszystkich naszych homies, zanim kogokolwiek do Ciebie wyślemy 😊"
+            },
+            "FAQSection": {
+                "heading": "FAQ"
+            }
+        },
+        "CleaningLanding": {
+            "meta": {
+                "title": "Sprzątanie | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Zajmiemy się Twoim domem - masz to z głowy",
+                "og_title": "Sprzątanie | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Zajmiemy się Twoim domem - masz to z głowy"
+            },
+            "OurAdvantages": {
+                "heading": "Nasze atuty",
+                "blocks": {
+                    "block_1": {
+                        "heading_1": "Detergenty",
+                        "heading_2": "biochemiczne",
+                        "para": "Ekologicznie odpowiedzialne sprzątanie domów i obiektów przemysłowych"
+                    },
+                    "block_2": {
+                        "heading_1": "W trosce",
+                        "heading_2": "o Ciebie",
+                        "heading_3": "i środowisko",
+                        "para": "Zaangażowanie w zdrowie i zrównoważony rozwój poprzez praktyki i produkty przyjazne dla środowiska"
+                    },
+                    "block_3": {
+                        "heading_1": "Jesteśmy",
+                        "heading_2": "profesjonalistami",
+                        "para": "Wykazywanie się wiedzą i doskonałością w dostarczaniu najwyższej jakości usług i rozwiązań"
+                    }
+                }
+            },
+            "WhyWeShouldClean": {
+                "heading": "Dlaczego powinniśmy sprzątać twoją przestrzeń?",
+                "block_1": {
+                    "heading": "Ekologiczne sprzątanie",
+                    "para": "Ekologiczne środki chemiczne i metody czyszczenia zmniejszają ryzyko wpływu szkodliwych substancji chemicznych na zdrowie Twoich bliskich. Jest to szczególnie istotne w domach z dziećmi, gdzie bezpieczeństwo i czystość odgrywają kluczową rolę."
+                },
+                "block_2": {
+                    "heading": "Oszczędność czasu i pieniędzy",
+                    "para": "Firma oferująca atrakcyjne ceny i wysokiej jakości usługi pozwala zaoszczędzić czas i środki finansowe. Zamiast tracić swój wolny czas na sprzątanie, możesz skupić się na innych istotnych zadaniach, a ceny firmy pozwolą zaoszczędzić Twoje pieniądze."
+                },
+                "block_3": {
+                    "heading": "Zwiększony komfort",
+                    "para": "Przyjazni i pozytywni pracownicy firmy sprzątającej stworzą przyjemną atmosferę w Twoim domu podczas sprzątania. To przyczyni się do Twojego komfortu i wygody, a także uczyni proces sprzątania mniej stresującym."
+                },
+                "block_4": {
+                    "heading": "Profesjonalna jakość",
+                    "para": "Firma, która zwraca uwagę na atmosferę i pozytywny nastrój, często dąży również do wysokiego standardu profesjonalnego sprzątania. Oznacza to, że Twój dom zostanie dokładnie oczyszczony i przygotowany do spełnienia Twoich potrzeb."
+                }
+            },
+            "selectCityForServiceModal": {
+                "h_1": "Wybierz miasto",
+                "message": "Usługa jest dostępna w następujących miastach:",
+                "cities": {
+                    "krakow": "Kraków",
+                    "warsaw": "Warszawa",
+                    "wroclaw": "Wrocław",
+                    "poznan": "Poznań",
+                    "rzeszow": "Rzeszów",
+                    "katowice": "Katowice"
+                }
+            },
+            "serviceName": "sprzątanie",
+            "serviceHeroDescription": "Zajmiemy się Twoim domem - masz to z głowy 🍿",
+            "bookNowText": "Zarezerwuj teraz!",
+            "descriptionHTML": "'<p><strong>W Homie na równi cenimy jakość usług i ludzkie podejście.</strong> To dlatego, na pierwsze sprzątanie będziemy osobiście z naszym najlepszym homie 💖 do tej konkretnej misji. W ten sposób poznamy Twój dom i <strong>razem z Tobą</strong> omówimy szczegóły pracy. Wspólnie upewnimy się, że wykonamy to, co dla Ciebie szczególnie ważne✨</p><p>Po sprzątaniu skontaktujemy się z Tobą telefonicznie, aby upewnić się, że wszystko przebiegło zgodnie z planem. Na postawie Twojej opinii będziemy mogli również dokonać niezbędnych poprawek do kolejnego sprzątania. </p><p>I Voilà!</p><p>Z poziomu swojego konta, możesz zarządzać misjami według uznania. Masz 100% kontroli nad wybraną przez siebie usługą sprzątania 🤗</p><p>Sprawdź co obejmuje sprzątanie Standardowe i Generalne 🔥</p>'",
+            "cleaningPlans": {
+                "regularBtn": "Standardowe",
+                "advancedBtn": "Generalne",
+                "plansFeautures": {
+                    "homespace": "PRZESTRZEŃ DOMOWA",
+                    "homespace_1": "Odkurzenie lub zamiecenie i umycie podłóg i listew przypodłogowych",
+                    "homespace_2": "Wytarcie kurzu z dostępnych powierzchni do 3m wysokości",
+                    "homespace_3": "Wytarcie frontów szaf, szafek, komód, blatów",
+                    "homespace_4": "Uporządkowanie przedmiotów codziennego użytku",
+                    "homespace_5": "Wyniesienie śmieci & wyczyszczenie koszy na śmieci",
+                    "homespace_6": "Wytarcie dostępnych lamp",
+                    "homespace_7": "Usunięcie pajęczyn",
+                    "homespace_8": "Umycie luster i ram",
+                    "homespace_9": "Nastawienia pralki z wyselekcjonowanym praniem",
+                    "homespace_10": "Umycie i uporządkowanie wnętrza szaf i szafek",
+                    "homespace_11": "Mycie podłóg z głębokiego brudu",
+                    "kitchen": "KUCHNIA",
+                    "kitchen_1": "Umycie naczyń i zlewu",
+                    "kitchen_2": "Wytarcie zewnętrznych powierzchni szafek kuchennych i blatu",
+                    "kitchen_3": "Usunięcie kamienia z czajnika",
+                    "kitchen_4": "Wyczyszczenie mikrofalówki, tostera, małego agd",
+                    "kitchen_5": "Umycie i uporządkowanie wnętrza szafek",
+                    "kitchen_6": "Umycie lodówki",
+                    "kitchen_7": "Wyczyszczenie piekarnika",
+                    "livingRoom": "POKÓJ DZIENNY",
+                    "livingRoom_1": "Wytarcie stołów i krzeseł",
+                    "livingRoom_2": "Odkurzenie sof, ułożenie poduszek",
+                    "bathroom": "ŁAZIENKA",
+                    "bathroom_1": "Umycie i odkażenie toalety, prysznica, wanny i umywalki",
+                    "bathroom_2": "Wytarcie luster i powierzchni szklanych",
+                    "bathroom_3": "Usunięcie osadu z mydła i delikatnego kamienia",
+                    "bathroom_4": "Czyszczenie fug",
+                    "balcony": "BALKON / TARAS",
+                    "balcony_1": "Umycie podłóg i barierek",
+                    "balcony_2": "Wyczyszczenie odchodów gołębi",
+                    "bedroom": "Sypialnia",
+                    "bedroom_1": "Zmiana pościeli",
+                    "bedroom_2": "Ścielenie łóżek"
+                },
+                "notes": {
+                    "yes": "Zawsze mamy ze sobą zestaw uniwersalnych środków czystości",
+                    "no": "Nie zapewniamy narzędzi do sprzątania. <br/>Przygotuj proszę: odkurzacz lub miotłę, mop i wiaderko"
+                }
+            },
+            "homies": {
+                "homie1_name": "Irina",
+                "homie1_description": "✨Pierwsza w zespole homies✨ Wspiera nas od samego początku, uczyniła cuda w tak wielu domach, że teraz jej kalendarz jest wypełniony po brzegi do 2087 roku!",
+                "homie2_name": "Olena",
+                "homie2_description": "Punktualna i skoncentrowana na swojej pracy. Zawsze jest ciekawa Twojej opinii o wykonanym przez nią zadaniu 🙂",
+                "homie3_name": "Julia",
+                "homie3_description": "Zawsze uśmiechnięta, przyniesie odrobinę słońca nawet w pochmurny dzień. Julia pracuje tak szybko, że została naszym lokalnym \"Flash'em\" ⚡🦸"
+            },
+            "faq": {
+                "question_1": "Czy muszę zapewnić środki czystości i narzędzia do sprzątania?",
+                "answer_1": "Zapewniamy wszystkie niezbędne środki czystości, aby posprzątać Twoje mieszkanie na medal. Jeśli jednak wolisz użyć swoich produktów, dedykowanych konkretnym powierzchniom, np. do drewna, daj nam znać, gdy spotkamy się na miejscu. <br/> '<strong> Uwaga: </strong>' Nie zapewniamy narzędzi do sprzątania. Przygotuj proszę: odkurzacz lub miotłę, mop i wiaderko, ewentualnie drabinkę jeśli będzie potrzebna.",
+                "question_2": "Czy podczas sprzątania muszę być w domu?",
+                "answer_2": "Nie ma takiej potrzeby. Jeśli jednak zdecydujesz się wyjść, przekaż nam informacje jak możemy wejść i/lub zamknąć drzwi po wykonaniu usługi.",
+                "question_3": "W jaki sposób obliczyć liczbę okien do umycia?",
+                "answer_3": "Aby zamówić odpowiednią ilość okien do umycia należy policzyć ilość skrzydeł okiennych lub wydzielonych ramami tafli szkła.",
+                "question_4": "Jak mogę zmienić termin sprzątania?",
+                "answer_4": "Aby zmienić termin jednej, wybranej misji w ramach usługi sprzątania cyklicznego - skontaktuj się z nami. '<br/>' Aby zmienić dzień lub częstotliwość dla całej usługi sprzątania, anuluj wybraną usługę na swoich koncie (\"Usługi\" → \"Aktywne\" → \"Anuluj\") i zarezerwuj ją ponownie z nowym dniem & częstotliwością. ",
+                "question_5": "Czy wykonujecie sprzątanie poremontowe?",
+                "answer_5": "Tak, zapewniamy tego rodzaju sprzątanie.",
+                "question_6": "Czy zwierzęta są akceptowane?",
+                "answer_6": "Jasne, że tak! Cena sprzątania nie ulega zmianie. Jeżeli futrzaści członkowie rodziny będą w domu podczas sprzątania, upewnij się, że będą odpowiednio zabezpieczeni, np. podczas otwierania i mycia okien. ",
+                "question_7": "Czy wykonujecie czyszczenie tapicerki sofy?",
+                "answer_7": "Tak, zapewniamy taką usługę."
+            }
+        },
+        "MassageLanding": {
+            "meta": {
+                "title": "Massage | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Skorzystaj z masażu w swoim domu i poczuj się fantastycznie",
+                "og_title": "Massage | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Skorzystaj z masażu w swoim domu i poczuj się fantastycznie"
+            },
+            "selectCityForServiceModal": {
+                "h_1": "Wybierz miasto",
+                "message": "Usługa jest dostępna w następujących miastach:",
+                "cities": {
+                    "krakow": "Kraków",
+                    "warsaw": "Warszawa",
+                    "wroclaw": "Wrocław",
+                    "poznan": "Poznań",
+                    "rzeszow": "Rzeszów",
+                    "katowice": "Katowice"
+                }
+            },
+            "serviceName": "masaż",
+            "serviceHeroDescription": "Skorzystaj z masażu w swoim domu i poczuj się fantastycznie 😊",
+            "bookNowText": "Zarezerwuj teraz!",
+            "descriptionHTML": "'<p>May the massage be with you ✊</p><p>Na wszystko jest właściwy moment, na masaż w szczególności! Każdego dnia tygodnia, nasi fizjoterapeuci przyjeżdżają do wskazanych lokalizacji, wyposażeni w przenośny stół do masażu, olejki i muzykę, abyś poczuł/a się wyjątkowo dobrze ☺️</p><p>Lubimy, gdy rzeczy są intuicyjne, dlatego zaprojektowaliśmy prostą ofertę masażu, dopasowaną do Twoich potrzeb.</p><p>Sprawdź poniżej ❤️</p>'",
+            "massagePlans": {
+                "relaxation": {
+                    "heading": "Masaż relaksacyjny",
+                    "body": "Popularny wybór. Ten rodzaj masażu wykonujemy delikatnie lub nieco mocniejszymi technikami, dostosowując siłę nacisku do Twoich odczuć. Masaż relaksacyjny jest niezastąpionym zabójcą stresu, sprawdzi się po ciężkim dniu pracy, jako plan na romantyczny wieczór lub prezent. Uwaga, może okazać się, że pod koniec znajdziesz się w pierwszej fazie snu 😉"
+                },
+                "deepTissue": {
+                    "heading": "Masaż tkanek głębokich",
+                    "body": "Chcesz uwolnić się od głębiej zlokalizowanych napięć i poczuć się jak pianka marshmallow? Masaż tkanek głębokich będzie odpowiednim kandydatem! 😁"
+                },
+                "sportive": {
+                    "heading": "Masaż Sportowy",
+                    "body": "Skuteczny w połączeniu z Twoim aktywnym trybem życia & treningami. Ten rodzaj masażu pobudza ciało i stymuluje mięśnie do szybszej regeneracji. Zastrzyk energii na cały tydzień! 💪"
+                },
+                "targeted": {
+                    "heading": "Masaż ukierunkowany",
+                    "body": "🎯 Home-office daje Ci w kość? A może nabawiłeś się skurczów mięśni? Ten masaż skupi się na tej partii ciała, która powoduje u Ciebie dyskomfort. Po nim będziesz fikać fikołki ✨"
+                }
+            },
+            "homies": {
+                "homie1_name": "Wiktoria",
+                "homie1_description": "Zamknij oczy... Jesteś na Bali! Dokładnie to widzimy za każdym razem kiedy Wiktoria do nas przychodzi. Nigdy się nie spiesząc, dba o każdy mięsień z osobna.",
+                "homie2_name": "Anita",
+                "homie2_description": "Jakość i hojność. Te dwa słowa przychodzą nam na myśl kiedy myślimy o masażach wykonywanych przez Anitę. W ciągu dnia pracuje z dziećmi, a jak sama mówi, po pracy relaksuje się masując.",
+                "homie3_name": "Mateusz",
+                "homie3_description": "Bez dwóch zdań fizjoterapeuta z krwi i kości! W trakcie masażu dowiesz się wszystkiego o powięziach, tkankach, ścięgnach, mięśniach. Wykonuje mocne masaże, dlatego element \"cierpienia\" jest w pakiecie z Mateuszem 😈"
+            },
+            "faq": {
+                "question_1": "Jak wybrać odpowiedni rodzaj masażu?",
+                "answer_1": "Jeśli chcesz się odprężyć i rozluźnić delikatne napięcie mięśni lub podarować komuś masaż w prezencie, polecamy masaż relaksacyjny. Masaż tkanek głębokich i sportowy dedykowane są osobom o mniejszej wrażliwości na ból i głębiej zlokalizowanych napięciach mięśni. Bez względu na to jaki rodzaj masażu wybierzesz nasz homie dostosuje siłę i zakres masażu do Twoich aktualnych potrzeb.",
+                "question_2": "Jak przygotować się do masażu?",
+                "answer_2": "Bezpośrednio przed masażem przygotuj nieco przestrzeni, tak abyśmy mogli rozłożyć przenośny stół do masażu. Przyda się również duży ręcznik lub koc. Możesz pozostać w bieliźnie lub komfortowym luźnym ubraniu. Na koniec odpręż się i nie martw o nic.",
+                "question_3": "Jakie materiały i sprzęt zapewniacie?",
+                "answer_3": "Na każdą misję przyjeżdżamy wyposażeni w niezbędny sprzęt do wykonania masażu, dbając o bezpieczeństwo Twoje i naszych homies w związku z epidemią Covid-19. Mamy ze sobą mobilny stół do masażu, podkłady higieniczne, płyn do dezynfekcji powierzchni i rąk, olejki (naturalne lub hipoalergiczne), opcjonalnie głośnik.",
+                "question_4": "Jak zorganizowany jest masaż dla dwóch osób?",
+                "answer_4": "Masaże dla dwóch osób odbywają się jeden po drugim. Nasz homie wykona go w nawiązaniu do Twojego wyboru i potrzeb. ",
+                "question_5": "Jakie są przeciwwskazania do wykonania masażu?",
+                "answer_5": "'<p>Osoby, których dotyczą wymienione poniżej sytuacje, nie powinny poddawać się masażowi:</p><p><ul><li>wszystkie stany chorobowe przebiegające z wysoką temperaturą ciała (powyżej 38° C), ostre i podostre stany zapa</li><li>osoby borykające się z gorączką niewiadomego pochodzenia;</li><li>kobiety w okresie menstruacji;</li><li>osoby powyżej 80 roku życia;</li><li>kobiety w ciąży;</li><li>osoby po zabiegach operacyjnych. (Masaż można wykonać 12 miesięcy po zabiegu jeśli był poważny i 6 miesięcy po mniejszym, jeżeli blizny są dobrze zagojone);</li><li>wszelkiego rodzaju zmiany dermatologiczne;</li><li>przerwanie ciągłości skóry, wczesny okres po złamaniach, skręceniach i zwichnięciach - w takich przypadkach można masować poszczególne zdrowe stawy;</li><li>blizny, stłuczenia, stany zapalne skóry, żylaki - w takich przypadkach można masować tylko zdrowe części ciała;</li><li>alergie na stosowane do masażu olejki;</li><li>osoby z cerą naczynkową</li><li>krwotoki lub tendencje do ich wystąpienia;</li><li>niewyrównane wady serca, tętniaki, świeże zakrzepy, świeży zawał serca;</li><li>nowotwory złośliwe i niezłośliwe;</li><li>pourazowe wylewy w stawach i mięśniach (do 3 dni od urazu);</li><li>zapalenia żył;</li><li>zapalenie szpiku kostnego z przetokami;</li><li>jamistość rdzenia;</li><li>wszystkie przypadki wymagające interwencji chirurgicznej;</li><li>choroba wrzodowa z krwawieniami;</li><li>kamica wątrobowa i nerkowa;</li><li>skazy krwotoczne (pochodzenia płytkowego, naczyniowa, osoczowa);</li><li>schorzenia układu sercowo-naczyniowego (nadciśnienie tętnicze, wady zastawki przedsionkowo-komorowej lewej);</li><li>niedokrwistość związana głównie z niedoborem żelaza i kwasu foliowego;</li><li>białaczka;</li><li>choroby nerek (ostra niewydolność nerek, kłębuszkowe i od miedniczkowe zapalenie nerek, kamica nerkowa, wrodzone wady nerek);</li><li>zapalenie trzustki;</li><li>gestoza – zespół chorobowy charakteryzujący się nadciśnieniem tętniczym, białkomoczem i obrzękami;</li><li>nadczynność i niedoczynność tarczycy i przytarczyc;</li><li>chorzy, u których stwierdzono hemofilię.</li></ul></p>'"
+            }
+        },
+        "FlowersLanding": {
+            "meta": {
+                "title": "Kwiaty | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "description": "Wprowadź 🌼 Flower power do swojego życia!",
+                "og_title": "Kwiaty | Heyhomie.io - Korzystaj wygodnie z usług w swoim domu",
+                "og_description": "Wprowadź 🌼 Flower power do swojego życia!"
+            },
+            "selectCityForServiceModal": {
+                "h_1": "Wybierz miasto",
+                "message": "Usługa jest dostępna w następujących miastach:",
+                "cities": {
+                    "krakow": "Kraków",
+                    "warsaw": "Warszawa",
+                    "wroclaw": "Wrocław",
+                    "poznan": "Poznań",
+                    "rzeszow": "Rzeszów",
+                    "katowice": "Katowice"
+                }
+            },
+            "serviceName": "kwiaty",
+            "serviceHeroDescription": "Wprowadź 🌼 Flower power \ndo swojego życia!",
+            "bookNowText": "Zarezerwuj teraz!",
+            "descriptionHTML": "'<p>Spraw przyjemność bliskim. Piękny, spersonalizowany bukiet kwiatów to sprawdzony patent 🌸</p><p>Daj nam znać jakiej okazji dotyczą kwiaty, możesz też zostawić krótką wiadomość, którą umieścimy na liściku dołączonym do bukietu. Zadbamy o resztę 🙂</p><p>Każdy bukiet jest unikalny, przygotowany w oparciu o kwiaty dostępne w aktualnym sezonie i dostarczany punktualnie przez naszych homies!</p>'",
+            "descriptionCTA": "Odkryj nasze bukiety",
+            "flowersGalleryHeading": "Zobacz przykładowe kompozycje",
+            "faq": {
+                "question_1": "Czy mogę wybrać konkretne kwiaty & kolor bukietu?",
+                "answer_1": "Nasze bukiety tworzymy ze świeżych kwiatów sezonowych, dlatego nie ma możliwości wyboru konkretnego gatunku kwiatów. Możemy natomiast przygotować bukiet w wybranej przez Ciebie kolorystyce. Zostaw nam notatkę przy składaniu zamówienia, a my dostarczymy Ci bukiet w wybranym, dominującym kolorze.",
+                "question_2": "Czy możecie dołączyć liścik do mojego bukietu?",
+                "answer_2": "Jasne! :) Zostaw nam notatkę podczas składania zamówienia, a my (bezpłatnie) dołączymy liścik do Twoich kwiatów.",
+                "question_3": "Jakiej wielkości są bukiety?",
+                "answer_3": "Oferujemy bukiety w dwóch rozmiarach. Średni, o średnicy ok. 30 cm, oraz duży, o średnicy ok. 40 cm."
+            }
+        }
+    }
+}

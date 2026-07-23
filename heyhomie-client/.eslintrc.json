@@ -1,0 +1,126 @@
+{
+    "env": {
+        "browser": true,
+        "worker": true,
+        "es2022": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "airbnb-base",
+        "plugin:import/recommended",
+        "plugin:prettier/recommended" // has to be the last one
+    ],
+    "plugins": ["import", "babel", "prettier"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "overrides": [],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "ecmaFeatures": {
+            "jsx": true,
+            "flow": true,
+            "impliedStrict": true,
+            "classes": true,
+            "experimentalObjectRestSpread": true
+        },
+        // "requireConfigFile": false, // @todo remove it after babel configuration
+        "sourceType": "module"
+    },
+    "rules": {
+        "one-var": ["error", { "uninitialized": "consecutive" }],
+        "func-names": "off",
+        "camelcase": "off",
+        "no-useless-return": "off",
+        "no-else-return": "off",
+        "no-shadow": "off",
+        "no-nested-ternary": "off",
+        "no-unused-expressions": "off",
+        "dot-notation": "off",
+        "no-console": ["warn", { "allow": ["warn", "error"] }],
+        "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
+        "no-unused-vars": [
+            "warn",
+            {
+                "varsIgnorePattern": "^[A-Z].*$"
+            }
+        ],
+        "object-shorthand": "off",
+        "class-methods-use-this": "off",
+        "no-restricted-syntax": [
+            "off",
+            {
+                "selector": "ForOfStatement",
+                "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations"
+            },
+            {
+                "selector": "ForInStatement",
+                "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations"
+            },
+            {
+                "selector": "LabeledStatement",
+                "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations"
+            },
+            {
+                "selector": "WithStatement",
+                "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations"
+            }
+        ],
+        // important rule
+        "space-before-function-paren": [
+            "error",
+            {
+                "named": "never",
+                "anonymous": "always",
+                "asyncArrow": "always"
+            }
+        ],
+        // @todo need to find out analogue for vanilla js/vue
+        // "react-use-props/require": [
+        //     2,
+        //     { "element": "svg", "props": ["width", "height"] },
+        //     { "element": "img", "props": ["width", "height"] },
+        //     { "element": "Image", "props": ["width", "height"] },
+        //     { "element": "Picture.Item", "props": ["width", "height"] },
+        //     { "element": "iframe", "props": ["width", "height"] },
+        //     { "element": "video", "props": ["width", "height"] }
+        // ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "mjs": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never",
+                "json": "always",
+                "svg": "always"
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "prettier/prettier": ["error"]
+    },
+    "settings": {
+        "polyfills": [
+            // Example of marking entire API and all methods and properties as polyfilled
+            "Promise",
+            // Example of marking specific method of an API as polyfilled
+            "WebAssembly.compile",
+            // Example of API with no property (i.e. a function)
+            "fetch",
+            // Example of instance method, must add `.prototype.`
+            "Array.prototype.push"
+        ],
+        "import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+        "import/resolver": {
+            "node": { "extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"] }
+            // "webpack": {
+            //     "config": "./config/webpack.config.js"
+            // }
+        },
+        "import/ignore": ["css", "scss", "less", "node_modules"] // \.(scss|less|css)$
+    }
+}

@@ -1,0 +1,33 @@
+/* ShakingText.module.css */
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* @keyframes changeColor {
+    1% {
+        color: rgba(179, 30, 80, var(--tw-text-opacity));
+    }
+    100% {
+        color: rgba(179, 30, 80, var(--tw-text-opacity));
+    }
+} */
+
+.animating {
+    animation: shake 0.7s ease-in-out infinite;
+    color: rgb(179, 30, 80);
+}
