@@ -6,6 +6,8 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import HreflangLinks from '../components/seo/HreflangLinks';
+import CanonicalLink from '../components/seo/CanonicalLink';
 
 import tw, { css, styled, theme } from 'twin.macro';
 
@@ -366,6 +368,8 @@ function MassageLandingPage({ cities }) {
                 <meta property='og:title' content={t(`meta.og_title`)} />
                 <meta property='og:description' content={t(`meta.og_description`)} />
             </Head>
+            <HreflangLinks path='massage' />
+            <CanonicalLink path='massage' />
             <Topnav handleChangeLanguage={changeLocale} />
             <ContentContainer>
                 <BookingHeroSection

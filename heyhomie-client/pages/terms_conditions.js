@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import HreflangLinks from '../components/seo/HreflangLinks';
+import CanonicalLink from '../components/seo/CanonicalLink';
 
 import tw, { css, styled, theme } from 'twin.macro';
 
@@ -134,10 +136,12 @@ function TermsConditionsPage({ cities }) {
                 <title>{t(`meta.title`)}</title>
                 <meta name='description' content={t(`meta.description`)} />
                 <meta property='og:type' content='website' />
-                <meta property='og:url' content='https://www.heyhomie.io/' />
+                <meta property='og:url' content='https://www.heyhomie.io/terms_conditions' />
                 <meta property='og:title' content={t(`meta.og_title`)} />
                 <meta property='og:description' content={t(`meta.og_description`)} />
             </Head>
+            <HreflangLinks path='terms_conditions' />
+            <CanonicalLink path='terms_conditions' />
             <Topnav handleChangeLanguage={changeLocale} />
             <ContentContainer>
                 <ContentHeading>

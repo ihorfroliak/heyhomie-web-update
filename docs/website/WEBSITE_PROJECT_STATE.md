@@ -72,8 +72,8 @@ A batch of work was done on **2026-06-29 (21:59–22:59)**. Everything else in t
 
 ### B. Partially implemented
 
-- **Canonicals** — only on city pages (inside `CleaningSeoJsonLd`). Missing on `/`, `/cleaning`, `/flowers`, `/massage`, `/about`, `/privacy`, `/terms_conditions`.
-- **Hreflang** — only on `/`, `/[city]`, `/cleaning`. Missing on `/flowers`, `/massage`, `/about`, `/privacy`, `/terms_conditions`.
+- **Canonicals** — ~~only on city pages~~ **RESOLVED 2026-07-25 (branch `claude/phone-history-issue`):** new reusable `components/seo/CanonicalLink.js` (locale-aware self-referencing canonical) added to `/`, `/cleaning`, `/flowers`, `/massage`, `/about`, `/privacy`, `/terms_conditions`. City pages still use the canonical inside `CleaningSeoJsonLd` (unchanged, no duplication — `CanonicalLink` deliberately not added there).
+- **Hreflang** — ~~only on `/`, `/[city]`, `/cleaning`~~ **RESOLVED 2026-07-25:** `HreflangLinks` now also on `/flowers`, `/massage`, `/about`, `/privacy`, `/terms_conditions`. Full public-page coverage. (Also fixed: `og:url` on `/about`, `/privacy`, `/terms_conditions` pointed at the homepage `/` — now page-specific.)
 - **Structured data** — only the cleaning/city graph. No Organization/WebSite schema sitewide, none on service landings.
 - **Sitemap** — code exists, **404 in production**.
 

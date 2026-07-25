@@ -36,6 +36,7 @@ import { faqCleaning } from '../components/serviceLanding/cleaning/faqCleaning';
 import { plansFeautures } from '../components/serviceLanding/cleaning/cleaningPlansFeatures';
 
 import HreflangLinks from '../components/seo/HreflangLinks';
+import CanonicalLink from '../components/seo/CanonicalLink';
 import HowItWorksSection from '../components/serviceLanding/HowItWorksSection';
 import HomiesGallery from '../components/serviceLanding/HomiesGallery';
 import HowWeSelectHomiesSection from '../components/serviceLanding/HowSelectHomiesSection';
@@ -593,6 +594,7 @@ function CleaningLandingPage({ cities }) {
                 <meta property='og:description' content={t(`meta.og_description`)} />
             </Head>
             <HreflangLinks path='cleaning' />
+            <CanonicalLink path='cleaning' />
             <Topnav handleChangeLanguage={changeLocale} />
             <ContentContainer>
                 <BookingHeroSection

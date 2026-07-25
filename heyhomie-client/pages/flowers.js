@@ -6,6 +6,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import HreflangLinks from '../components/seo/HreflangLinks';
+import CanonicalLink from '../components/seo/CanonicalLink';
 
 import tw, { css, styled, theme } from 'twin.macro';
 
@@ -283,6 +285,8 @@ function FlowersLandingPage({ cities }) {
                 <meta property='og:title' content={t(`meta.og_title`)} />
                 <meta property='og:description' content={t(`meta.og_description`)} />
             </Head>
+            <HreflangLinks path='flowers' />
+            <CanonicalLink path='flowers' />
             <Topnav handleChangeLanguage={changeLocale} />
             <ContentContainer>
                 <BookingHeroSection

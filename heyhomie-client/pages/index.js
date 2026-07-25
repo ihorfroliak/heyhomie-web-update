@@ -11,6 +11,7 @@ import Topnav from '../components/utilpages/topnav/Topnav';
 import Footer from '../components/utilpages/footer/Footer';
 import HomeLanding from '../components/home/HomeLanding';
 import HreflangLinks from '../components/seo/HreflangLinks';
+import CanonicalLink from '../components/seo/CanonicalLink';
 
 function Home({ cities }) {
     const dispatch = useDispatch();
@@ -55,6 +56,7 @@ function Home({ cities }) {
                 <meta property='og:description' content={t(`meta.og_description`)} />
             </Head>
             <HreflangLinks path='' />
+            <CanonicalLink path='' />
             <Topnav cities={cities} handleChangeCity={changeCity} handleChangeLanguage={changeLocale} />
             <HomeLanding cities={cities} />
             <Footer cities={cities} />
