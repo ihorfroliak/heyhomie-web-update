@@ -10,20 +10,9 @@
  */
 import tw, { styled } from 'twin.macro';
 import CleaningCalculator from './CleaningCalculator';
+import { useCleaningCopy } from './cleaningCopy';
 
 const C = { ink: '#141338', slate: '#52516B', light: '#F6FBFF', border: '#EDEEEF' };
-
-const PL = {
-    breadcrumb: ['HeyHomie', 'Kraków', 'Sprzątanie mieszkań'],
-    title: 'Sprzątanie mieszkań i domów',
-    sub: 'Wybierz rozmiar, częstotliwość i rodzaj sprzątania — cena i czas przeliczają się na bieżąco. Płacisz dzień po wizycie, odwołanie do 24 h przed jest bezpłatne.',
-    promises: [
-        ['Płatność po usłudze', 'Nic nie pobieramy przy rezerwacji — płacisz dzień po wizycie.'],
-        ['Bezpłatne odwołanie', 'Odwołaj lub przełóż do 24 h przed terminem bez opłat.'],
-        ['Ubezpieczone sprzątanie', 'Każda wizyta jest objęta ubezpieczeniem.'],
-        ['Uczciwy zakres', 'Mówimy wprost, czego nie robimy — przed rezerwacją, nie w regulaminie.'],
-    ],
-};
 
 const Section = styled.section`
     background: ${C.light};
@@ -109,6 +98,7 @@ const Promise = styled.div`
 `;
 
 const CleaningCalculatorSection = ({ onBook }) => {
+    const PL = useCleaningCopy().hero;
     return (
         <Section>
             <Inner>

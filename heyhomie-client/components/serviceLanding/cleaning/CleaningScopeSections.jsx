@@ -12,7 +12,8 @@
  */
 import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
-import { ROOM_CARDS, TOTAL_TASKS, EXCLUSIONS, FRAGILE, FRAGILE_PLACEHOLDER, FRAGILE_NOTE, OTHER_SERVICES } from './cleaningContent';
+import { ROOM_CARDS, EXCLUSIONS, FRAGILE, FRAGILE_PLACEHOLDER, FRAGILE_NOTE, OTHER_SERVICES } from './cleaningContent';
+import { useCleaningCopy } from './cleaningCopy';
 
 const C = { ink: '#141338', indigo: '#414483', slate: '#52516B', mint: '#77ECC8', light: '#F6FBFF', border: '#EDEEEF' };
 
@@ -107,8 +108,9 @@ const exCard = { borderRadius: 16, background: '#fff', padding: 22 };
 const panel = { width: 452, maxWidth: '100%', borderRadius: 16, border: `1.5px solid ${C.border}`, padding: 26 };
 
 const CleaningScopeSections = ({ onBook, onChecklist }) => {
+    const cp = useCleaningCopy().scope;
     const [fragile, setFragile] = useState({});
-    const toggle = f => setFragile(s => ({ ...s, [f]: !s[f] }));
+    const toggle = f => setFragile(prev => ({ ...prev, [f]: !prev[f] }));
 
     return (
         <>
@@ -117,14 +119,11 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                 <Inner>
                     <div style={rowHeader}>
                         <div>
-                            <H2>Co robimy w każdym pomieszczeniu</H2>
-                            <Lead>
-                                Pełna lista {TOTAL_TASKS} — bez „i inne prace porządkowe”. W generalnym dochodzą wnętrza AGD, fugi i szafki; część pozycji jest
-                                dopłatą w standardowym, a w generalnym w cenie.
-                            </Lead>
+                            <H2>{cp.includedTitle}</H2>
+                            <Lead>{cp.includedLead}</Lead>
                         </div>
                         <Btn type='button' onClick={onChecklist}>
-                            Otwórz pełny checklist →
+                            {cp.openChecklist}
                         </Btn>
                     </div>
                     <Grid cols={4}>
@@ -134,11 +133,11 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                                 <Counts>
                                     <div>
                                         <b>{rc.std}</b>
-                                        <span>standardowe</span>
+                                        <span>{cp.std}</span>
                                     </div>
                                     <div>
                                         <b style={{ color: C.indigo }}>{rc.gen}</b>
-                                        <span>generalne</span>
+                                        <span>{cp.gen}</span>
                                     </div>
                                 </Counts>
                                 <div style={{ fontWeight: 500, fontSize: 12.5, lineHeight: 1.55, color: C.slate, marginTop: 12 }}>{rc.sample}</div>
@@ -151,8 +150,8 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
             {/* 2 · what we don't do */}
             <Band tint>
                 <Inner>
-                    <H2>Czego nie robimy</H2>
-                    <Lead>Mówimy o tym wprost przed rezerwacją, a nie w regulaminie. Część prac możemy wykonać osobno — jak, napisane jest przy każdej.</Lead>
+                    <H2>{cp.exclusionsTitle}</H2>
+                    <Lead>{cp.exclusionsLead}</Lead>
                     <Grid cols={3}>
                         {EXCLUSIONS.map(ex => (
                             <div key={ex.title} style={exCard}>
@@ -185,14 +184,11 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                 <Inner>
                     <div style={split}>
                         <div style={{ flex: '1 1 320px', minWidth: 0 }}>
-                            <H2>Rzeczy wymagające szczególnej ostrożności</H2>
-                            <Lead>
-                                Naturalny kamień, mosiądz bez powłoki, antyki i sprzęt, który już jest uszkodzony, wymagają innych środków niż reszta domu —
-                                albo pominięcia. Zaznacz je przy rezerwacji: homie dostanie tę informację przed wejściem, a Ty masz to udokumentowane.
-                            </Lead>
+                            <H2>{cp.fragileTitle}</H2>
+                            <Lead>{cp.fragileLead}</Lead>
                         </div>
                         <div style={panel}>
-                            <div style={{ fontWeight: 700, fontSize: 16 }}>Zgłoś przed sprzątaniem</div>
+                            <div style={{ fontWeight: 700, fontSize: 16 }}>{cp.fragilePanelTitle}</div>
                             <div style={chips}>
                                 {FRAGILE.map(f => (
                                     <Chip key={f} type='button' on={!!fragile[f]} onClick={() => toggle(f)}>
@@ -238,11 +234,11 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                 <Inner>
                     <div style={rowHeader}>
                         <div>
-                            <H2>HeyHomie robi też</H2>
-                            <Lead dark>Osobne usługi — możesz zamówić je razem ze sprzątaniem albo pojedynczo.</Lead>
+                            <H2>{cp.othersTitle}</H2>
+                            <Lead dark>{cp.othersLead}</Lead>
                         </div>
                         <Btn type='button' dark onClick={onBook}>
-                            Wszystkie usługi →
+                            {cp.allServices}
                         </Btn>
                     </div>
                     <Grid cols={5}>

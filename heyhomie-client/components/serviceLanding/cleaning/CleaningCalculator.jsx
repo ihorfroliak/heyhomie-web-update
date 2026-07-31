@@ -16,6 +16,7 @@
 import { useMemo, useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import { calculate, TYPES, FREQS, visibleAddons, zl } from '../../../lib/cleaning/calculator';
+import { useCleaningCopy } from './cleaningCopy';
 
 // Brand canon (heyhomie-shared/BRAND.md)
 const C = {
@@ -25,56 +26,6 @@ const C = {
     mint: '#77ECC8',
     light: '#F6FBFF',
     border: '#EDEEEF',
-};
-
-const PL = {
-    title: 'Kalkulator sprzątania',
-    s1: 'Rozmiar mieszkania',
-    rooms: 'Pokoje',
-    baths: 'Łazienki',
-    kitchenNote: 'Kuchnia i przedpokój są zawsze w cenie — nie trzeba ich zaznaczać. Drugą kuchnię dopisz w uwagach, doliczymy ją ręcznie.',
-    s2: 'Jak często?',
-    freq: { once: 'Jednorazowo', weekly: 'Co tydzień', biweekly: 'Co 2 tyg.', monthly: 'Co miesiąc' },
-    s3: 'Rodzaj sprzątania',
-    type: {
-        standard: { label: 'Standardowe', meta: 'regularna czystość, bez wnętrz AGD' },
-        general: { label: 'Generalne', meta: 'z wnętrzami AGD, fugami i szafkami' },
-    },
-    s4: 'Metraż',
-    areaNote: 'Metraż nie zmienia ceny — cena zależy od liczby pomieszczeń. Podajesz go, żeby homie wiedział, ile środków i czasu zabrać.',
-    s5: 'Opcje dodatkowe',
-    generalHint: n => `${n} opcje — reszta w cenie`,
-    addon: {
-        oven: ['Piekarnik w środku', ''],
-        fridge: ['Lodówka w środku', ''],
-        hood: ['Okap z filtrami', ''],
-        cabinets: ['Szafki w środku', ''],
-        microwave: ['Mikrofalówka w środku', ''],
-        bins: ['Kosze na śmieci', ''],
-        balcony: ['Balkon lub taras', ''],
-        windows: ['Mycie okien', 'za skrzydło'],
-        ironing: ['Prasowanie', 'za godzinę'],
-        hours: ['Dodatkowa godzina', 'za godzinę'],
-    },
-    s6: 'O obiekcie',
-    s6note: 'To nie zakupy — to informacje, które zmieniają sposób pracy homie.',
-    pets: 'Zwierzęta w domu',
-    petsNote: 'Cena bez zmian — homie po prostu wie, na co uważać.',
-    gear: 'Odkurzacz, mop i wiadro na miejscu',
-    gearNoteStd: 'Nie masz? Homie przywiezie swój — +15 zł do standardowego jednorazowego.',
-    gearNoteGen: 'Do generalnego zawsze wozimy sprzęt bezpłatnie.',
-    line: {
-        base: 'Kuchnia + przedpokój',
-        rooms: 'Pokoje',
-        baths: 'Łazienki',
-        gear: 'Sprzęt na miejscu',
-        discount: 'Rabat',
-    },
-    priceCaption: 'Cena za wizytę',
-    time: 'Czas na miejscu',
-    crew: n => `${n} ${n === 1 ? 'homie' : 'homies'}`,
-    cta: 'Wybierz termin →',
-    footnote: 'Płatność zawsze po wykonanej usłudze. Fakturę na firmę (NIP) wybierzesz w kolejnym kroku.',
 };
 
 const AREA_MIN = 25;
@@ -177,6 +128,7 @@ function Toggle({ on, onClick, title, note }) {
 }
 
 const CleaningCalculator = ({ onBook }) => {
+    const PL = useCleaningCopy().calc;
     const [type, setType] = useState('standard');
     const [freq, setFreq] = useState('once');
     const [rooms, setRooms] = useState(2);
