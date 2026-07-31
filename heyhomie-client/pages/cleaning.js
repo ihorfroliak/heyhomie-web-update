@@ -44,6 +44,7 @@ import OurAdvantagesSection from '../components/serviceLanding/cleaning/OurAdvan
 import WhyWeShouldCleanSection from '../components/serviceLanding/cleaning/WhyWeShouldCleanSection';
 import GallerySection from '../components/serviceLanding/cleaning/GallerySection';
 import CleaningCalculatorSection from '../components/serviceLanding/cleaning/CleaningCalculatorSection';
+import CleaningScopeSections from '../components/serviceLanding/cleaning/CleaningScopeSections';
 
 const ContentContainer = styled.div`
     min-height: 100vh;
@@ -627,6 +628,7 @@ function CleaningLandingPage({ cities }) {
                         }}
                     ></div>
                 </CleaningDescription>
+                <CleaningScopeSections onBook={handleClickBookNow} />
                 <div
                     style={{
                         minHeight: `40vh`,
