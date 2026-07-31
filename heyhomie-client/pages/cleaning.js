@@ -43,6 +43,7 @@ import FAQSection from '../components/serviceLanding/FAQSection';
 import OurAdvantagesSection from '../components/serviceLanding/cleaning/OurAdvantagesSection';
 import WhyWeShouldCleanSection from '../components/serviceLanding/cleaning/WhyWeShouldCleanSection';
 import GallerySection from '../components/serviceLanding/cleaning/GallerySection';
+import CleaningCalculatorSection from '../components/serviceLanding/cleaning/CleaningCalculatorSection';
 
 const ContentContainer = styled.div`
     min-height: 100vh;
@@ -602,6 +603,7 @@ function CleaningLandingPage({ cities }) {
                     bookNowText={t(`bookNowText`)}
                     handleClick={handleClickBookNow}
                 />
+                <CleaningCalculatorSection onBook={handleClickBookNow} />
                 <CleaningDescription>
                     <CleaningPlans />
 
