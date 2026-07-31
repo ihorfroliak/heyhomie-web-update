@@ -16,6 +16,7 @@
 import { useMemo, useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import { calculate, TYPES, FREQS, visibleAddons, zl } from '../../../lib/cleaning/calculator';
+import { saveCleaningDraft } from '../../../lib/cleaning/cleaningDraft';
 import { useCleaningCopy } from './cleaningCopy';
 
 // Brand canon (heyhomie-shared/BRAND.md)
@@ -404,7 +405,13 @@ const CleaningCalculator = ({ onBook }) => {
 
                 <button
                     type='button'
-                    onClick={() => onBook && onBook({ type, freq, rooms, bathrooms, area, addons, pets, gearOnSite, ...result })}
+                    onClick={() => {
+                        // Capture the selection for the (future) city-page booking prefill,
+                        // then hand off to the existing booking trigger. Best-effort + isolated.
+                        const draft = { type, freq, rooms, bathrooms, area, addons, pets, gearOnSite, total: result.total, minutes: result.minutes };
+                        saveCleaningDraft(draft);
+                        if (onBook) onBook(draft);
+                    }}
                     style={{
                         width: '100%',
                         marginTop: 16,
