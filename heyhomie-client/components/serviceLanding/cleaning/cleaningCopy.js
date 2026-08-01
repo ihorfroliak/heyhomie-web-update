@@ -82,6 +82,52 @@ const COPY = {
             othersTitle: 'HeyHomie robi też',
             othersLead: 'Osobne usługi — możesz zamówić je razem ze sprzątaniem albo pojedynczo.',
             allServices: 'Wszystkie usługi →',
+            rooms: [
+                { name: 'W całym mieszkaniu', sample: 'Podłogi, kurz, fronty szaf, drzwi i klamki, lustra, włączniki, kosze.' },
+                { name: 'Kuchnia', sample: 'Blaty, zlew i bateria, płyta i płytki nad blatem, AGD z zewnątrz — a w generalnym wnętrza AGD i szafki.' },
+                { name: 'Łazienka', sample: 'WC, kabina, wanna, umywalka i lustra — w generalnym fugi, kamień i szafki w środku.' },
+                { name: 'Sypialnia', sample: 'Szafy i biurko, pościel na życzenie, parapety — w generalnym wnętrza szaf i lustra.' },
+            ],
+            exclusions: [
+                {
+                    title: 'Nie przenosimy mebli',
+                    body: 'Sprzątamy dookoła i pod tym, co da się podnieść jedną ręką. Przesuwanie szaf i kanap to ryzyko dla podłogi i dla kręgosłupa homie.',
+                    tag: '',
+                },
+                {
+                    title: 'Nie czyścimy rolet i żaluzji',
+                    body: 'Lamele łatwo wygiąć, a mechanizmu nie da się naprawić na miejscu. Odkurzamy je z zewnątrz, gdy są zamknięte.',
+                    tag: '',
+                },
+                { title: 'Nie myjemy żyrandoli', body: 'Wszystko powyżej 3 m i wszystko, co wymaga demontażu, zostaje. Dostępne lampy przecieramy.', tag: '' },
+                { title: 'Nie myjemy sufitów', body: 'Usuwamy pajęczyny z narożników, ale sufit jako powierzchnia nie wchodzi w żadną z usług.', tag: '' },
+                {
+                    title: 'Nie myjemy klatki schodowej',
+                    body: 'Możemy to zrobić po ustaleniu: wybierz „dodatkową godzinę” i dopisz w uwadze, o co chodzi, albo napisz do wsparcia.',
+                    tag: 'możliwe po ustaleniu',
+                },
+                {
+                    title: 'Nie dezynfekujemy pomieszczeń',
+                    body: 'Dezynfekcję pojedynczych elementów — na przykład wnętrza lodówki — wykonujemy po zgłoszeniu we wsparciu.',
+                    tag: 'możliwe po ustaleniu',
+                },
+            ],
+            fragile: ['Kamień naturalny', 'Mosiądz / miedź bez powłoki', 'Antyki', 'Sprzęt już uszkodzony', 'Parkiet bez lakieru', 'Sprzęt AGD z usterką'],
+            fragilePlaceholder: 'Np. „Bateria w łazience z nieszkliwionego mosiądzu — proszę tylko przetrzeć wodą”.',
+            fragileNote: 'Każde sprzątanie jest ubezpieczone. Zgłoszone wcześniej uszkodzenia zapisujemy w zleceniu razem ze zdjęciem, jeśli je dodasz.',
+            services: {
+                from: 'od',
+                zl: 'zł',
+                quote: 'wycena',
+                units: { item: '/ mebel', sash: '/ skrzydło' },
+                names: {
+                    upholstery: 'Czyszczenie tapicerki',
+                    kitchen: 'Generalne kuchni',
+                    bath: 'Generalne łazienki',
+                    windows: 'Mycie okien',
+                    office: 'Sprzątanie biur',
+                },
+            },
         },
     },
     en: {
@@ -156,6 +202,55 @@ const COPY = {
             othersTitle: 'HeyHomie also does',
             othersLead: 'Separate services — order them together with a clean or on their own.',
             allServices: 'All services →',
+            rooms: [
+                { name: 'Whole apartment', sample: 'Floors, dust, cabinet fronts, doors and handles, mirrors, switches, bins.' },
+                {
+                    name: 'Kitchen',
+                    sample: 'Countertops, sink and tap, hob and splashback tiles, appliances outside — and on a general clean the appliance interiors and cabinets.',
+                },
+                { name: 'Bathroom', sample: 'Toilet, shower, bathtub, basin and mirrors — on a general clean grout, limescale and cabinets inside.' },
+                { name: 'Bedroom', sample: 'Wardrobes and desk, bedding on request, window sills — on a general clean wardrobe interiors and mirrors.' },
+            ],
+            exclusions: [
+                {
+                    title: 'We don’t move furniture',
+                    body: 'We clean around and under whatever lifts with one hand. Sliding wardrobes and sofas risks the floor and the homie’s back.',
+                    tag: '',
+                },
+                {
+                    title: 'We don’t clean blinds or shutters',
+                    body: 'Slats bend easily and the mechanism can’t be fixed on site. We vacuum them from the outside when closed.',
+                    tag: '',
+                },
+                { title: 'We don’t wash chandeliers', body: 'Anything above 3 m or needing disassembly stays. We wipe reachable lamps.', tag: '' },
+                { title: 'We don’t wash ceilings', body: 'We remove cobwebs from corners, but the ceiling as a surface isn’t part of any service.', tag: '' },
+                {
+                    title: 'We don’t clean the stairwell',
+                    body: 'We can do it by arrangement: pick “extra hour” and note what’s needed, or message support.',
+                    tag: 'possible on request',
+                },
+                {
+                    title: 'We don’t disinfect whole rooms',
+                    body: 'Disinfecting single items — the fridge interior, say — we do on request via support.',
+                    tag: 'possible on request',
+                },
+            ],
+            fragile: ['Natural stone', 'Uncoated brass / copper', 'Antiques', 'Already-damaged items', 'Unlacquered parquet', 'Faulty appliances'],
+            fragilePlaceholder: 'E.g. “Bathroom tap in unglazed brass — please just wipe with water.”',
+            fragileNote: 'Every clean is insured. Pre-declared damage is logged on the order together with a photo if you add one.',
+            services: {
+                from: 'from',
+                zl: 'zł',
+                quote: 'quote',
+                units: { item: '/ item', sash: '/ sash' },
+                names: {
+                    upholstery: 'Upholstery cleaning',
+                    kitchen: 'Kitchen deep clean',
+                    bath: 'Bathroom deep clean',
+                    windows: 'Window washing',
+                    office: 'Office cleaning',
+                },
+            },
         },
     },
 };

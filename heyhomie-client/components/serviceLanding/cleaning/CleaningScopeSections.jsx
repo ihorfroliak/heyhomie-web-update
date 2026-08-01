@@ -5,14 +5,15 @@
  *   3. Fragile disclosure                  — flag delicate items before the visit
  *   4. "HeyHomie robi też"                 — other-services strip
  *
- * Presentation only; content comes from ./cleaningContent. Uses the repo pattern:
- * `styled` + `${tw``}` for responsive structure, plain `style={{}}` for static bits
- * (the `tw=`/`css=` props are NOT configured in this project). Brand-canon palette
- * inline (heyhomie-shared/BRAND.md); copy PL-first (step 4 → next-intl).
+ * Presentation only. NUMBERS/ids come from ./cleaningContent; all TEXT (pl/en) comes
+ * from ./cleaningCopy `scope` (index-aligned with the content arrays). Uses the repo
+ * pattern: `styled` + `${tw``}` for responsive structure, plain `style={{}}` for static
+ * bits (the `tw=`/`css=` props are NOT configured in this project). Brand-canon palette
+ * inline (heyhomie-shared/BRAND.md).
  */
 import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
-import { ROOM_CARDS, EXCLUSIONS, FRAGILE, FRAGILE_PLACEHOLDER, FRAGILE_NOTE, OTHER_SERVICES } from './cleaningContent';
+import { ROOM_COUNTS, SERVICES } from './cleaningContent';
 import { useCleaningCopy } from './cleaningCopy';
 
 const C = { ink: '#141338', indigo: '#414483', slate: '#52516B', mint: '#77ECC8', light: '#F6FBFF', border: '#EDEEEF' };
@@ -127,20 +128,20 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                         </Btn>
                     </div>
                     <Grid cols={4}>
-                        {ROOM_CARDS.map(rc => (
-                            <RoomCard key={rc.room}>
-                                <div style={{ fontWeight: 700, fontSize: 16 }}>{rc.room}</div>
+                        {cp.rooms.map((r, i) => (
+                            <RoomCard key={r.name}>
+                                <div style={{ fontWeight: 700, fontSize: 16 }}>{r.name}</div>
                                 <Counts>
                                     <div>
-                                        <b>{rc.std}</b>
+                                        <b>{ROOM_COUNTS[i].std}</b>
                                         <span>{cp.std}</span>
                                     </div>
                                     <div>
-                                        <b style={{ color: C.indigo }}>{rc.gen}</b>
+                                        <b style={{ color: C.indigo }}>{ROOM_COUNTS[i].gen}</b>
                                         <span>{cp.gen}</span>
                                     </div>
                                 </Counts>
-                                <div style={{ fontWeight: 500, fontSize: 12.5, lineHeight: 1.55, color: C.slate, marginTop: 12 }}>{rc.sample}</div>
+                                <div style={{ fontWeight: 500, fontSize: 12.5, lineHeight: 1.55, color: C.slate, marginTop: 12 }}>{r.sample}</div>
                             </RoomCard>
                         ))}
                     </Grid>
@@ -153,7 +154,7 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                     <H2>{cp.exclusionsTitle}</H2>
                     <Lead>{cp.exclusionsLead}</Lead>
                     <Grid cols={3}>
-                        {EXCLUSIONS.map(ex => (
+                        {cp.exclusions.map(ex => (
                             <div key={ex.title} style={exCard}>
                                 <div style={{ fontWeight: 700, fontSize: 15.5, lineHeight: 1.4 }}>{ex.title}</div>
                                 <div style={{ fontWeight: 500, fontSize: 13, lineHeight: 1.55, color: C.slate, marginTop: 11 }}>{ex.body}</div>
@@ -190,7 +191,7 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                         <div style={panel}>
                             <div style={{ fontWeight: 700, fontSize: 16 }}>{cp.fragilePanelTitle}</div>
                             <div style={chips}>
-                                {FRAGILE.map(f => (
+                                {cp.fragile.map(f => (
                                     <Chip key={f} type='button' on={!!fragile[f]} onClick={() => toggle(f)}>
                                         {f}
                                     </Chip>
@@ -209,7 +210,7 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                                     lineHeight: 1.55,
                                 }}
                             >
-                                {FRAGILE_PLACEHOLDER}
+                                {cp.fragilePlaceholder}
                             </div>
                             <div
                                 style={{
@@ -222,7 +223,7 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                                     borderTop: `1px solid ${C.border}`,
                                 }}
                             >
-                                {FRAGILE_NOTE}
+                                {cp.fragileNote}
                             </div>
                         </div>
                     </div>
@@ -242,14 +243,23 @@ const CleaningScopeSections = ({ onBook, onChecklist }) => {
                         </Btn>
                     </div>
                     <Grid cols={5}>
-                        {OTHER_SERVICES.map(s => (
-                            <div key={s.id} onClick={onBook} style={{ borderRadius: 14, background: 'rgba(255,255,255,0.06)', padding: 20, cursor: 'pointer' }}>
-                                <div style={{ fontWeight: 700, fontSize: 14.5 }}>{s.name}</div>
-                                <div style={{ fontWeight: 700, fontSize: 13, color: C.mint, marginTop: 6 }}>
-                                    {s.price} <span style={{ color: 'rgba(255,255,255,0.5)', fontWeight: 500 }}>{s.unit}</span>
+                        {SERVICES.map(s => {
+                            const sv = cp.services;
+                            const price = s.amount == null ? sv.quote : `${sv.from} ${s.amount} ${sv.zl}`;
+                            const unit = s.unit ? sv.units[s.unit] : '';
+                            return (
+                                <div
+                                    key={s.id}
+                                    onClick={onBook}
+                                    style={{ borderRadius: 14, background: 'rgba(255,255,255,0.06)', padding: 20, cursor: 'pointer' }}
+                                >
+                                    <div style={{ fontWeight: 700, fontSize: 14.5 }}>{sv.names[s.id]}</div>
+                                    <div style={{ fontWeight: 700, fontSize: 13, color: C.mint, marginTop: 6 }}>
+                                        {price} <span style={{ color: 'rgba(255,255,255,0.5)', fontWeight: 500 }}>{unit}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </Grid>
                 </Inner>
             </Band>
