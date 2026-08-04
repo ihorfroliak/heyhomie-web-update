@@ -4,7 +4,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.2563" y1="8.8711" x2="20.2737" y2="26.8035" gradientTransform="matrix(1 0 0 1 5.2441 0)">
-	<stop  offset="0" style="stop-color:#36F0C7"/>
+	<stop  offset="0" style="stop-color:#77ECC8"/>
 	<stop  offset="0.0532" style="stop-color:#5DEBB4"/>
 	<stop  offset="0.1199" style="stop-color:#86E5A0"/>
 	<stop  offset="0.1904" style="stop-color:#AAE18F"/>
@@ -15,7 +15,7 @@
 	<stop  offset="0.6545" style="stop-color:#FAD668"/>
 	<stop  offset="0.7395" style="stop-color:#FBB46F"/>
 	<stop  offset="0.9261" style="stop-color:#FE5F80"/>
-	<stop  offset="1" style="stop-color:#FF3C87"/>
+	<stop  offset="1" style="stop-color:#EB4E87"/>
 </linearGradient>
 <path fill="url(#SVGID_1_)" d="M12.263,5.105c-5.077,0-12.008,9.102-11.93,13.766c0.088,5.104,13.453,8.012,18.556,8.038
 	c6.795,0.035,11.528-5.328,12.472-7.202C33.87,14.717,21.913,5.105,12.263,5.105z M25.877,18.905

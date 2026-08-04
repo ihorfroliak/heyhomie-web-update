@@ -7,7 +7,7 @@ import Image from 'next/dist/client/image';
 const OurAdvantagesSectionContainer = styled.div`
     & > h2 {
         text-transform: uppercase;
-        font-family: Quicksand;
+        font-family: Manrope;
         font-style: normal;
         font-weight: bold;
         text-align: center;
@@ -70,7 +70,7 @@ const Block_1 = styled.div`
 
         h2,
         h3 {
-            font-family: 'Quicksand';
+            font-family: 'Manrope';
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -118,7 +118,7 @@ const Block_2 = styled.div`
 
         h2,
         h3 {
-            font-family: 'Quicksand';
+            font-family: 'Manrope';
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -164,7 +164,7 @@ const Block_3 = styled.div`
 
         h2,
         h3 {
-            font-family: 'Quicksand';
+            font-family: 'Manrope';
             font-weight: bold;
             text-transform: uppercase;
         }

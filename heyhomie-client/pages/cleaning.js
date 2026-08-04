@@ -70,7 +70,7 @@ const CleaningDescription = styled.div`
             justify-content: flex-start;
             align-items: center;
 
-            font-family: 'Quicksand';
+            font-family: 'Manrope';
 
             margin-bottom: 32px;
 
@@ -82,7 +82,7 @@ const CleaningDescription = styled.div`
             }
             span {
                 text-transform: uppercase;
-                color: #14133a;
+                color: #141338;
                 font-weight: bold;
 
                 font-size: 32px;
@@ -131,7 +131,7 @@ const CleaningDescription = styled.div`
                 justify-content: flex-start;
                 align-items: center;
 
-                font-family: 'Quicksand';
+                font-family: 'Manrope';
 
                 margin-bottom: 48px;
                 margin-top: 80px;
@@ -179,7 +179,7 @@ const CleaningPlansControls = styled.div`
 `;
 
 const CleaningAdvancedPlanFeature = styled.li`
-    color: #14133a;
+    color: #141338;
 
     transition: 0.2s ease-in-out;
 
@@ -291,9 +291,9 @@ const CleaningPlansFlexBoxSectionStyled = styled.div`
     flex-direction: column;
 
     h3 {
-        color: #ff3c87;
+        color: #eb4e87;
 
-        font-family: Quicksand;
+        font-family: Manrope;
         text-transform: uppercase;
         font-style: normal;
         font-weight: bold;
@@ -334,7 +334,7 @@ const CleaningPlansFlexBoxSectionStyled = styled.div`
         position: relative;
         text-indent: 2rem;
 
-        color: #14133a;
+        color: #141338;
 
         font-size: 14px;
         line-height: 25px;
@@ -386,7 +386,7 @@ const CleaningPlansControlsLeftBtn = styled.button`
 
     text-align: center;
 
-    color: #14133a;
+    color: #141338;
 
     font-weight: bold;
     font-size: 16px;
@@ -398,7 +398,7 @@ const CleaningPlansControlsLeftBtn = styled.button`
     ${props =>
         props.isSelected
             ? css`
-                  background: #36f0c7;
+                  background: #77ecc8;
               `
             : tw`
         shadow-surface1
@@ -421,7 +421,7 @@ const CleaningPlansControlsRightBtn = styled.button`
 
     text-align: center;
 
-    color: #14133a;
+    color: #141338;
 
     font-weight: bold;
     font-size: 16px;
@@ -433,7 +433,7 @@ const CleaningPlansControlsRightBtn = styled.button`
     ${props =>
         props.isSelected
             ? css`
-                  background: #36f0c7;
+                  background: #77ecc8;
               `
             : tw`
         shadow-surface1

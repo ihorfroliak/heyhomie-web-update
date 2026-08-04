@@ -45,7 +45,7 @@ const StyledActiveServiceCard = styled.div`
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 22px;
-                color: #14133a;
+                color: #141338;
 
                 margin-left: 8px;
                 margin-right: 8px;
@@ -76,7 +76,7 @@ const StyledActiveServiceCard = styled.div`
 
             font-weight: bold;
             font-size: 16px;
-            color: #14133a;
+            color: #141338;
 
             outline: none;
         }
@@ -96,7 +96,7 @@ const StyledActiveServiceCard = styled.div`
         button {
             font-weight: bold;
             font-size: 16px;
-            color: #14133a;
+            color: #141338;
 
             outline: none;
         }

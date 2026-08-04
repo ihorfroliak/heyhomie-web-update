@@ -34,8 +34,8 @@ class MyDocument extends Document {
             <Html translate='no'>
                 <Head>
                     <link rel='preconnect' href='https://fonts.gstatic.com' />
-                    <link href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap' rel='stylesheet' />
-                    <link href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap' rel='stylesheet'></link>
+                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap' rel='stylesheet' />
+                    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap' rel='stylesheet'></link>
                     <link rel='manifest' href='/manifest.json' />
                     <link rel='icon' href='/favicon-32x32-svg.svg' type='image/svg+xml' />
                     <link rel='alternate icon' href='/favicon-16x16.png' type='image/png' sizes='16x16' />

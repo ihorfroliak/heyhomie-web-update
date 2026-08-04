@@ -29,7 +29,7 @@ const ContentHeading = styled.h1`
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
-    color: #14133a;
+    color: #141338;
 
     margin-bottom: 32px;
 
@@ -49,7 +49,7 @@ const ContentHeading = styled.h1`
 `;
 const ContentBody = styled.div`
     width: 100%;
-    color: #14133a;
+    color: #141338;
 
     a {
         text-decoration: underline;

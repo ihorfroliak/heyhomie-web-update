@@ -20,7 +20,7 @@ const BillingsContainer = styled.div`
         font-weight: bold;
         font-size: 28px;
         line-height: 34px;
-        color: #14133a;
+        color: #141338;
 
         margin-top: 40px;
         margin-bottom: 24px;
@@ -97,7 +97,7 @@ const BillingDiv = styled.div`
 
         font-weight: bold;
         font-size: 18px;
-        color: #14133a;
+        color: #141338;
     }
 
     .billingDate {
@@ -119,7 +119,7 @@ const BillingDiv = styled.div`
     .billingAmount {
         grid-area: billingAmount;
         font-size: 14px;
-        color: #14133a;
+        color: #141338;
 
         display: flex;
         justify-content: flex-start;
@@ -145,7 +145,7 @@ const BillingDiv = styled.div`
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
-            color: #14133a;
+            color: #141338;
         }
 
         @media (min-width: 640px) {
@@ -247,13 +247,13 @@ const BillingsComponent = () => {
                                         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                                             <path
                                                 d='M18.9333 18.8667H5.06667C4.47756 18.8667 4 19.3443 4 19.9334C4 20.5225 4.47756 21 5.06667 21H18.9333C19.5224 21 20 20.5225 20 19.9334C20 19.3443 19.5224 18.8667 18.9333 18.8667Z'
-                                                fill='#14133A'
+                                                fill='#141338'
                                             />
                                             <path
                                                 fillRule='evenodd'
                                                 clipRule='evenodd'
                                                 d='M9.05062 11.6998C8.60658 11.257 7.88769 11.2573 7.44407 11.6998C7.00035 12.1423 7.00047 12.8596 7.44411 13.302L11.4641 17.312C11.7602 17.6073 12.2403 17.6071 12.5362 17.312L16.5562 13.302C17.0002 12.8592 16.9999 12.1422 16.5563 11.6998C16.1125 11.2572 15.3934 11.2573 14.9497 11.6998L13.1258 13.5196V6.22141C13.1258 5.59638 12.6172 5.08894 11.9898 5.08894C11.3623 5.08894 10.8538 5.59596 10.8538 6.22141V13.4989L9.05062 11.6998Z'
-                                                fill='#14133A'
+                                                fill='#141338'
                                             />
                                         </svg>
                                         <div>{t(`downloadInvoice_btn`)}</div>

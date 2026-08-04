@@ -5,8 +5,8 @@ Read this first in every session. Do not paste code here. Keep it compact.
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-07-23 (paths rewritten after workspace reorganisation) |
-| Current phase | **PHASE A–D complete (audit + context recovery). Awaiting approval to implement.** |
+| Last updated | 2026-08-02 (brand-canon design migration) |
+| Current phase | **PHASE M in progress — whole web migrated to the brand canon (Manrope + new palette) per heyhomie-shared/BRAND.md. Lint green, Docker build green. Awaiting review + deploy decision.** |
 | Production site | https://heyhomie.io |
 | Project root (session cwd) | `C:\Users\ihorf\Projects\heyhomie-web` |
 | Frontend repo (source of truth) | `C:\Users\ihorf\Projects\heyhomie-web\heyhomie-client` |
@@ -173,4 +173,27 @@ Recorded in `HeyHomie_Website_Page_Inventory.xlsx` → **CHANGELOG** sheet. 2026
 ## 12. Tests passed / pending
 
 - Passed: live HTTP evidence checks (§7).
-- Pending: everything else — no automated suite exists yet.
+- Passed 2026-07-26: `npm run lint` exit 0 (node:12 container) after fixing 28 pre-existing prettier errors + removing the broken `react/no-array-index-key` disable directives; `docker build` (node:12) exit 0.
+- Pending: automated unit/integration/E2E — no runner yet.
+
+## 13. City-page cleaning content build (2026-07-26)
+
+**Goal:** the SEO/content block on every city page (`CleaningSeoSection`) adapts to the chosen city and answers real customer questions, PL + EN. 6 cities × 2 languages = 12 rendered variants from one component + one message set.
+
+**Done**
+- **FAQ expanded 11 → 21 items** (`messages/{pl,en}.json` → `CleaningSeoSection.faq`). New/rewritten per the client brief: standard-vs-general (windows are a **separate add-on**, general adds oven/fridge/hood/inside-cabinets); be-home/keys → **key-handover act with e-signature** + "inform support"; supplies → no-vacuum/bucket → support, permanent equipment on recurring (**Kärcher only**); recurring → more-frequent via support; payment → **3 options** (subscription / bank transfer / **Pay later** link next day, Apple Pay·Google Pay·BLIK); pets → inform support / mark on order; dissatisfaction → "best home friend"; upholstery (photo→support or in-app "czyszczenie tapicerki"); carpets (pickup/on-site + B2B); flower delivery; **how to order** (Book now) + **how to enter details** (scope → Dalej/Continue → date/time → address → contact); change scope after ordering; rental / one-off / neglected-after-tenants; after-death/special → **not offered**; how to count windows.
+- **"Homies" capitalised** across the whole section (brand term for cleaners), both locales.
+- **Per-city adaptation**: `cityDistricts.js` now carries `keyStreets` for all 6 cities; `getCitySeoForms()` returns `streets`; the "how to enter details" answer interpolates real streets per city. Districts + streets stay in original Polish spelling in both locales.
+- **Component** (`CleaningSeoSection.js`): FAQ answers rendered via a markdown-lite parser (`**bold**`, `[label](#order)` link, `» ` support-note callout) — **no HTML in the message catalogue** (intl-messageformat would choke on tags). Added a primary **Zamów/Book** CTA under the intro linking to `#order`. schema.org FAQPage fed stripped plain text.
+- **Anchor**: `#order` span added before `ServicesContainer` in `pages/[city].js` so in-copy CTAs jump to the booking start.
+- **Placement unchanged**: section renders after `CitypageBody` (bullets + testimonials), before `Footer` — matches `preview/krakow.html` ("renderowana przed stopką"). ⚠️ The 2026-07-23 brief also said "between *To jest całkiem proste* and *Nasi klienci*"; the re-attached preview says before-footer. **Open: confirm final placement (D10).**
+- **Key-handover document**: `docs/legal/HeyHomie_Protokol_przekazania_kluczy.docx` — bilingual PL/EN handover & return act with fill-in fields (order no., city, address, date, times, key count, both signatures), importable to Google Docs. Copy tells clients to inform support first.
+
+**Files changed:** `messages/pl.json`, `messages/en.json`, `components/serviceLanding/cleaning/CleaningSeoSection.js`, `components/serviceLanding/cleaning/cityDistricts.js`, `components/home/HomeLanding.js` (removed dead eslint-disable), `pages/[city].js`, `pages/index.js`+`pages/cleaning.js`+`BookingMenu.js`+`ServicesSlider.js` (prettier normalise only), new `.gitattributes`, new `heyhomie-client/.dockerignore`, new `docs/legal/*.docx`, `docs/website/CONTENT_INSERTION_SPEC.md`.
+
+**Not invented:** every claim maps to real product behaviour (booking flow, Pay later, in-app upholstery service, recurring scheduling). Reference `krakow.cleanwhale.pl/order` used only to ensure our copy is distinct and more complete — not copied.
+
+**New open decision**
+| ID | Decision |
+|---|---|
+| D10 | Final placement of the city SEO block: **before footer** (current, matches preview) vs. **between the bullets and testimonials** (earlier brief). |

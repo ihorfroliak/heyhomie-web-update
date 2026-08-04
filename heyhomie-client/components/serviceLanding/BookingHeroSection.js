@@ -45,7 +45,7 @@ const BookNowSubsection = styled.div`
     .bookNowSubsection__heading {
         text-transform: uppercase;
 
-        font-family: Quicksand;
+        font-family: Manrope;
         font-style: normal;
         font-weight: bold;
         font-size: 32px;
@@ -58,7 +58,7 @@ const BookNowSubsection = styled.div`
         font-size: 16px;
         line-height: 19px;
 
-        color: #14133a;
+        color: #141338;
 
         margin-bottom: 24px;
     }
@@ -94,7 +94,7 @@ const BookNowSubsection = styled.div`
             font-size: 26px;
             line-height: 31px;
 
-            color: #14133a;
+            color: #141338;
 
             white-space: pre-line;
 
@@ -150,7 +150,7 @@ const BookingHeroSection = ({ servicePictureURL, serviceName, serviceDescription
                     <svg className='bookNowSubsection__svgDiv__svg1' width='19' height='20' viewBox='0 0 19 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
                         <path
                             d='M18.9839 11.8991C18.9566 6.56176 15.4387 1.54952 10.9936 0.357421C7.69391 -0.536654 4.83051 0.249048 2.45797 2.68743C0.167252 5.01745 -0.541781 7.72677 0.412686 10.8425C0.903556 12.4681 1.4217 14.1208 2.18527 15.6651C5.04867 21.5443 14.6479 21.2734 18.0567 15.8818C18.8475 14.6355 19.0657 13.1996 18.9839 11.8991Z'
-                            fill='#36F0C7'
+                            fill='#77ECC8'
                         />
                     </svg>
                     <svg className='bookNowSubsection__svgDiv__svg2' width='64' height='63' viewBox='0 0 64 63' fill='none' xmlns='http://www.w3.org/2000/svg'>

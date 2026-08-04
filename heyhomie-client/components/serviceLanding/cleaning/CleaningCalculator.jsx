@@ -6,7 +6,7 @@
  *
  * Colours use the shared brand canon (heyhomie-shared/BRAND.md) directly, NOT the
  * tailwind theme — the theme still carries the older mixed palette (primary.salad =
- * #36F0C7); the design is the refreshed set. When the theme is migrated this can
+ * #77ECC8); the design is the refreshed set. When the theme is migrated this can
  * switch to theme tokens.
  *
  * Copy is inline PL for now (the design is PL-first); step 4 moves it into next-intl

@@ -45,7 +45,7 @@ const StyledPastMissionCard = styled.div`
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 22px;
-                color: #14133a;
+                color: #141338;
 
                 margin-left: 8px;
                 margin-right: 8px;
@@ -69,7 +69,7 @@ const StyledPastMissionCard = styled.div`
             text-align: right;
 
             font-size: 14px;
-            color: #14133a;
+            color: #141338;
             height: 17px;
             line-height: 17px;
 

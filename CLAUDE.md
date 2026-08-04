@@ -6,6 +6,13 @@ Project root. Code, docs, previews and tooling all live under this one directory
 `docs/website/WEBSITE_PROJECT_STATE.md` — operational source of truth (phase, reconciliation,
 open decisions). Page-level status: `HeyHomie_Website_Page_Inventory.xlsx`.
 
+**Cross-repo source of truth (shared with the mobile apps):** before changing any pricing, brand
+token, product copy or cleaning-domain rule, read [`../heyhomie-shared/`](../heyhomie-shared/README.md)
+— `PRODUCT.md`, `DOMAIN_RULES.md`, `BRAND.md`, `ROADMAP.md`. HeyHomie is one product across four
+surfaces (this web site + the `heyhomie-mobile` monorepo). The `/cleaning` calculator MUST match
+`DOMAIN_RULES.md` (prices, add-ons, frequency, cancellation) and `BRAND.md` (tokens) — do not invent
+prices or tokens. Any domain/brand change goes **into `heyhomie-shared` first**, then this repo.
+
 ## Layout
 ```
 heyhomie-client/   the heyhomie.io website (Next.js 10, Pages Router, React 17,

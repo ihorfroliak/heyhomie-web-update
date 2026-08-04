@@ -13,7 +13,7 @@ const ContactManager = ({ manager_name, manager_email, manager_phone_number, man
             >
                 <div
                     style={{
-                        fontFamily: 'Quicksand',
+                        fontFamily: 'Manrope',
                         fontWeight: 'bold',
                     }}
                 >

@@ -64,12 +64,12 @@ function CardSection({ onChange, disabled }) {
         style: {
             base: {
                 'color': theme`colors.primary.dark`,
-                'fontFamily': 'Lato',
+                'fontFamily': 'Manrope',
                 'fontSmoothing': 'antialiased',
                 'fontSize': '16px',
                 '::placeholder': {
                     color: theme`colors.primary.grey`,
-                    fontFamily: 'Lato',
+                    fontFamily: 'Manrope',
                 },
                 'lineHeight': '48px',
             },
@@ -86,12 +86,12 @@ function CardSection({ onChange, disabled }) {
         style: {
             base: {
                 'color': theme`colors.primary.dark`,
-                'fontFamily': 'Lato',
+                'fontFamily': 'Manrope',
                 'fontSmoothing': 'antialiased',
                 'fontSize': '16px',
                 '::placeholder': {
                     color: theme`colors.primary.grey`,
-                    fontFamily: 'Lato',
+                    fontFamily: 'Manrope',
                 },
                 'lineHeight': '48px',
             },
@@ -108,12 +108,12 @@ function CardSection({ onChange, disabled }) {
         style: {
             base: {
                 'color': theme`colors.primary.dark`,
-                'fontFamily': 'Lato',
+                'fontFamily': 'Manrope',
                 'fontSmoothing': 'antialiased',
                 'fontSize': '16px',
                 '::placeholder': {
                     color: theme`colors.primary.grey`,
-                    fontFamily: 'Lato',
+                    fontFamily: 'Manrope',
                 },
                 'lineHeight': '48px',
             },
@@ -143,7 +143,7 @@ function CardSection({ onChange, disabled }) {
                     width: '100%',
                     paddingLeft: '1rem',
                     marginBottom: '16px',
-                    fontFamily: 'Lato',
+                    fontFamily: 'Manrope',
                 }}
             >
                 <PlaceholderPopUp isVisible={cardNumberInputPlaceholderVisible}>{t(`cardNumberPlaceholder`)}</PlaceholderPopUp>
@@ -168,7 +168,7 @@ function CardSection({ onChange, disabled }) {
                     width: '45%',
                     paddingLeft: '1rem',
                     marginBottom: '16px',
-                    fontFamily: 'Lato',
+                    fontFamily: 'Manrope',
                 }}
             >
                 <PlaceholderPopUp isVisible={cardDateInputPlaceholderVisible}>{t(`cardExpiryPlaceholder`)}</PlaceholderPopUp>
@@ -195,7 +195,7 @@ function CardSection({ onChange, disabled }) {
                     width: '45%',
                     paddingLeft: '1rem',
                     marginBottom: '16px',
-                    fontFamily: 'Lato',
+                    fontFamily: 'Manrope',
                 }}
             >
                 <PlaceholderPopUp isVisible={cardCVCInputPlaceholderVisible}>{t(`cardCVCPlaceholder`)}</PlaceholderPopUp>

@@ -55,7 +55,7 @@ const EditAddressModalDialogContentContainer = styled.div`
 
         text-align: center;
 
-        color: #14133a;
+        color: #141338;
 
         margin-bottom: 16px;
     }

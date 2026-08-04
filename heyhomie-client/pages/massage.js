@@ -62,7 +62,7 @@ const MassageDescription = styled.div`
             justify-content: flex-start;
             align-items: center;
 
-            font-family: 'Quicksand';
+            font-family: 'Manrope';
 
             margin-bottom: 32px;
 
@@ -74,7 +74,7 @@ const MassageDescription = styled.div`
             }
             span {
                 text-transform: uppercase;
-                color: #14133a;
+                color: #141338;
                 font-weight: bold;
 
                 font-size: 32px;
@@ -122,7 +122,7 @@ const MassageDescription = styled.div`
                 justify-content: flex-start;
                 align-items: center;
 
-                font-family: 'Quicksand';
+                font-family: 'Manrope';
 
                 margin-bottom: 48px;
                 margin-top: 80px;
@@ -170,7 +170,7 @@ const MassagePlansControls = styled.div`
 `;
 
 const MassageAdvancedPlanFeature = styled.li`
-    color: #14133a;
+    color: #141338;
     font-weight: bold;
 
     transition: 0.2s ease-in-out;
@@ -201,9 +201,9 @@ const MassagePlansFlexBoxSectionStyled = styled.div`
     width: 100%;
 
     h3 {
-        color: #ff3c87;
+        color: #eb4e87;
 
-        font-family: Quicksand;
+        font-family: Manrope;
         text-transform: uppercase;
         font-style: normal;
         font-weight: bold;
@@ -223,7 +223,7 @@ const MassagePlansFlexBoxSectionStyled = styled.div`
     }
 
     div {
-        color: #14133a;
+        color: #141338;
 
         font-weight: normal;
         font-size: 14px;

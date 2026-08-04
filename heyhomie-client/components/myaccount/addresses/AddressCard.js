@@ -16,7 +16,7 @@ const AddressCardStyled = styled.div`
         font-weight: bold;
         font-size: 18px;
         line-height: 22px;
-        color: #14133a;
+        color: #141338;
         margin-bottom: 4px;
     }
     div {
@@ -67,7 +67,7 @@ const AddressCard = ({ address, handleSetAddressForDelete, handleSetAddressForEd
                 <button
                     onClick={() => handleSetAddressForEdit(address)}
                     style={{
-                        color: '#14133A',
+                        color: '#141338',
                         marginRight: '16px',
                     }}
                 >

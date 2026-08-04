@@ -86,7 +86,7 @@ const HomieDetailsPopupContent = styled.div`
 
             font-weight: bold;
             font-size: 12px;
-            color: #14133a;
+            color: #141338;
         }
     }
 
@@ -96,13 +96,13 @@ const HomieDetailsPopupContent = styled.div`
         .spokenLanguages__heading {
             text-transform: uppercase;
             font-size: 10px;
-            color: #14133a;
+            color: #141338;
         }
 
         .spokenLanguages__languages {
             font-weight: bold;
             font-size: 12px;
-            color: #14133a;
+            color: #141338;
         }
     }
 `;

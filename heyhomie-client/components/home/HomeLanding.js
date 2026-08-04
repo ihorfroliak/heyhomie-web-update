@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -19,7 +18,7 @@ const Hero = styled.section`
     padding: 64px 24px 32px;
 
     h1 {
-        font-family: 'Quicksand';
+        font-family: 'Manrope';
         font-weight: bold;
         text-transform: uppercase;
 
@@ -59,7 +58,7 @@ const Section = styled.section`
 `;
 
 const SubHeading = styled.h2`
-    font-family: 'Quicksand';
+    font-family: 'Manrope';
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -98,13 +97,13 @@ const CityCard = styled.a`
     align-items: center;
     justify-content: center;
 
-    background-color: #f4f7ff;
+    background-color: #f6fbff;
     border: 2px solid transparent;
     border-radius: 12px;
 
     padding: 22px 16px;
 
-    font-family: 'Quicksand';
+    font-family: 'Manrope';
     font-weight: bold;
     font-size: 18px;
     color: ${theme`colors.primary.dark`};
@@ -112,7 +111,7 @@ const CityCard = styled.a`
     transition: border-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 
     &:hover {
-        border-color: #36f0c7;
+        border-color: #77ecc8;
         transform: translateY(-2px);
     }
 `;
@@ -144,7 +143,7 @@ const ValueCard = styled.div`
     }
 
     h3 {
-        font-family: 'Quicksand';
+        font-family: 'Manrope';
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
@@ -162,7 +161,7 @@ const CtaLink = styled.a`
     display: inline-block;
     margin-top: 24px;
 
-    background-color: #36f0c7;
+    background-color: #77ecc8;
     border-radius: 8px;
 
     padding: 14px 28px;

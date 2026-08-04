@@ -15,13 +15,13 @@ const CommentTextArea = styled.textarea`
     font-size: 16px;
     line-height: 19px;
 
-    color: #14133a;
+    color: #141338;
 
     border: 1px solid #727189;
     border-radius: 4px;
 
     &:focus {
-        border: 1px solid #14133a;
+        border: 1px solid #141338;
         outline: none;
     }
 `;
@@ -77,7 +77,7 @@ const EditServiceCommentModalDialogContentContainer = styled.div`
 
         text-align: center;
 
-        color: #14133a;
+        color: #141338;
     }
 
     padding-bottom: 16px;

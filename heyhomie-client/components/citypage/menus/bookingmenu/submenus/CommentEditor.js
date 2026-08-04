@@ -25,7 +25,7 @@ const CommentEditorContainer = styled.div`
         font-size: 14px;
         line-height: 17px;
 
-        color: #14133a;
+        color: #141338;
 
         margin-bottom: 1rem;
     }
@@ -39,13 +39,13 @@ const CommentEditorContainer = styled.div`
         font-size: 16px;
         line-height: 19px;
 
-        color: #14133a;
+        color: #141338;
 
         border: 1px solid #727189;
         border-radius: 4px;
 
         &:focus {
-            border: 1px solid #14133a;
+            border: 1px solid #141338;
             outline: none;
         }
     }

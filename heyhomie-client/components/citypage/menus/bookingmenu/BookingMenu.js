@@ -341,7 +341,7 @@ const BookingMenu = () => {
                                 fill='none'
                                 xmlns='http://www.w3.org/2000/svg'
                             >
-                                <circle cx='6' cy='6' r='5.5' fill='#14133A' stroke='#14133A' />
+                                <circle cx='6' cy='6' r='5.5' fill='#141338' stroke='#141338' />
                             </svg>
                             <span style={{ position: 'absolute', left: '4px', top: '0', color: 'white', fontSize: '8px' }}>
                                 <em>i</em>

@@ -10,7 +10,7 @@ const StyledContainer = styled.div`
     ${properties =>
         properties.checked
             ? css`
-                  background-color: #14133a;
+                  background-color: #141338;
                   color: white;
 
                   div:nth-child(2) > button {

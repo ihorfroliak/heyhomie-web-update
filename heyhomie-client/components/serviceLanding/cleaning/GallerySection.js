@@ -21,7 +21,7 @@ const GallerySectionContainer = styled.div`
 
     & > h2 {
         text-transform: uppercase;
-        font-family: Quicksand;
+        font-family: Manrope;
         font-style: normal;
         font-weight: bold;
         text-align: center;

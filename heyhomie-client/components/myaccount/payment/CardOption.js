@@ -142,7 +142,7 @@ const CardOption = ({ card, handleSetCardForDelete, handleSetCardDefault }) => {
                 {card.default ? (
                     <>
                         <svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                            <rect x='1' y='1' width='10' height='10' rx='5' fill='#36F0C7' stroke='#36F0C7' strokeWidth='2' />
+                            <rect x='1' y='1' width='10' height='10' rx='5' fill='#77ECC8' stroke='#77ECC8' strokeWidth='2' />
                             <path
                                 d='M8.02583 3.81065C8.62352 3.79571 8.92237 4.51307 8.49651 4.93153L5.44825 7.98032C5.26147 8.16713 4.94767 8.16713 4.76089 7.98032L3.21435 6.42603C2.57182 5.81329 3.52067 4.86428 4.13331 5.50691L4.9925 6.36625C5.05227 6.42603 5.15687 6.42603 5.22411 6.36625L7.57755 4.01241C7.69709 3.88538 7.85399 3.81813 8.02583 3.81065Z'
                                 fill='white'

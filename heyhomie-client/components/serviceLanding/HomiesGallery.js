@@ -32,7 +32,7 @@ const HomieCardDescription = styled.div`
     height: 377px;
     width: 100%;
 
-    color: #14133a;
+    color: #141338;
     text-align: center;
     padding-top: 125px;
 
@@ -83,7 +83,7 @@ const HomiesGalleryContainer = styled.div`
         text-transform: uppercase;
         text-align: center;
 
-        font-family: Quicksand;
+        font-family: Manrope;
         font-style: normal;
         font-weight: bold;
         font-size: 32px;

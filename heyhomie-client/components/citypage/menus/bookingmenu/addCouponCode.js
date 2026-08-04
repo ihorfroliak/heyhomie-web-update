@@ -121,7 +121,7 @@ const AddCouponCode = () => {
                     onClick={() => setFormOpen(true)}
                     style={{
                         fontSize: '18px',
-                        color: '#14133A',
+                        color: '#141338',
                     }}
                 >
                     {t(`switchToAddCouponForm_btn`)}

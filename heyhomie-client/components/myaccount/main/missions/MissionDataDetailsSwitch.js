@@ -11,7 +11,7 @@ const MissionDetailsContainer = styled.div``;
 const SectionHeading = styled.div`
     font-size: 10px;
     line-height: 10px;
-    color: #14133a;
+    color: #141338;
 
     text-transform: uppercase;
 
@@ -21,7 +21,7 @@ const SectionBody = styled.div`
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
-    color: #14133a;
+    color: #141338;
 
     margin-bottom: 8px;
 `;

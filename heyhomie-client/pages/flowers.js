@@ -62,7 +62,7 @@ const FlowersDescription = styled.div`
             justify-content: flex-start;
             align-items: center;
 
-            font-family: 'Quicksand';
+            font-family: 'Manrope';
 
             margin-bottom: 32px;
 
@@ -74,7 +74,7 @@ const FlowersDescription = styled.div`
             }
             span {
                 text-transform: uppercase;
-                color: #14133a;
+                color: #141338;
                 font-weight: bold;
 
                 font-size: 32px;
@@ -122,7 +122,7 @@ const FlowersDescription = styled.div`
                 justify-content: flex-start;
                 align-items: center;
 
-                font-family: 'Quicksand';
+                font-family: 'Manrope';
 
                 margin-bottom: 48px;
                 margin-top: 80px;
@@ -154,7 +154,7 @@ const FlowersDescription = styled.div`
 const FlowersGallerySection = styled.div`
     & > h2 {
         text-transform: uppercase;
-        font-family: Quicksand;
+        font-family: Manrope;
         font-style: normal;
         font-weight: bold;
         text-align: center;

@@ -47,7 +47,7 @@ const CancelMissionModalDialogContentContainer = styled.div`
 
         text-align: center;
 
-        color: #14133a;
+        color: #141338;
     }
 
     padding-bottom: 16px;
