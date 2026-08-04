@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "heyhomie-client (docker preview)",
+      "url": "http://localhost:3401",
+      "port": 3401
+    },
+    {
+      "name": "heyhomie-client (next dev)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3006
+    },
+    {
+      "name": "heyhomie-client (prod server)",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.js"],
+      "port": 3000
+    }
+  ]
+}

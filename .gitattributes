@@ -1,0 +1,16 @@
+# Prettier is configured with "endOfLine": "lf" (heyhomie-client/.prettierrc.json),
+# and CI runs `npm run lint` on Linux. Without this, a Windows clone gets CRLF in
+# the working tree and eslint reports thousands of `Delete ␍` errors.
+* text=auto eol=lf
+
+# Binary — never normalise
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webm binary
+*.pdf binary
+*.xlsx binary
+*.woff binary
+*.woff2 binary
