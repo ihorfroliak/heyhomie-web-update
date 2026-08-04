@@ -18,9 +18,9 @@
             "og_title": "Korzystaj wygodnie z usług w swoim domu",
             "og_description": "Sprzątanie, Pralnia, Dowóz kwiatów, Masaż",
             "title_city": "Sprzątanie {cityLocative} i usługi domowe z dojazdem | HeyHomie",
-            "description_city": "Profesjonalne sprzątanie mieszkań i domów {cityLocative}: standardowe, generalne, po remoncie, mycie okien. Sprawdzeni homies, ekologiczne środki, przejrzyste ceny. Zarezerwuj online!",
+            "description_city": "Profesjonalne sprzątanie mieszkań i domów {cityLocative}: standardowe, generalne, po remoncie, mycie okien. Sprawdzeni Homies, ekologiczne środki, przejrzyste ceny. Zarezerwuj online!",
             "og_title_city": "Sprzątanie {cityLocative} | HeyHomie",
-            "og_description_city": "Sprzątanie mieszkań i domów {cityLocative}: standardowe, generalne, po remoncie. Sprawdzeni homies, ekologiczne środki, przejrzyste ceny."
+            "og_description_city": "Sprzątanie mieszkań i domów {cityLocative}: standardowe, generalne, po remoncie. Sprawdzeni Homies, ekologiczne środki, przejrzyste ceny."
         },
         "Layout": {
             "cityNames": {
@@ -850,7 +850,7 @@
                     "statuses": {
                         "planned": "Zaplanowane",
                         "canceled": "Anulowane",
-                        "searching_homie": "Wybieramy homie",
+                        "searching_homie": "Wybieramy Homie",
                         "homie_found": "Potwierdzona",
                         "done": "Zakończone",
                         "unpaid": "Nieopłacone",
@@ -1288,7 +1288,7 @@
         "landing": {
             "hero": {
                 "h1": "Sprzątanie i usługi domowe w całej Polsce",
-                "subtitle": "Profesjonalne sprzątanie mieszkań i domów z dojazdem — sprawdzeni homies, ekologiczne środki i rezerwacja online w kilka minut.",
+                "subtitle": "Profesjonalne sprzątanie mieszkań i domów z dojazdem — sprawdzeni Homies, ekologiczne środki i rezerwacja online w kilka minut.",
                 "cta": "Wybierz swoje miasto"
             },
             "cityPicker": {
@@ -1299,19 +1299,20 @@
                 "heading": "Dlaczego HeyHomie?",
                 "subheading": "Sprzątanie standardowe i generalne, po remoncie, mycie okien oraz czyszczenie kuchni i łazienki.",
                 "eco": { "title": "Ekologiczne środki", "body": "Bezpieczne dla domu, dzieci i zwierząt." },
-                "vetted": { "title": "Sprawdzeni homies", "body": "Każdą osobę weryfikujemy przed wizytą." },
+                "vetted": { "title": "Sprawdzeni Homies", "body": "Każdą osobę weryfikujemy przed wizytą." },
                 "pricing": { "title": "Przejrzyste ceny", "body": "Cenę widzisz przed rezerwacją." },
                 "guarantee": { "title": "Gwarancja zadowolenia", "body": "Poprawimy, jeśli coś wymaga poprawy." },
                 "cta": "Zobacz ofertę sprzątania"
             }
         }
     },
-    "CleaningSeoSection": {
+    "CleaningSeoSection":     {
         "intro": {
             "heading": "Profesjonalne sprzątanie mieszkań i domów {cityLocative}",
-            "para_1": "HeyHomie to nowoczesna firma sprzątająca {cityLocative}. Oferujemy sprzątanie mieszkań, domów i biur — zarówno jednorazowe, jak i regularne. Nasi sprawdzeni homies przyjeżdżają z własnymi, ekologicznymi środkami czystości i dbają o każdy detal, abyś Ty zyskał/a wolny czas dla siebie.",
+            "para_1": "HeyHomie to nowoczesna firma sprzątająca {cityLocative}. Oferujemy sprzątanie mieszkań, domów i biur — zarówno jednorazowe, jak i regularne. Nasi sprawdzeni Homies przyjeżdżają z własnymi, ekologicznymi środkami czystości i dbają o każdy detal, abyś Ty zyskał/a wolny czas dla siebie.",
             "para_2": "Wybierasz dogodny termin, a my zajmujemy się resztą. Realizujemy sprzątanie standardowe (regularne utrzymanie czystości), sprzątanie generalne (dokładne, gruntowne) oraz sprzątanie po remoncie i przed wprowadzeniem się. Płacisz dopiero po wykonanej usłudze, a każde sprzątanie objęte jest gwarancją zadowolenia.",
-            "para_3": "Dlaczego {cityName}? Bo znamy to miasto i jego mieszkańców. Dojeżdżamy do każdej dzielnicy {cityLocative} — szybko, punktualnie i bez ukrytych kosztów."
+            "para_3": "Dlaczego {cityName}? Bo znamy to miasto i jego mieszkańców. Dojeżdżamy do każdej dzielnicy {cityLocative} — szybko, punktualnie i bez ukrytych kosztów.",
+            "cta": "Zamów sprzątanie {cityLocative}"
         },
         "trust": {
             "heading": "Dlaczego HeyHomie?",
@@ -1320,7 +1321,7 @@
                 "body": "Sprzątamy bezpiecznymi dla domu i środowiska detergentami."
             },
             "vetted": {
-                "title": "Sprawdzeni homies",
+                "title": "Sprawdzeni Homies",
                 "body": "Każdą osobę weryfikujemy, zanim trafi do Twojego domu."
             },
             "pricing": {
@@ -1340,7 +1341,7 @@
             },
             "general": {
                 "title": "Sprzątanie generalne",
-                "body": "Gruntowne, dokładne sprzątanie: mycie okien, czyszczenie wnętrza szafek, lodówki i piekarnika, usuwanie kamienia i czyszczenie fug. Najlepsze przed świętami, po remoncie lub gdy chcesz odświeżyć całe mieszkanie."
+                "body": "Gruntowne, dokładne sprzątanie: czyszczenie wnętrza szafek, lodówki, piekarnika i okapu kuchennego, usuwanie kamienia i czyszczenie fug. Mycie okien dodasz jako osobną opcję. Najlepsze przed świętami, po remoncie lub gdy chcesz odświeżyć całe mieszkanie."
             },
             "linkText": "Zobacz pełny zakres sprzątania standardowego i generalnego →"
         },
@@ -1356,7 +1357,7 @@
             },
             "windows": {
                 "title": "Mycie okien",
-                "body": "Mycie okien, ram i parapetów — bez smug, na lśniąco."
+                "body": "Mycie okien, ram i parapetów — bez smug, na lśniąco. Dostępne jako osobna opcja dodatkowa."
             },
             "kitchen": {
                 "title": "Sprzątanie kuchni",
@@ -1368,38 +1369,58 @@
             },
             "upholstery": {
                 "title": "Czyszczenie tapicerki",
-                "body": "Pranie sof, foteli i dywanów — odświeżamy tkaniny w Twoim domu."
+                "body": "Pranie sof, foteli, materaców i dywanów — odświeżamy tkaniny w Twoim domu."
             }
         },
         "districts": {
             "heading": "Sprzątamy w każdej dzielnicy",
-            "subheading": "Nasi homies dojeżdżają do wszystkich dzielnic i okolic — {cityLocative}:",
+            "subheading": "Nasi Homies dojeżdżają do wszystkich dzielnic i okolic — {cityLocative}:",
             "footnote": "Nie widzisz swojej okolicy na liście? Napisz do nas — obsługujemy całe miasto wraz z przedmieściami."
         },
         "faq": {
             "heading": "Najczęstsze pytania",
             "q1": "Czy obsługujecie wszystkie dzielnice {cityLocative}?",
-            "a1": "Tak. Nasi homies dojeżdżają do wszystkich dzielnic {cityLocative} oraz okolic — bez dodatkowych opłat za dojazd w granicach miasta.",
+            "a1": "Tak. Nasi Homies dojeżdżają do wszystkich dzielnic {cityLocative} oraz okolic — bez dodatkowych opłat za dojazd w granicach miasta.",
             "q2": "Czym różni się sprzątanie standardowe od generalnego?",
-            "a2": "Standardowe to regularne utrzymanie czystości. Generalne jest dużo dokładniejsze — obejmuje m.in. mycie okien, wnętrza szafek, lodówki i piekarnika.",
-            "q3": "Czy muszę być w domu podczas sprzątania?",
-            "a3": "Nie ma takiej potrzeby. Jeśli wyjdziesz, wystarczy że przekażesz nam, jak wejść i zamknąć mieszkanie po usłudze.",
-            "q4": "Czy zapewniacie środki czystości?",
-            "a4": "Tak, przyjeżdżamy z ekologicznymi środkami czystości. Prosimy jedynie o przygotowanie sprzętu: odkurzacza lub miotły, mopa i wiadra.",
-            "q5": "Czy mogę zamówić sprzątanie regularne?",
-            "a5": "Oczywiście. Możesz ustawić sprzątanie cykliczne — co tydzień, co dwa tygodnie lub co miesiąc — i zarządzać nim z poziomu swojego konta.",
-            "q6": "Jak wygląda płatność?",
-            "a6": "Wycenę widzisz przed potwierdzeniem rezerwacji, a płatnością zarządzasz wygodnie online ze swojego konta — bez ukrytych kosztów.",
-            "q7": "Czy akceptujecie zwierzęta?",
-            "a7": "Jasne, że tak! Uwielbiamy zwierzęta, a cena sprzątania się nie zmienia. Zadbaj tylko, aby Twoi pupile byli bezpieczni, np. podczas otwierania i mycia okien.",
-            "q8": "Co jeśli nie będę zadowolony/a ze sprzątania?",
-            "a8": "Skontaktuj się z nami — w ramach gwarancji zadowolenia wrócimy i poprawimy to, co wymaga poprawy.",
-            "q9": "Czy środki czystości są bezpieczne dla dzieci i alergików?",
-            "a9": "Tak. Używamy ekologicznych, przyjaznych domownikom środków — bezpiecznych dla dzieci i zwierząt.",
-            "q10": "Czy mogę przełożyć lub odwołać wizytę?",
-            "a10": "Tak. Pojedynczą wizytę przełożysz lub odwołasz, kontaktując się z nami; całą usługę cykliczną zmienisz z poziomu swojego konta.",
-            "q11": "Jak policzyć liczbę okien do umycia?",
-            "a11": "Policz liczbę skrzydeł okiennych lub osobnych tafli szkła wydzielonych ramami — tyle okien wskaż przy zamówieniu."
+            "a2": "Sprzątanie standardowe to regularne utrzymanie czystości — ogólnie wszystko, co na zewnątrz: odkurzanie i mycie podłóg, ścieranie kurzu z powierzchni, mycie kuchni i łazienki, opróżnianie koszy. Sprzątanie generalne obejmuje to samo, a dodatkowo to, co w środku: wnętrza szafek, lodówkę, piekarnik i okap kuchenny, usuwanie kamienia i czyszczenie fug.\n**Mycie okien to osobna opcja dodatkowa** — nie wchodzi w zakres sprzątania generalnego, ale możesz dodać ją do zamówienia.",
+            "q3": "Jak zamówić usługę?",
+            "a3": "Wystarczy nacisnąć przycisk [Zamów teraz](#order), wybrać zakres sprzątania i dogodny termin. Cały proces zajmuje kilka minut.",
+            "q4": "Jak wskazać dane do zamówienia?",
+            "a4": "Najpierw podaj szczegóły zakresu sprzątania, a następnie naciśnij **Dalej**, wybierz preferowaną datę i godzinę, wskaż adres (np. {streets}) i wprowadź dane osobiste — numer telefonu i e-mail — abyśmy mogli wysłać Ci potwierdzenie rezerwacji.",
+            "q5": "Czy mogę zmienić zakres usługi po złożeniu zamówienia?",
+            "a5": "Tak. Zakres sprzątania możesz modyfikować przed realizacją — wystarczy kontakt z obsługą klienta.",
+            "q6": "Czy muszę być w domu podczas sprzątania?",
+            "a6": "Nie ma takiej potrzeby. Możesz zostawić lub przekazać klucze — fakt ich przekazania i odbioru szybko potwierdzamy protokołem z podpisem elektronicznym, dla bezpieczeństwa obu stron.\n» Chcesz skorzystać z przekazania kluczy? Poinformuj o tym obsługę klienta.",
+            "q7": "Czy zapewniacie środki czystości?",
+            "a7": "Tak, przyjeżdżamy z ekologicznymi środkami czystości. Prosimy jedynie o przygotowanie sprzętu: odkurzacza, mopa i wiadra.\n» Nie masz odkurzacza lub wiadra do mycia? Poinformuj obsługę klienta. Przy stałej współpracy możemy umówić się na udostępnienie sprzętu na stałe — zależnie od cykliczności usługi udostępniamy wyłącznie sprzęt marki Kärcher.",
+            "q8": "Czy mogę zamówić sprzątanie regularne?",
+            "a8": "Oczywiście. Możesz ustawić sprzątanie cykliczne — co tydzień, co dwa tygodnie lub co miesiąc — i zarządzać nim z poziomu swojego konta.\n» Potrzebujesz wizyt częściej — codziennie w dni robocze, dwa razy w tygodniu lub w innym rytmie? Poinformuj obsługę klienta, a ustalimy indywidualny harmonogram.",
+            "q9": "Jak wygląda płatność?",
+            "a9": "Wycenę widzisz przed potwierdzeniem rezerwacji — bez ukrytych kosztów. Masz trzy opcje płatności: **subskrypcja** (dodajesz swoją kartę, a płatność pobierana jest automatycznie), **przelew bankowy** albo — najwygodniej — **Pay later**: następnego dnia po wykonaniu usługi otrzymujesz link do płatności i płacisz dowolną metodą (Apple Pay, Google Pay, BLIK i inne).",
+            "q10": "Czy akceptujecie zwierzęta?",
+            "a10": "Jasne, że tak! Uwielbiamy zwierzęta, a cena sprzątania się nie zmienia. Zadbaj tylko, aby Twoi pupile byli bezpieczni, np. podczas otwierania okien.\n» Prosimy o poinformowanie obsługi klienta o zwierzętach w domu — możesz też zaznaczyć to podczas składania zamówienia (tak/nie).",
+            "q11": "Co jeśli nie będę zadowolony/a ze sprzątania?",
+            "a11": "Skontaktuj się z nami — w ramach gwarancji zadowolenia wrócimy i poprawimy to, co wymaga poprawy. Zależy nam, żebyś był/a w pełni zadowolony/a: chcemy być Twoim najlepszym domowym przyjacielem i dawać Ci najlepszy możliwy serwis.",
+            "q12": "Czy wykonujecie jednorazowe sprzątanie mieszkań?",
+            "a12": "Tak, jednorazowe sprzątanie mieszkania to jedna z najczęściej wybieranych usług. Aktualne stawki znajdziesz w cenniku sprzątania mieszkań podczas składania zamówienia.",
+            "q13": "Czy mogę zamówić sprzątanie pod wynajem?",
+            "a13": "Oczywiście. Sprzątanie mieszkań pod wynajem to szybka i gruntowna usługa, dzięki której lokal jest gotowy dla kolejnego najemcy.",
+            "q14": "Sprzątanie mieszkań zaniedbanych i po najmie",
+            "a14": "Specjalizujemy się także w trudniejszych przypadkach — sprzątamy mieszkania zaniedbane oraz lokale po dłuższym nieużytkowaniu. To gruntowna usługa, która przywraca mieszkanie do stanu gotowego do zamieszkania.",
+            "q15": "Sprzątanie mieszkań po śmierci i zlecenia specjalne",
+            "a15": "Nie — tego rodzaju zleceń nie realizujemy.",
+            "q16": "Czyszczenie tapicerki i pranie mebli",
+            "a16": "To osobna usługa. Możesz wysłać nam zdjęcia do obsługi klienta, a my wycenimy wykonanie. Możesz też zamówić ją bezpośrednio w naszej aplikacji — szukaj usługi „czyszczenie tapicerki”. Pierzemy sofy, fotele, materace i krzesła u Ciebie w domu.",
+            "q17": "Czy czyścicie dywany?",
+            "a17": "Tak, świadczymy również czyszczenie dywanów. W zależności od sytuacji i rozmiaru odbieramy dywan i czyścimy go u nas albo wykonujemy usługę na miejscu. Obsługujemy także duże korporacje oraz mniejsze firmy z wykładziną dywanową w biurze.",
+            "q18": "Czym jest usługa dostawy kwiatów?",
+            "a18": "To nasza dodatkowa usługa — zajmujemy się również dostawą bukietów kwiatów mieszanych. 💐",
+            "q19": "Czy środki czystości są bezpieczne dla dzieci i alergików?",
+            "a19": "Tak. Używamy ekologicznych, przyjaznych domownikom środków — bezpiecznych dla dzieci i zwierząt.",
+            "q20": "Czy mogę przełożyć lub odwołać wizytę?",
+            "a20": "Tak. Pojedynczą wizytę przełożysz lub odwołasz, kontaktując się z nami; całą usługę cykliczną zmienisz z poziomu swojego konta.",
+            "q21": "Jak policzyć liczbę okien do umycia?",
+            "a21": "Policz liczbę skrzydeł okiennych lub osobnych tafli szkła wydzielonych ramami — tyle okien wskaż przy zamówieniu."
         },
         "otherCities": {
             "heading": "Sprzątanie w innych miastach",
@@ -1429,12 +1450,12 @@
                 }
             },
             "homiesGallery": {
-                "heading": "Poznaj naszych homies"
+                "heading": "Poznaj naszych Homies"
             },
             "howWeSelectHomies": {
                 "heading": "JAK WYBIERAMY HOMIES?",
-                "para_1": "Rozpoczęliśmy tę przygodę tworząc usługę, która ułatwiłaby nam życie. W trakcie tego procesu testowaliśmy każdego homie, aby upewnić się, że sprosta standardom, których poszukiwaliśmy dla samych siebie. ",
-                "para_2": "A dziś? Nic się w tej kwestii nie zmieniło! Wciąż osobiście rekrutujemy, testujemy i trenujemy wszystkich naszych homies, zanim kogokolwiek do Ciebie wyślemy 😊"
+                "para_1": "Rozpoczęliśmy tę przygodę tworząc usługę, która ułatwiłaby nam życie. W trakcie tego procesu testowaliśmy każdego Homie, aby upewnić się, że sprosta standardom, których poszukiwaliśmy dla samych siebie. ",
+                "para_2": "A dziś? Nic się w tej kwestii nie zmieniło! Wciąż osobiście rekrutujemy, testujemy i trenujemy wszystkich naszych Homies, zanim kogokolwiek do Ciebie wyślemy 😊"
             },
             "FAQSection": {
                 "heading": "FAQ"
@@ -1502,7 +1523,7 @@
             "serviceName": "sprzątanie",
             "serviceHeroDescription": "Zajmiemy się Twoim domem - masz to z głowy 🍿",
             "bookNowText": "Zarezerwuj teraz!",
-            "descriptionHTML": "'<p><strong>W Homie na równi cenimy jakość usług i ludzkie podejście.</strong> To dlatego, na pierwsze sprzątanie będziemy osobiście z naszym najlepszym homie 💖 do tej konkretnej misji. W ten sposób poznamy Twój dom i <strong>razem z Tobą</strong> omówimy szczegóły pracy. Wspólnie upewnimy się, że wykonamy to, co dla Ciebie szczególnie ważne✨</p><p>Po sprzątaniu skontaktujemy się z Tobą telefonicznie, aby upewnić się, że wszystko przebiegło zgodnie z planem. Na postawie Twojej opinii będziemy mogli również dokonać niezbędnych poprawek do kolejnego sprzątania. </p><p>I Voilà!</p><p>Z poziomu swojego konta, możesz zarządzać misjami według uznania. Masz 100% kontroli nad wybraną przez siebie usługą sprzątania 🤗</p><p>Sprawdź co obejmuje sprzątanie Standardowe i Generalne 🔥</p>'",
+            "descriptionHTML": "'<p><strong>W Homie na równi cenimy jakość usług i ludzkie podejście.</strong> To dlatego, na pierwsze sprzątanie będziemy osobiście z naszym najlepszym Homie 💖 do tej konkretnej misji. W ten sposób poznamy Twój dom i <strong>razem z Tobą</strong> omówimy szczegóły pracy. Wspólnie upewnimy się, że wykonamy to, co dla Ciebie szczególnie ważne✨</p><p>Po sprzątaniu skontaktujemy się z Tobą telefonicznie, aby upewnić się, że wszystko przebiegło zgodnie z planem. Na postawie Twojej opinii będziemy mogli również dokonać niezbędnych poprawek do kolejnego sprzątania. </p><p>I Voilà!</p><p>Z poziomu swojego konta, możesz zarządzać misjami według uznania. Masz 100% kontroli nad wybraną przez siebie usługą sprzątania 🤗</p><p>Sprawdź co obejmuje sprzątanie Standardowe i Generalne 🔥</p>'",
             "cleaningPlans": {
                 "regularBtn": "Standardowe",
                 "advancedBtn": "Generalne",
@@ -1549,7 +1570,7 @@
             },
             "homies": {
                 "homie1_name": "Irina",
-                "homie1_description": "✨Pierwsza w zespole homies✨ Wspiera nas od samego początku, uczyniła cuda w tak wielu domach, że teraz jej kalendarz jest wypełniony po brzegi do 2087 roku!",
+                "homie1_description": "✨Pierwsza w zespole Homies✨ Wspiera nas od samego początku, uczyniła cuda w tak wielu domach, że teraz jej kalendarz jest wypełniony po brzegi do 2087 roku!",
                 "homie2_name": "Olena",
                 "homie2_description": "Punktualna i skoncentrowana na swojej pracy. Zawsze jest ciekawa Twojej opinii o wykonanym przez nią zadaniu 🙂",
                 "homie3_name": "Julia",
@@ -1623,13 +1644,13 @@
             },
             "faq": {
                 "question_1": "Jak wybrać odpowiedni rodzaj masażu?",
-                "answer_1": "Jeśli chcesz się odprężyć i rozluźnić delikatne napięcie mięśni lub podarować komuś masaż w prezencie, polecamy masaż relaksacyjny. Masaż tkanek głębokich i sportowy dedykowane są osobom o mniejszej wrażliwości na ból i głębiej zlokalizowanych napięciach mięśni. Bez względu na to jaki rodzaj masażu wybierzesz nasz homie dostosuje siłę i zakres masażu do Twoich aktualnych potrzeb.",
+                "answer_1": "Jeśli chcesz się odprężyć i rozluźnić delikatne napięcie mięśni lub podarować komuś masaż w prezencie, polecamy masaż relaksacyjny. Masaż tkanek głębokich i sportowy dedykowane są osobom o mniejszej wrażliwości na ból i głębiej zlokalizowanych napięciach mięśni. Bez względu na to jaki rodzaj masażu wybierzesz nasz Homie dostosuje siłę i zakres masażu do Twoich aktualnych potrzeb.",
                 "question_2": "Jak przygotować się do masażu?",
                 "answer_2": "Bezpośrednio przed masażem przygotuj nieco przestrzeni, tak abyśmy mogli rozłożyć przenośny stół do masażu. Przyda się również duży ręcznik lub koc. Możesz pozostać w bieliźnie lub komfortowym luźnym ubraniu. Na koniec odpręż się i nie martw o nic.",
                 "question_3": "Jakie materiały i sprzęt zapewniacie?",
-                "answer_3": "Na każdą misję przyjeżdżamy wyposażeni w niezbędny sprzęt do wykonania masażu, dbając o bezpieczeństwo Twoje i naszych homies w związku z epidemią Covid-19. Mamy ze sobą mobilny stół do masażu, podkłady higieniczne, płyn do dezynfekcji powierzchni i rąk, olejki (naturalne lub hipoalergiczne), opcjonalnie głośnik.",
+                "answer_3": "Na każdą misję przyjeżdżamy wyposażeni w niezbędny sprzęt do wykonania masażu, dbając o bezpieczeństwo Twoje i naszych Homies w związku z epidemią Covid-19. Mamy ze sobą mobilny stół do masażu, podkłady higieniczne, płyn do dezynfekcji powierzchni i rąk, olejki (naturalne lub hipoalergiczne), opcjonalnie głośnik.",
                 "question_4": "Jak zorganizowany jest masaż dla dwóch osób?",
-                "answer_4": "Masaże dla dwóch osób odbywają się jeden po drugim. Nasz homie wykona go w nawiązaniu do Twojego wyboru i potrzeb. ",
+                "answer_4": "Masaże dla dwóch osób odbywają się jeden po drugim. Nasz Homie wykona go w nawiązaniu do Twojego wyboru i potrzeb. ",
                 "question_5": "Jakie są przeciwwskazania do wykonania masażu?",
                 "answer_5": "'<p>Osoby, których dotyczą wymienione poniżej sytuacje, nie powinny poddawać się masażowi:</p><p><ul><li>wszystkie stany chorobowe przebiegające z wysoką temperaturą ciała (powyżej 38° C), ostre i podostre stany zapa</li><li>osoby borykające się z gorączką niewiadomego pochodzenia;</li><li>kobiety w okresie menstruacji;</li><li>osoby powyżej 80 roku życia;</li><li>kobiety w ciąży;</li><li>osoby po zabiegach operacyjnych. (Masaż można wykonać 12 miesięcy po zabiegu jeśli był poważny i 6 miesięcy po mniejszym, jeżeli blizny są dobrze zagojone);</li><li>wszelkiego rodzaju zmiany dermatologiczne;</li><li>przerwanie ciągłości skóry, wczesny okres po złamaniach, skręceniach i zwichnięciach - w takich przypadkach można masować poszczególne zdrowe stawy;</li><li>blizny, stłuczenia, stany zapalne skóry, żylaki - w takich przypadkach można masować tylko zdrowe części ciała;</li><li>alergie na stosowane do masażu olejki;</li><li>osoby z cerą naczynkową</li><li>krwotoki lub tendencje do ich wystąpienia;</li><li>niewyrównane wady serca, tętniaki, świeże zakrzepy, świeży zawał serca;</li><li>nowotwory złośliwe i niezłośliwe;</li><li>pourazowe wylewy w stawach i mięśniach (do 3 dni od urazu);</li><li>zapalenia żył;</li><li>zapalenie szpiku kostnego z przetokami;</li><li>jamistość rdzenia;</li><li>wszystkie przypadki wymagające interwencji chirurgicznej;</li><li>choroba wrzodowa z krwawieniami;</li><li>kamica wątrobowa i nerkowa;</li><li>skazy krwotoczne (pochodzenia płytkowego, naczyniowa, osoczowa);</li><li>schorzenia układu sercowo-naczyniowego (nadciśnienie tętnicze, wady zastawki przedsionkowo-komorowej lewej);</li><li>niedokrwistość związana głównie z niedoborem żelaza i kwasu foliowego;</li><li>białaczka;</li><li>choroby nerek (ostra niewydolność nerek, kłębuszkowe i od miedniczkowe zapalenie nerek, kamica nerkowa, wrodzone wady nerek);</li><li>zapalenie trzustki;</li><li>gestoza – zespół chorobowy charakteryzujący się nadciśnieniem tętniczym, białkomoczem i obrzękami;</li><li>nadczynność i niedoczynność tarczycy i przytarczyc;</li><li>chorzy, u których stwierdzono hemofilię.</li></ul></p>'"
             }
@@ -1656,7 +1677,7 @@
             "serviceName": "kwiaty",
             "serviceHeroDescription": "Wprowadź 🌼 Flower power \ndo swojego życia!",
             "bookNowText": "Zarezerwuj teraz!",
-            "descriptionHTML": "'<p>Spraw przyjemność bliskim. Piękny, spersonalizowany bukiet kwiatów to sprawdzony patent 🌸</p><p>Daj nam znać jakiej okazji dotyczą kwiaty, możesz też zostawić krótką wiadomość, którą umieścimy na liściku dołączonym do bukietu. Zadbamy o resztę 🙂</p><p>Każdy bukiet jest unikalny, przygotowany w oparciu o kwiaty dostępne w aktualnym sezonie i dostarczany punktualnie przez naszych homies!</p>'",
+            "descriptionHTML": "'<p>Spraw przyjemność bliskim. Piękny, spersonalizowany bukiet kwiatów to sprawdzony patent 🌸</p><p>Daj nam znać jakiej okazji dotyczą kwiaty, możesz też zostawić krótką wiadomość, którą umieścimy na liściku dołączonym do bukietu. Zadbamy o resztę 🙂</p><p>Każdy bukiet jest unikalny, przygotowany w oparciu o kwiaty dostępne w aktualnym sezonie i dostarczany punktualnie przez naszych Homies!</p>'",
             "descriptionCTA": "Odkryj nasze bukiety",
             "flowersGalleryHeading": "Zobacz przykładowe kompozycje",
             "faq": {

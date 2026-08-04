@@ -13,6 +13,7 @@ export const cityDistricts = {
         nameNominative: 'Kraków',
         nameEn: 'Kraków',
         locativePl: 'w Krakowie',
+        keyStreets: ['Floriańska', 'Karmelicka', 'Długa', 'Aleja Pokoju'],
         districts: [
             'Stare Miasto',
             'Kazimierz',
@@ -42,6 +43,7 @@ export const cityDistricts = {
         nameNominative: 'Warszawa',
         nameEn: 'Warsaw',
         locativePl: 'w Warszawie',
+        keyStreets: ['Marszałkowska', 'Nowy Świat', 'Puławska', 'Aleje Jerozolimskie'],
         districts: [
             'Śródmieście',
             'Mokotów',
@@ -65,66 +67,29 @@ export const cityDistricts = {
         nameNominative: 'Poznań',
         nameEn: 'Poznań',
         locativePl: 'w Poznaniu',
-        districts: [
-            'Stare Miasto',
-            'Nowe Miasto',
-            'Grunwald',
-            'Jeżyce',
-            'Wilda',
-            'Łazarz',
-            'Sołacz',
-            'Winogrady',
-            'Rataje',
-            'Naramowice',
-        ],
+        keyStreets: ['Święty Marcin', 'Głogowska', 'Półwiejska', 'Garbary'],
+        districts: ['Stare Miasto', 'Nowe Miasto', 'Grunwald', 'Jeżyce', 'Wilda', 'Łazarz', 'Sołacz', 'Winogrady', 'Rataje', 'Naramowice'],
     },
     wroclaw: {
         nameNominative: 'Wrocław',
         nameEn: 'Wrocław',
         locativePl: 'we Wrocławiu',
-        districts: [
-            'Stare Miasto',
-            'Śródmieście',
-            'Krzyki',
-            'Fabryczna',
-            'Psie Pole',
-            'Nadodrze',
-            'Sępolno',
-            'Biskupin',
-            'Ołbin',
-            'Gaj',
-        ],
+        keyStreets: ['Świdnicka', 'Legnicka', 'Powstańców Śląskich', 'Grabiszyńska'],
+        districts: ['Stare Miasto', 'Śródmieście', 'Krzyki', 'Fabryczna', 'Psie Pole', 'Nadodrze', 'Sępolno', 'Biskupin', 'Ołbin', 'Gaj'],
     },
     katowice: {
         nameNominative: 'Katowice',
         nameEn: 'Katowice',
         locativePl: 'w Katowicach',
-        districts: [
-            'Śródmieście',
-            'Ligota',
-            'Brynów',
-            'Załęże',
-            'Koszutka',
-            'Dąb',
-            'Bogucice',
-            'Giszowiec',
-            'Nikiszowiec',
-            'Piotrowice',
-        ],
+        keyStreets: ['Mariacka', '3 Maja', 'Chorzowska', 'Warszawska'],
+        districts: ['Śródmieście', 'Ligota', 'Brynów', 'Załęże', 'Koszutka', 'Dąb', 'Bogucice', 'Giszowiec', 'Nikiszowiec', 'Piotrowice'],
     },
     rzeszow: {
         nameNominative: 'Rzeszów',
         nameEn: 'Rzeszów',
         locativePl: 'w Rzeszowie',
-        districts: [
-            'Śródmieście',
-            'Nowe Miasto',
-            'Baranówka',
-            'Drabinianka',
-            'Pobitno',
-            'Staromieście',
-            'Krakowska-Południe',
-        ],
+        keyStreets: ['3 Maja', 'Grunwaldzka', 'Lubelska', 'Krakowska'],
+        districts: ['Śródmieście', 'Nowe Miasto', 'Baranówka', 'Drabinianka', 'Pobitno', 'Staromieście', 'Krakowska-Południe'],
     },
 };
 
@@ -148,5 +113,9 @@ export const getCitySeoForms = (cityName, isPl) => {
         locative = isPl ? data.locativePl : `in ${data.nameEn}`;
     }
 
-    return { data, displayName, locative };
+    // Key streets stay in their original Polish spelling in both locales — they are
+    // proper nouns and the literal strings users type when searching for an address.
+    const streets = data && data.keyStreets ? data.keyStreets.join(', ') : '';
+
+    return { data, displayName, locative, streets };
 };

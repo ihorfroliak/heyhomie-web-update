@@ -18,9 +18,9 @@
             "og_title": "Get the services you need",
             "og_description": "Directly to your home: Cleaning, Laundry, Flowers Delivery, Massage",
             "title_city": "Cleaning services {cityLocative} & home help with delivery | HeyHomie",
-            "description_city": "Professional apartment and house cleaning {cityLocative}: standard, deep, post-renovation, window cleaning. Vetted homies, eco-friendly supplies, transparent pricing. Book online!",
+            "description_city": "Professional apartment and house cleaning {cityLocative}: standard, deep, post-renovation, window cleaning. Vetted Homies, eco-friendly supplies, transparent pricing. Book online!",
             "og_title_city": "Cleaning services {cityLocative} | HeyHomie",
-            "og_description_city": "Apartment and house cleaning {cityLocative}: standard, deep, post-renovation. Vetted homies, eco-friendly supplies, transparent pricing."
+            "og_description_city": "Apartment and house cleaning {cityLocative}: standard, deep, post-renovation. Vetted Homies, eco-friendly supplies, transparent pricing."
         },
         "Layout": {
             "cityNames": {
@@ -534,7 +534,7 @@
             "massage_preferred_therapist_gender_n": "Either",
             "massage_preferred_therapist_gender_f": "Female",
             "massage_preferred_therapist_gender_m": "Male",
-            "massage_fallback_to_any_gender_nameCaptionKey": "Hey homie, don’t worry about the gender if my choice is not available",
+            "massage_fallback_to_any_gender_nameCaptionKey": "Hey Homie, don’t worry about the gender if my choice is not available",
             "massage_plan_linkToLandingCopy": "Checklist",
             "laundry_clothesTitle": "Clothes",
             "laundry_clothes_light_nameCaptionKey": "Light",
@@ -847,7 +847,7 @@
                     "statuses": {
                         "planned": "Planned",
                         "canceled": "Cancelled",
-                        "searching_homie": "Searching homie",
+                        "searching_homie": "Searching Homie",
                         "homie_found": "Confirmed",
                         "done": "Done",
                         "unpaid": "Unpaid",
@@ -1285,7 +1285,7 @@
         "landing": {
             "hero": {
                 "h1": "Cleaning and home services across Poland",
-                "subtitle": "Professional apartment and house cleaning at your door — vetted homies, eco-friendly supplies and online booking in minutes.",
+                "subtitle": "Professional apartment and house cleaning at your door — vetted Homies, eco-friendly supplies and online booking in minutes.",
                 "cta": "Choose your city"
             },
             "cityPicker": {
@@ -1296,19 +1296,20 @@
                 "heading": "Why HeyHomie?",
                 "subheading": "Standard and deep cleaning, post-renovation, window cleaning and kitchen & bathroom care.",
                 "eco": { "title": "Eco-friendly supplies", "body": "Safe for your home, children and pets." },
-                "vetted": { "title": "Vetted homies", "body": "Every person is verified before the visit." },
+                "vetted": { "title": "Vetted Homies", "body": "Every person is verified before the visit." },
                 "pricing": { "title": "Transparent pricing", "body": "You see the price before booking." },
                 "guarantee": { "title": "Satisfaction guarantee", "body": "We fix anything that needs fixing." },
                 "cta": "See our cleaning offer"
             }
         }
     },
-    "CleaningSeoSection": {
+    "CleaningSeoSection":     {
         "intro": {
             "heading": "Professional apartment and house cleaning {cityLocative}",
-            "para_1": "HeyHomie is a modern cleaning company {cityLocative}. We clean apartments, houses and offices — both one-off and recurring. Our vetted homies arrive with their own eco-friendly cleaning supplies and take care of every detail, so you get your free time back.",
+            "para_1": "HeyHomie is a modern cleaning company {cityLocative}. We clean apartments, houses and offices — both one-off and recurring. Our vetted Homies arrive with their own eco-friendly cleaning supplies and take care of every detail, so you get your free time back.",
             "para_2": "You pick a convenient date and we take care of the rest. We offer standard cleaning (regular upkeep), deep cleaning (thorough, top-to-bottom), as well as post-renovation and move-in cleaning. You pay only after the service is done, and every cleaning is backed by our satisfaction guarantee.",
-            "para_3": "Why {cityName}? Because we know the city and its residents. We reach every district {cityLocative} — fast, on time and with no hidden costs."
+            "para_3": "Why {cityName}? Because we know the city and its residents. We reach every district {cityLocative} — fast, on time and with no hidden costs.",
+            "cta": "Book a cleaning {cityLocative}"
         },
         "trust": {
             "heading": "Why HeyHomie?",
@@ -1317,7 +1318,7 @@
                 "body": "We clean with detergents that are safe for your home and the environment."
             },
             "vetted": {
-                "title": "Vetted homies",
+                "title": "Vetted Homies",
                 "body": "Every person is verified before they enter your home."
             },
             "pricing": {
@@ -1337,14 +1338,14 @@
             },
             "general": {
                 "title": "Deep cleaning",
-                "body": "Thorough, detailed cleaning: windows, the inside of cabinets, fridge and oven, limescale and grout. Best before the holidays, after a renovation, or whenever your whole place needs a refresh."
+                "body": "Thorough, detailed cleaning: the inside of cabinets, the fridge, the oven and the kitchen hood, limescale and grout. Window cleaning can be added as a separate option. Best before the holidays, after a renovation, or whenever your whole place needs a refresh."
             },
             "linkText": "See the full scope of standard and deep cleaning →"
         },
         "services": {
             "heading": "What our cleaning covers",
             "cleaning": {
-                "title": "Apartment & house cleaning",
+                "title": "Apartment and house cleaning",
                 "body": "Standard and deep cleaning tailored to your space — one-off or recurring."
             },
             "postRenovation": {
@@ -1353,7 +1354,7 @@
             },
             "windows": {
                 "title": "Window cleaning",
-                "body": "Windows, frames and sills — streak-free and sparkling."
+                "body": "Windows, frames and sills — streak-free and sparkling. Available as a separate add-on."
             },
             "kitchen": {
                 "title": "Kitchen cleaning",
@@ -1365,38 +1366,58 @@
             },
             "upholstery": {
                 "title": "Upholstery cleaning",
-                "body": "Washing sofas, armchairs and carpets — refreshing the fabrics in your home."
+                "body": "Washing sofas, armchairs, mattresses and carpets — refreshing the fabrics in your home."
             }
         },
         "districts": {
             "heading": "We clean in every district",
-            "subheading": "Our homies reach every district and surrounding area — {cityLocative}:",
-            "footnote": "Don't see your area on the list? Get in touch — we cover the whole city and its suburbs."
+            "subheading": "Our Homies reach every district and surrounding area — {cityLocative}:",
+            "footnote": "Do not see your area on the list? Get in touch — we cover the whole city and its suburbs."
         },
         "faq": {
             "heading": "Frequently asked questions",
             "q1": "Do you cover all districts {cityLocative}?",
-            "a1": "Yes. Our homies reach every district {cityLocative} and the surrounding areas — with no extra travel fee within the city.",
+            "a1": "Yes. Our Homies reach every district {cityLocative} and the surrounding areas — with no extra travel fee within the city.",
             "q2": "What is the difference between standard and deep cleaning?",
-            "a2": "Standard is regular upkeep. Deep cleaning is far more thorough — it includes windows, the inside of cabinets, the fridge and the oven.",
-            "q3": "Do I have to be home during the cleaning?",
-            "a3": "No need. If you go out, just let us know how to get in and lock up after the service.",
-            "q4": "Do you provide cleaning supplies?",
-            "a4": "Yes, we arrive with eco-friendly cleaning products. We only ask you to prepare the tools: a vacuum or broom, a mop and a bucket.",
-            "q5": "Can I book recurring cleaning?",
-            "a5": "Of course. You can set up recurring cleaning — weekly, bi-weekly or monthly — and manage it from your account.",
-            "q6": "How does payment work?",
-            "a6": "You see the quote before confirming your booking and manage payment conveniently online from your account — with no hidden costs.",
-            "q7": "Do you accept pets?",
-            "a7": "Absolutely! We love animals and the cleaning price stays the same. Just make sure your pets are safe, for example when we open and clean the windows.",
-            "q8": "What if I am not happy with the cleaning?",
-            "a8": "Get in touch — under our satisfaction guarantee we will come back and fix whatever needs fixing.",
-            "q9": "Are the cleaning products safe for children and people with allergies?",
-            "a9": "Yes. We use eco-friendly, household-safe products — safe for children and pets.",
-            "q10": "Can I reschedule or cancel a visit?",
-            "a10": "Yes. You can reschedule or cancel a single visit by contacting us; you can change a recurring service from your account.",
-            "q11": "How do I count the number of windows to clean?",
-            "a11": "Count the number of window sashes or separate panes of glass divided by frames — that is the number of windows to select when ordering."
+            "a2": "Standard cleaning is regular upkeep — in general everything on the surface: vacuuming and mopping floors, dusting, cleaning the kitchen and bathroom, emptying bins. Deep cleaning covers the same, plus what is inside: the inside of cabinets, the fridge, the oven and the kitchen hood, limescale and grout.\n**Window cleaning is a separate add-on** — it is not part of deep cleaning, but you can add it to your order.",
+            "q3": "How do I place an order?",
+            "a3": "Just press [Book now](#order), choose the cleaning scope and a convenient date. The whole process takes a few minutes.",
+            "q4": "How do I provide the order details?",
+            "a4": "First enter the cleaning scope, then press **Continue**, choose your preferred date and time, enter your address (e.g. {streets}) and your contact details — phone number and email — so we can send you a booking confirmation.",
+            "q5": "Can I change the scope after placing an order?",
+            "a5": "Yes. You can modify the cleaning scope before the service — just contact customer support.",
+            "q6": "Do I have to be home during the cleaning?",
+            "a6": "Not at all. You can leave or hand over the keys — we quickly confirm the handover and return with an act signed electronically, for the safety of both sides.\n» Would you like to use key handover? Please let customer support know.",
+            "q7": "Do you provide cleaning supplies?",
+            "a7": "Yes, we arrive with eco-friendly cleaning products. We only ask you to prepare the equipment: a vacuum, a mop and a bucket.\n» No vacuum or bucket at home? Let customer support know. For ongoing cooperation we can arrange permanent equipment — depending on how often the service runs we provide Kärcher equipment only.",
+            "q8": "Can I book recurring cleaning?",
+            "a8": "Of course. You can set up recurring cleaning — weekly, bi-weekly or monthly — and manage it from your account.\n» Need visits more often — every workday, twice a week or another rhythm? Let customer support know and we will arrange a custom schedule.",
+            "q9": "How does payment work?",
+            "a9": "You see the quote before confirming your booking — with no hidden costs. There are three payment options: **subscription** (add your card and payment is charged automatically), **bank transfer**, or — the most convenient — **Pay later**: the day after the service you receive a payment link and pay with any method (Apple Pay, Google Pay, BLIK and more).",
+            "q10": "Do you accept pets?",
+            "a10": "Absolutely! We love animals and the cleaning price stays the same. Just make sure your pets are safe, for example while the windows are open.\n» Please tell customer support about pets at home — you can also mark it while placing your order (yes/no).",
+            "q11": "What if I am not happy with the cleaning?",
+            "a11": "Get in touch — under our satisfaction guarantee we will come back and fix whatever needs fixing. We truly care that you are fully satisfied: we want to be your best home friend and give you the best possible service.",
+            "q12": "Do you offer one-off apartment cleaning?",
+            "a12": "Yes, a one-off apartment cleaning is one of the most popular services. You will find the current rates in the cleaning price list while placing your order.",
+            "q13": "Can I order rental / end-of-tenancy cleaning?",
+            "a13": "Of course. Rental cleaning is a fast and thorough service that gets the place ready for the next tenant.",
+            "q14": "Cleaning of neglected apartments and after tenants",
+            "a14": "We also specialise in tougher cases — we clean neglected apartments and places left unused for a long time. It is a thorough service that brings the apartment back to a move-in-ready state.",
+            "q15": "Cleaning after a death and special orders",
+            "a15": "No — we do not carry out this type of order.",
+            "q16": "Upholstery and furniture cleaning",
+            "a16": "This is a separate service. You can send photos to customer support and we will quote the job. You can also order it directly in our app — look for “upholstery cleaning”. We wash sofas, armchairs, mattresses and chairs at your home.",
+            "q17": "Do you clean carpets?",
+            "a17": "Yes, we also offer carpet cleaning. Depending on the situation and size, we either pick the carpet up and clean it at our facility or do it on site. We also serve large corporations and smaller companies with carpeted offices.",
+            "q18": "What is the flower delivery service?",
+            "a18": "It is one of our extra services — we also deliver mixed flower bouquets. 💐",
+            "q19": "Are the cleaning products safe for children and people with allergies?",
+            "a19": "Yes. We use eco-friendly, household-safe products — safe for children and pets.",
+            "q20": "Can I reschedule or cancel a visit?",
+            "a20": "Yes. You can reschedule or cancel a single visit by contacting us; you can change a recurring service from your account.",
+            "q21": "How do I count the number of windows to clean?",
+            "a21": "Count the number of window sashes or separate panes of glass divided by frames — that is the number of windows to select when ordering."
         },
         "otherCities": {
             "heading": "Cleaning in other cities",
@@ -1426,12 +1447,12 @@
                 }
             },
             "homiesGallery": {
-                "heading": "Meet the homies"
+                "heading": "Meet the Homies"
             },
             "howWeSelectHomies": {
                 "heading": "HOW DO WE \nSELECT HOMIES?",
-                "para_1": "We started this adventure creating a service that would make our lives easier. While building our service, we got used to testing all our homies personally to make sure they would fill the standard we wanted for ourselves.",
-                "para_2": "And today? Nothing changed! We still hire, interview and test all of our homies personally before we send them to anyone else 😊"
+                "para_1": "We started this adventure creating a service that would make our lives easier. While building our service, we got used to testing all our Homies personally to make sure they would fill the standard we wanted for ourselves.",
+                "para_2": "And today? Nothing changed! We still hire, interview and test all of our Homies personally before we send them to anyone else 😊"
             },
             "FAQSection": {
                 "heading": "ANY QUESTIONS ? \n(FAQ)"
@@ -1499,7 +1520,7 @@
             "serviceName": "cleaning",
             "serviceHeroDescription": "We take care of your house \nso you don't have to 🍿",
             "bookNowText": "Book now!",
-            "descriptionHTML": "'<p><strong>At Homie we value quality services as well as human experiences.</strong> This is why, for your first cleaning, we come personally with our best homie 💖 for the job to discover your place and review with you all the details. Together, we make sure the homie will focus on the parts that are the most important for you ✨</p><p>Once the cleaning is done, we contact you on the phone to make sure everything went well and <strong>we make the necessary adjustments for your next cleaning, based on your feedback.</strong></p><p>And voilà! From your account panel you can manage your mission as you pleased, being 100% in control of your cleaning service 🤗</p><p>Discover bellow what’s included in our 2 cleaning offers: Regular & Deep 🔥</p>'",
+            "descriptionHTML": "'<p><strong>At Homie we value quality services as well as human experiences.</strong> This is why, for your first cleaning, we come personally with our best Homie 💖 for the job to discover your place and review with you all the details. Together, we make sure the Homie will focus on the parts that are the most important for you ✨</p><p>Once the cleaning is done, we contact you on the phone to make sure everything went well and <strong>we make the necessary adjustments for your next cleaning, based on your feedback.</strong></p><p>And voilà! From your account panel you can manage your mission as you pleased, being 100% in control of your cleaning service 🤗</p><p>Discover bellow what’s included in our 2 cleaning offers: Regular & Deep 🔥</p>'",
             "cleaningPlans": {
                 "regularBtn": "Regular",
                 "advancedBtn": "Deep",
@@ -1546,7 +1567,7 @@
             },
             "homies": {
                 "homie1_name": "Irina",
-                "homie1_description": "✨Our very first homie✨ She supported us from the very beginning and she made miracles in so many houses that now her calendar is full until 2087!",
+                "homie1_description": "✨Our very first Homie✨ She supported us from the very beginning and she made miracles in so many houses that now her calendar is full until 2087!",
                 "homie2_name": "Olena",
                 "homie2_description": "Highly punctual & focused. She is always open and curious on your feedback 🙂",
                 "homie3_name": "Julia",
@@ -1620,11 +1641,11 @@
             },
             "faq": {
                 "question_1": "How to choose the right type of massage?",
-                "answer_1": "If you want to relax, release slight muscles tension or gift someone, we recommend relaxation type of massage. Deep tissue and sport massage are dedicated to people with reduced pain sensitivity or deeper located tensions. <br/>No matter which type of massage you book, our homie will adapt the strength and massage scope to your personal needs and muscles tension. ",
+                "answer_1": "If you want to relax, release slight muscles tension or gift someone, we recommend relaxation type of massage. Deep tissue and sport massage are dedicated to people with reduced pain sensitivity or deeper located tensions. <br/>No matter which type of massage you book, our Homie will adapt the strength and massage scope to your personal needs and muscles tension. ",
                 "question_2": "How should I prepare to my massage?",
                 "answer_2": "Before your massage arrange us a little bit of space to set up portable massage table.<br/>Prepare yourself a bigger towel or a blanket and stay in your underwear or light, comfortable clothes. Relax and enjoy!",
                 "question_3": "What kind of materials do you provide?",
-                "answer_3": "We provide all the necessary equipment and accessories to perform your massage, taking care of yours and our homies safety due to Covid-19. We come to you with a portable massage table, liners, surface disinfectant, oils (natural or hypoalergical), optionally speaker. ",
+                "answer_3": "We provide all the necessary equipment and accessories to perform your massage, taking care of yours and our Homies safety due to Covid-19. We come to you with a portable massage table, liners, surface disinfectant, oils (natural or hypoalergical), optionally speaker. ",
                 "question_4": "How the massages for 2 people are organised? ",
                 "answer_4": "Massages for two are performed one by one, by selected massage therapist, according to your preferences.",
                 "question_5": "What are the contraindications to massage?",

@@ -19,37 +19,37 @@ const CleaningSeoJsonLd = ({ cityKey, displayName, locative, locale, faqItems = 
         {
             '@type': ['LocalBusiness', 'CleaningService'],
             '@id': businessId,
-            name: 'HeyHomie',
-            url: DOMAIN,
-            image: `${DOMAIN}/homie-meta.jpg`,
-            description:
+            'name': 'HeyHomie',
+            'url': DOMAIN,
+            'image': `${DOMAIN}/homie-meta.jpg`,
+            'description':
                 locale === 'pl'
-                    ? `Profesjonalne sprzątanie mieszkań, domów i biur ${locative}. Sprawdzeni homies, ekologiczne środki, przejrzyste ceny.`
-                    : `Professional apartment, house and office cleaning ${locative}. Vetted homies, eco-friendly supplies, transparent pricing.`,
-            areaServed: { '@type': 'City', name: displayName },
-            priceRange: '$$',
+                    ? `Profesjonalne sprzątanie mieszkań, domów i biur ${locative}. Sprawdzeni Homies, ekologiczne środki, przejrzyste ceny.`
+                    : `Professional apartment, house and office cleaning ${locative}. Vetted Homies, eco-friendly supplies, transparent pricing.`,
+            'areaServed': { '@type': 'City', 'name': displayName },
+            'priceRange': '$$',
         },
         {
             '@type': 'Service',
-            serviceType: locale === 'pl' ? 'Sprzątanie mieszkań i domów' : 'Apartment and house cleaning',
-            name: locale === 'pl' ? `Sprzątanie ${locative}` : `Cleaning ${locative}`,
-            url: pageUrl,
-            provider: { '@id': businessId },
-            areaServed: { '@type': 'City', name: displayName },
-            hasOfferCatalog: {
+            'serviceType': locale === 'pl' ? 'Sprzątanie mieszkań i domów' : 'Apartment and house cleaning',
+            'name': locale === 'pl' ? `Sprzątanie ${locative}` : `Cleaning ${locative}`,
+            'url': pageUrl,
+            'provider': { '@id': businessId },
+            'areaServed': { '@type': 'City', 'name': displayName },
+            'hasOfferCatalog': {
                 '@type': 'OfferCatalog',
-                name: locale === 'pl' ? 'Usługi sprzątania' : 'Cleaning services',
-                itemListElement: services.map(s => ({
+                'name': locale === 'pl' ? 'Usługi sprzątania' : 'Cleaning services',
+                'itemListElement': services.map(s => ({
                     '@type': 'Offer',
-                    itemOffered: { '@type': 'Service', name: s.title, description: s.body },
+                    'itemOffered': { '@type': 'Service', 'name': s.title, 'description': s.body },
                 })),
             },
         },
         {
             '@type': 'BreadcrumbList',
-            itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'HeyHomie', item: locale === 'pl' ? DOMAIN : `${DOMAIN}/${locale}` },
-                { '@type': 'ListItem', position: 2, name: displayName, item: pageUrl },
+            'itemListElement': [
+                { '@type': 'ListItem', 'position': 1, 'name': 'HeyHomie', 'item': locale === 'pl' ? DOMAIN : `${DOMAIN}/${locale}` },
+                { '@type': 'ListItem', 'position': 2, 'name': displayName, 'item': pageUrl },
             ],
         },
     ];
@@ -57,10 +57,10 @@ const CleaningSeoJsonLd = ({ cityKey, displayName, locative, locale, faqItems = 
     if (faqItems.length > 0) {
         graph.push({
             '@type': 'FAQPage',
-            mainEntity: faqItems.map(item => ({
+            'mainEntity': faqItems.map(item => ({
                 '@type': 'Question',
-                name: item.q,
-                acceptedAnswer: { '@type': 'Answer', text: item.a },
+                'name': item.q,
+                'acceptedAnswer': { '@type': 'Answer', 'text': item.a },
             })),
         });
     }

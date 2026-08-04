@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -26,7 +25,7 @@ const Inner = styled.div`
 `;
 
 const Heading = styled.h2`
-    font-family: 'Quicksand';
+    font-family: 'Manrope';
     font-weight: bold;
     text-transform: uppercase;
 
@@ -60,7 +59,7 @@ const Lead = styled.p`
 `;
 
 const SubHeading = styled.h3`
-    font-family: 'Quicksand';
+    font-family: 'Manrope';
     font-weight: bold;
     text-transform: uppercase;
 
@@ -92,7 +91,7 @@ const TrustGrid = styled.div`
 `;
 
 const TrustCard = styled.div`
-    background-color: #f4f7ff;
+    background-color: #f6fbff;
     border-radius: 12px;
 
     padding: 20px 18px;
@@ -105,7 +104,7 @@ const TrustCard = styled.div`
     }
 
     h4 {
-        font-family: 'Quicksand';
+        font-family: 'Manrope';
         font-weight: bold;
 
         font-size: 16px;
@@ -161,7 +160,7 @@ const PlanCard = styled.div`
     }
 
     h4 {
-        font-family: 'Quicksand';
+        font-family: 'Manrope';
         font-weight: bold;
 
         font-size: 20px;
@@ -169,7 +168,7 @@ const PlanCard = styled.div`
 
         margin-bottom: 12px;
 
-        color: #ff3c87;
+        color: #eb4e87;
     }
 
     p {
@@ -196,7 +195,7 @@ const DistrictGrid = styled.ul`
 `;
 
 const DistrictChip = styled.li`
-    background-color: #f4f7ff;
+    background-color: #f6fbff;
     color: ${theme`colors.primary.dark`};
     border-radius: 20px;
 
@@ -237,7 +236,7 @@ const FaqQuestion = styled.button`
 
     padding: 20px 4px;
 
-    font-family: 'Quicksand';
+    font-family: 'Manrope';
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
@@ -251,7 +250,7 @@ const FaqQuestion = styled.button`
         flex-shrink: 0;
         transition: transform 0.2s ease-in-out;
         font-size: 20px;
-        color: #ff3c87;
+        color: #eb4e87;
         transform: rotate(${props => (props.isOpen ? '45deg' : '0deg')});
     }
 
@@ -262,13 +261,39 @@ const FaqQuestion = styled.button`
 
 const FaqAnswer = styled.div`
     overflow: hidden;
-    max-height: ${props => (props.isOpen ? '600px' : '0')};
-    transition: max-height 0.3s ease-in-out;
+    max-height: ${props => (props.isOpen ? '1400px' : '0')};
+    transition: max-height 0.35s ease-in-out;
 
     p {
         font-size: 15px;
         line-height: 25px;
-        padding: 0 4px 20px;
+        padding: 0 4px 16px;
+
+        &:last-child {
+            padding-bottom: 20px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        a {
+            color: #eb4e87;
+            font-weight: 700;
+            border-bottom: 2px solid #77ecc8;
+        }
+    }
+
+    p.faq-note {
+        background-color: #f6fbff;
+        border-left: 3px solid #77ecc8;
+        border-radius: 8px;
+
+        margin: 0 4px 16px;
+        padding: 12px 16px;
+
+        font-size: 14px;
+        line-height: 22px;
     }
 `;
 
@@ -283,7 +308,7 @@ const CitiesLinks = styled.div`
 const CityLink = styled.a`
     display: inline-block;
 
-    border: 2px solid #36f0c7;
+    border: 2px solid #77ecc8;
     border-radius: 8px;
 
     padding: 10px 20px;
@@ -295,7 +320,7 @@ const CityLink = styled.a`
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-        background-color: #36f0c7;
+        background-color: #77ecc8;
     }
 `;
 
@@ -303,7 +328,7 @@ const PlansCta = styled.a`
     display: inline-block;
     margin-top: 24px;
 
-    background-color: #36f0c7;
+    background-color: #77ecc8;
     border-radius: 8px;
 
     padding: 12px 24px;
@@ -318,6 +343,68 @@ const PlansCta = styled.a`
         opacity: 0.85;
     }
 `;
+
+const PrimaryCta = styled.a`
+    display: inline-block;
+    margin-top: 8px;
+
+    background-color: #77ecc8;
+    border-radius: 8px;
+
+    padding: 15px 32px;
+
+    font-family: 'Manrope';
+    font-weight: bold;
+    font-size: 17px;
+    color: ${theme`colors.primary.dark`};
+
+    box-shadow: 0px 8px 15px 0px rgba(119, 236, 200, 0.35);
+    transition: transform 0.1s ease-in-out, opacity 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-2px);
+        opacity: 0.92;
+    }
+`;
+
+// FAQ answers use a tiny markdown-lite so the copy stays HTML-free in the message
+// catalogue (intl-messageformat would choke on real tags): **bold**, [label](#order)
+// links, and lines beginning with "» " become highlighted support-contact notes.
+const inlineToNodes = (text, keyPrefix) =>
+    text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).map((tok, i) => {
+        if (/^\*\*[^*]+\*\*$/.test(tok)) {
+            return <strong key={`${keyPrefix}-b${i}`}>{tok.slice(2, -2)}</strong>;
+        }
+        const link = tok.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (link) {
+            return (
+                <a key={`${keyPrefix}-a${i}`} href={link[2]}>
+                    {link[1]}
+                </a>
+            );
+        }
+        return tok;
+    });
+
+const renderAnswer = answer =>
+    answer.split('\n').map((line, i) => {
+        const isNote = line.indexOf('» ') === 0;
+        const content = isNote ? line.slice(2) : line;
+        return (
+            <p key={i} className={isNote ? 'faq-note' : undefined}>
+                {inlineToNodes(content, i)}
+            </p>
+        );
+    });
+
+// Plain text for schema.org — strip the markdown-lite so JSON-LD stays clean.
+const stripMarkup = answer =>
+    answer
+        .replace(/\n» /g, ' ')
+        .replace(/\n/g, ' ')
+        .replace(/\*\*([^*]+)\*\*/g, '$1')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .trim();
 
 const TRUST_KEYS = [
     { key: 'eco', icon: '🌿' },
@@ -335,7 +422,7 @@ const SERVICE_KEYS = [
     { key: 'upholstery', icon: '🛋️' },
 ];
 
-const FAQ_KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
+const FAQ_KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
 
 const CleaningSeoSection = ({ city }) => {
     const t = useTranslations('CleaningSeoSection');
@@ -343,7 +430,7 @@ const CleaningSeoSection = ({ city }) => {
     const isPl = router.locale === 'pl';
 
     const cityName = city && city.name;
-    const { data, displayName, locative: cityLocative } = getCitySeoForms(cityName, isPl);
+    const { data, displayName, locative: cityLocative, streets } = getCitySeoForms(cityName, isPl);
 
     const otherCities = seoCitiesOrder.filter(c => c !== cityName);
 
@@ -356,19 +443,30 @@ const CleaningSeoSection = ({ city }) => {
     }));
 
     const faqItems = FAQ_KEYS.map(n => ({
-        q: t(`faq.q${n}`, { cityLocative, cityName: displayName }),
-        a: t(`faq.a${n}`, { cityLocative, cityName: displayName }),
+        q: t(`faq.q${n}`, { cityLocative, cityName: displayName, streets }),
+        a: t(`faq.a${n}`, { cityLocative, cityName: displayName, streets }),
     }));
+
+    // schema.org wants plain text — feed it the stripped answers, not the markdown-lite.
+    const faqSchema = faqItems.map(item => ({ q: item.q, a: stripMarkup(item.a) }));
 
     return (
         <Section aria-label={t('intro.heading', { cityLocative })}>
-            <CleaningSeoJsonLd cityKey={cityName} displayName={displayName} locative={cityLocative} locale={router.locale} faqItems={faqItems} services={services} />
+            <CleaningSeoJsonLd
+                cityKey={cityName}
+                displayName={displayName}
+                locative={cityLocative}
+                locale={router.locale}
+                faqItems={faqSchema}
+                services={services}
+            />
             <Inner>
                 {/* Intro */}
                 <Heading>{t('intro.heading', { cityLocative })}</Heading>
                 <Lead>{t('intro.para_1', { cityLocative, cityName: displayName })}</Lead>
                 <Lead>{t('intro.para_2', { cityLocative, cityName: displayName })}</Lead>
                 <Lead>{t('intro.para_3', { cityLocative, cityName: displayName })}</Lead>
+                <PrimaryCta href='#order'>{t('intro.cta', { cityLocative })}</PrimaryCta>
 
                 {/* Trust signals */}
                 <SubHeading>{t('trust.heading')}</SubHeading>
@@ -437,9 +535,7 @@ const CleaningSeoSection = ({ city }) => {
                                     +
                                 </span>
                             </FaqQuestion>
-                            <FaqAnswer isOpen={openFaq === i}>
-                                <p>{item.a}</p>
-                            </FaqAnswer>
+                            <FaqAnswer isOpen={openFaq === i}>{renderAnswer(item.a)}</FaqAnswer>
                         </FaqItem>
                     ))}
                 </FaqList>

@@ -276,6 +276,7 @@ function CityPage({ city, cities, homie_services: homieServices }) {
                 extraButtons={true}
             />
             <div>
+                <span id='order' aria-hidden='true' />
                 <ServicesContainer services={homieServices} default_background_image={city.default_background_image} />
                 <CitypageBody />
                 <CleaningSeoSection city={city} />
