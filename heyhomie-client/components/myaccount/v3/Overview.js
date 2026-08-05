@@ -15,9 +15,14 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
+import { useTranslations } from 'next-intl';
 import tw, { styled, theme } from 'twin.macro';
 
 import { listMissions } from '../../../api/endpoints/missions';
+import { missionDate } from '../../../lib/missions';
+// Step positions are shared with the Missions screen, so the two screens cannot
+// disagree about what a status means.
+import { STEP_INDEX } from './Missions';
 
 const Wrap = styled.div`
     ${tw`flex items-start`}
@@ -298,30 +303,8 @@ const Empty = styled(Card)`
     }
 `;
 
-/** The API's mission statuses, mapped to what a client is told. */
-const STATUS_LABEL = {
-    searching_homie: 'Finding a homie',
-    homie_found: 'Homie assigned',
-    in_progress: 'In progress',
-    done: 'Done',
-    canceled: 'Cancelled',
-    unpaid: 'Unpaid',
-    freezed: 'Paused',
-};
-
-/** How far along the four visible steps a mission is, from its own status. */
-const STEP_INDEX = {
-    searching_homie: 0,
-    homie_found: 1,
-    in_progress: 2,
-    done: 3,
-    unpaid: 3,
-    freezed: 0,
-    canceled: 0,
-};
-
-const fmtDate = d => (d ? new Date(d).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' }) : '');
-const fmtTime = d => (d ? new Date(d).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '');
+const fmtDate = ts => (ts ? missionDate(ts).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' }) : '');
+const fmtTime = ts => (ts ? missionDate(ts).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '');
 const fmtPrice = p => (p === null || p === undefined || p === '' ? '' : `${Math.round(Number(p))} zł`);
 const initials = name =>
     (name || '')
@@ -334,7 +317,32 @@ const initials = name =>
 
 export default function Overview() {
     const router = useRouter();
+    const t = useTranslations('AccountPage.IndexPage.MissionsComponent');
     const user = useSelector(state => state.user);
+
+    /**
+     * `service` on a mission is an OBJECT; the displayed name is a translation key
+     * on `homie_service`. An unknown value falls back to the raw string rather than
+     * throwing and taking the screen down.
+     */
+    const serviceName = m => {
+        if (!m || !m.homie_service) return (m && m.service && m.service.type) || '';
+        try {
+            return t(`missions.servicesNames.${m.homie_service}`);
+        } catch (e) {
+            return String(m.homie_service);
+        }
+    };
+    /** Localized status text from `messages/*.json`, not a hardcoded English map. */
+    const statusLabel = m => {
+        if (!m || !m.status) return '';
+        try {
+            return t(`missions.statuses.${m.status}`);
+        } catch (e) {
+            return String(m.status);
+        }
+    };
+
     const [upcoming, setUpcoming] = useState([]);
     const [past, setPast] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -381,21 +389,19 @@ export default function Overview() {
             <Col>
                 {next ? (
                     <NextCard>
-                        <div className="top">
+                        <div className='top'>
                             <div>
-                                <div className="pill">
+                                <div className='pill'>
                                     <i />
-                                    <span>Next mission · {STATUS_LABEL[next.status] || next.status}</span>
+                                    <span>Next mission · {statusLabel(next)}</span>
                                 </div>
-                                <div className="when">{fmtDate(next.meeting_date)}</div>
-                                <div className="summary">
-                                    {[next.service, fmtTime(next.meeting_date)].filter(Boolean).join(' · ')}
-                                </div>
+                                <div className='when'>{fmtDate(next.meeting_date)}</div>
+                                <div className='summary'>{[serviceName(next), fmtTime(next.meeting_date)].filter(Boolean).join(' · ')}</div>
                             </div>
                             {fmtPrice(next.price) ? (
                                 <div style={{ textAlign: 'right', flex: 'none' }}>
-                                    <div className="priceLabel">Charged after</div>
-                                    <div className="price">{fmtPrice(next.price)}</div>
+                                    <div className='priceLabel'>Charged after</div>
+                                    <div className='price'>{fmtPrice(next.price)}</div>
                                 </div>
                             ) : null}
                         </div>
@@ -403,40 +409,38 @@ export default function Overview() {
                         <Steps>
                             {steps.map((s, i) => (
                                 <Step key={s.title} $on={i <= step}>
-                                    <div className="row">
-                                        <div className="dot" />
-                                        {i < steps.length - 1 ? <div className="bar" /> : null}
+                                    <div className='row'>
+                                        <div className='dot' />
+                                        {i < steps.length - 1 ? <div className='bar' /> : null}
                                     </div>
-                                    <div className="title">{s.title}</div>
-                                    <div className="meta">{s.meta}</div>
+                                    <div className='title'>{s.title}</div>
+                                    <div className='meta'>{s.meta}</div>
                                 </Step>
                             ))}
                         </Steps>
 
-                        <div className="foot">
-                            <div className="avatar">{next.homie_name ? initials(next.homie_name) : '—'}</div>
+                        <div className='foot'>
+                            <div className='avatar'>{next.homie_name ? initials(next.homie_name) : '—'}</div>
                             <div style={{ flex: 1 }}>
                                 {/* The API gives a name and nothing else about a homie, so the
                                     design's rating / mission count / languages line is not drawn. */}
-                                <div className="homie">
-                                    {next.homie_name ? `${next.homie_name} is your homie` : 'Your homie is assigned before the visit'}
-                                </div>
+                                <div className='homie'>{next.homie_name ? `${next.homie_name} is your homie` : 'Your homie is assigned before the visit'}</div>
                             </div>
-                            <div className="ghost" onClick={() => router.push('/account/missions')}>
+                            <div className='ghost' onClick={() => router.push('/account/missions')}>
                                 Reschedule
                             </div>
                         </div>
                     </NextCard>
                 ) : (
                     <Empty>
-                        <div className="h">{loading ? 'Loading your missions…' : failed ? "We couldn't load your missions" : 'Nothing booked right now'}</div>
-                        <div className="b">
+                        <div className='h'>{loading ? 'Loading your missions…' : failed ? "We couldn't load your missions" : 'Nothing booked right now'}</div>
+                        <div className='b'>
                             {failed
                                 ? 'The connection dropped on the way. Refresh the page — nothing about your account has changed.'
                                 : 'When you book a cleaning, you can follow it here from confirmation through to payment.'}
                         </div>
                         {!loading && !failed ? (
-                            <div className="cta" onClick={() => router.push('/cleaning')}>
+                            <div className='cta' onClick={() => router.push('/cleaning')}>
                                 Book a cleaning
                             </div>
                         ) : null}
@@ -445,8 +449,8 @@ export default function Overview() {
 
                 <Card>
                     <SectionHead>
-                        <div className="h">Recent missions</div>
-                        <div className="a" onClick={() => router.push('/account/missions')}>
+                        <div className='h'>Recent missions</div>
+                        <div className='a' onClick={() => router.push('/account/missions')}>
                             See all →
                         </div>
                     </SectionHead>
@@ -454,13 +458,11 @@ export default function Overview() {
                         past.slice(0, 5).map(m => (
                             <Row key={m.id} onClick={() => router.push('/account/missions')}>
                                 <div style={{ flex: '1 1 auto', minWidth: 0 }}>
-                                    <div className="service">{m.service}</div>
-                                    <div className="meta">
-                                        {[fmtDate(m.meeting_date), m.homie_name].filter(Boolean).join(' · ')}
-                                    </div>
+                                    <div className='service'>{serviceName(m)}</div>
+                                    <div className='meta'>{[fmtDate(m.meeting_date), m.homie_name].filter(Boolean).join(' · ')}</div>
                                 </div>
-                                <div className="status">{STATUS_LABEL[m.status] || m.status}</div>
-                                <div className="total">{fmtPrice(m.price)}</div>
+                                <div className='status'>{statusLabel(m)}</div>
+                                <div className='total'>{fmtPrice(m.price)}</div>
                             </Row>
                         ))
                     ) : (
@@ -474,16 +476,16 @@ export default function Overview() {
             <Rail>
                 {last ? (
                     <Rebook onClick={() => router.push('/cleaning')}>
-                        <div className="h">Book the same again</div>
-                        <div className="b">{[last.service, fmtPrice(last.price)].filter(Boolean).join(' · ')}</div>
-                        <div className="a">Pick a date →</div>
+                        <div className='h'>Book the same again</div>
+                        <div className='b'>{[serviceName(last), fmtPrice(last.price)].filter(Boolean).join(' · ')}</div>
+                        <div className='a'>Pick a date →</div>
                     </Rebook>
                 ) : null}
 
                 <Help>
-                    <div className="h">Something not right?</div>
-                    <div className="b">Tell us within 24 hours of a mission and we come back and redo it — free.</div>
-                    <div className="a" onClick={() => router.push('/account/settings')}>
+                    <div className='h'>Something not right?</div>
+                    <div className='b'>Tell us within 24 hours of a mission and we come back and redo it — free.</div>
+                    <div className='a' onClick={() => router.push('/account/settings')}>
                         Report an issue →
                     </div>
                 </Help>

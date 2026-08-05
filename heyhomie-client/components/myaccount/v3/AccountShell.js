@@ -227,9 +227,9 @@ export default function AccountShell({ active, title, subtitle, children }) {
                 <Wordmark onClick={() => router.push('/account')}>homie</Wordmark>
 
                 <NewOrder onClick={() => router.push('/cleaning')}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={theme`colors.primary.dark`} strokeWidth="2" strokeLinecap="round">
-                        <line x1="12" y1="5" x2="12" y2="19" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
+                    <svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke={theme`colors.primary.dark`} strokeWidth='2' strokeLinecap='round'>
+                        <line x1='12' y1='5' x2='12' y2='19' />
+                        <line x1='5' y1='12' x2='19' y2='12' />
                     </svg>
                     <span>Create new order</span>
                 </NewOrder>
@@ -246,9 +246,9 @@ export default function AccountShell({ active, title, subtitle, children }) {
                     rather than showing an empty box when the session has none yet. */}
                 {user.referral_code ? (
                     <Referral onClick={() => router.push('/account/rewards')}>
-                        <div className="title">Invite a friend</div>
-                        <div className="body">They get a discount on their first order, and you earn credit for every order they make.</div>
-                        <div className="code" onClick={copyReferral}>
+                        <div className='title'>Invite a friend</div>
+                        <div className='body'>They get a discount on their first order, and you earn credit for every order they make.</div>
+                        <div className='code' onClick={copyReferral}>
                             <b>{user.referral_code}</b>
                             <span>{copied ? 'copied' : 'copy'}</span>
                         </div>
@@ -259,14 +259,14 @@ export default function AccountShell({ active, title, subtitle, children }) {
             <Main>
                 <Header>
                     <Titles>
-                        <div className="t">{title}</div>
-                        {subtitle ? <div className="s">{subtitle}</div> : null}
+                        <div className='t'>{title}</div>
+                        {subtitle ? <div className='s'>{subtitle}</div> : null}
                     </Titles>
                     <Who onClick={() => router.push('/account/settings')}>
-                        <div className="avatar">{initialsOf(user.first_name, user.last_name)}</div>
+                        <div className='avatar'>{initialsOf(user.first_name, user.last_name)}</div>
                         <div>
-                            <div className="name">{user.first_name ? `Hey ${user.first_name} 👋` : 'Your account'}</div>
-                            {user.phone_number ? <div className="phone">{user.phone_number}</div> : null}
+                            <div className='name'>{user.first_name ? `Hey ${user.first_name} 👋` : 'Your account'}</div>
+                            {user.phone_number ? <div className='phone'>{user.phone_number}</div> : null}
                         </div>
                     </Who>
                 </Header>
