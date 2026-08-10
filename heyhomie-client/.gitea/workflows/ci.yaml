@@ -7,7 +7,7 @@ on:
 
 jobs:
     lint:
-        name: Lint
+        name: Lint & test
         runs-on: ubuntu-latest
 
         steps:
@@ -27,6 +27,9 @@ jobs:
 
             - name: Lint code
               run: npm run lint
+
+            - name: Run tests
+              run: npm run test:ci
 
     ci:
         name: Continuous Integration

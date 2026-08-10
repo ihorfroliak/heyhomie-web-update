@@ -15,7 +15,17 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "overrides": [],
+    "overrides": [
+        {
+            // Jest injects describe/it/expect as globals, and tests legitimately
+            // reach for node built-ins (fs, path) that the browser env excludes.
+            "files": ["__tests__/**/*.js", "jest.config.js"],
+            "env": { "jest": true, "node": true },
+            "rules": {
+                "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+            }
+        }
+    ],
     "parser": "@babel/eslint-parser",
     "parserOptions": {
         "ecmaVersion": "latest",

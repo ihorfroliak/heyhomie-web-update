@@ -398,7 +398,9 @@ const renderAnswer = answer =>
     });
 
 // Plain text for schema.org — strip the markdown-lite so JSON-LD stays clean.
-const stripMarkup = answer =>
+// Exported for tests: markup leaking into JSON-LD is invisible in the UI but
+// invalidates the FAQPage rich result.
+export const stripMarkup = answer =>
     answer
         .replace(/\n» /g, ' ')
         .replace(/\n/g, ' ')

@@ -103,7 +103,9 @@ const capitalize = str => (str ? str.charAt(0).toUpperCase() + str.slice(1) : ''
  * section and the city-page <head> so both stay in sync.
  */
 export const getCitySeoForms = (cityName, isPl) => {
-    const data = cityName ? cityDistricts[cityName] : null;
+    // Always null for "not found", never undefined — the city list comes from the
+    // API at request time and can outrun this dataset, so callers branch on `data`.
+    const data = (cityName && cityDistricts[cityName]) || null;
 
     let displayName = capitalize(cityName);
     let locative = isPl ? `w mieście ${displayName}` : `in ${displayName}`;
