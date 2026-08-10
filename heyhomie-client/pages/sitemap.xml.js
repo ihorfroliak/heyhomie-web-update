@@ -8,7 +8,8 @@ const DEFAULT_LOCALE = 'pl';
 const STATIC_PATHS = ['', 'cleaning', 'flowers', 'massage', 'about', 'privacy', 'terms_conditions'];
 
 // Polish (default locale) is served without a prefix; other locales are prefixed.
-const localizedUrl = (locale, path) => {
+// Exported for tests — the URL shape is the whole point of this route.
+export const localizedUrl = (locale, path) => {
     const prefix = locale === DEFAULT_LOCALE ? '' : `/${locale}`;
     const suffix = path ? `/${path}` : '';
     return `${DOMAIN}${prefix}${suffix}` || `${DOMAIN}/`;
@@ -23,7 +24,7 @@ ${alternates}
     </url>`;
 };
 
-const buildSitemap = paths => `<?xml version="1.0" encoding="UTF-8"?>
+export const buildSitemap = paths => `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${paths.map(urlEntry).join('\n')}
 </urlset>`;

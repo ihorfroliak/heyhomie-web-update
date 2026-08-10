@@ -80,8 +80,27 @@ the literal strings people search for.
 Never put copy in a component. `intl-messageformat` treats `<...>` as tag syntax, so message values
 must contain **no HTML** — the cleaning FAQ uses a markdown-lite renderer instead.
 
+## Tests
+Jest 26 — the last line that runs on the Node 12 pin, so it is not a choice, and Vitest/Playwright
+are out until `engines.node` moves. CI gates on `lint` **and** `test:ci`.
+
+```bash
+docker run --rm -v "$PWD/heyhomie-client:/app" -w /app node:12.22.12-bullseye-slim \
+  bash -lc 'npm install && npx jest'
+```
+
+`__tests__/` guards the rules this repo keeps breaking, not code coverage for its own sake:
+`messages` (PL/EN key parity, no HTML in formatter-rendered values, Homies capitalised),
+`cityDistricts` (Polish locative — `we Wrocławiu` not `w`), `brandCanon` (no legacy token creeps
+back), `seoRouting` (PL unprefixed / EN under `/en`, sitemap shape, JSON-LD stays plain text).
+
+Values that really are raw HTML (fed to `dangerouslySetInnerHTML`) are allowlisted by path in
+`__tests__/messages.test.js`. Add to that list only when the value is genuinely rendered raw.
+
 ## Known gaps (as of 2026-08)
-- **No test runner at all.** CI gates on lint only. Any "tests pass" claim needs a runner built first.
+- **No E2E and no component tests.** The suite is unit + data-integrity only; the booking flow is
+  still verified by hand. Playwright needs a Node newer than the pin, so it would have to run on the
+  host against the Docker container.
 - No GTM, no data layer, no custom GA4 events, no Ads conversion tag, no consent management.
   GA4 `G-RY504GZ2G0` is hardcoded for **both** dev and prod, so dev traffic pollutes production data.
 - `icon_hex_color` still arrives as legacy mint `#36F0C780` from the Rails API — backend fix, not here.

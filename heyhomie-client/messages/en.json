@@ -755,7 +755,10 @@
             },
             "cities": {
                 "heading": "Cities",
+                "krakow": "Kraków",
                 "warsaw": "Warsaw",
+                "wroclaw": "Wrocław",
+                "poznan": "Poznań",
                 "rzeszow": "Rzeszów",
                 "katowice": "Katowice"
             },
